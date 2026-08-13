@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_tips
+    columns:
+      - name: total_bill
+        tests:
+          - not_null
+
+      - name: tip
+        tests:
+          - not_null
+
+      - name: sex
+        tests:
+          - not_null
+
+      - name: day
+        tests:
+          - not_null

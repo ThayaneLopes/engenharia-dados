@@ -1,0 +1,770 @@
+==================== 2026-08-13T17:20:52.120458Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-08-13T17:20:52.121381Z | bd552af5-28be-4b23-8ec7-98ac26c75d39 ====================
+17:20:52.121451 [info ]: Starting dbt LSP server
+17:20:52.121543 [info ]: Connecting to LSP client on port 8000
+17:20:52.128798 [info ]: Successfully connected to LSP client
+17:20:52.128905 [info ]: Creating LSP service...
+17:20:52.134094 [info ]: Creating LSP server...
+17:20:52.134123 [info ]: Starting LSP server...
+17:21:33.170164 [info ]: Started loading project
+17:21:33.171483 [info ]: Finished loading project [  0.00s]
+17:27:03.708756 [info ]: Loading ~/.dbt/profiles.yml
+17:29:20.262949 [info ]: Started loading project
+17:29:20.264331 [info ]: Loading ~/.dbt/profiles.yml
+17:29:20.280966 [debug]:    Started loading packages
+17:29:20.286335 [debug]:     Loaded [  0.01s] packages
+17:29:20.288960 [info ]: Finished loading project [  0.03s]
+17:29:20.289726 [info ]: Started parsing
+17:29:20.435378 [error]: [SerializationError (dbt1013)]: Invalid model definition `meu_projeto.+ materialized`: models.meu_projeto.+ materialized: invalid type: string "view", expected struct ProjectModelConfig at line 8 column 21
+  --> dbt_project.yml:8:21
+17:29:20.449226 [debug]: Finished parsing models/staging/stg_tips.sql [  0.01s]
+17:29:20.957053 [error]: [CyclicDependency (dbt1022)]: Model 'stg_tips' cannot reference itself
+  --> models/staging/stg_tips.sql:17:6
+17:29:20.960123 [info ]: Cached model count updated: 1 models (estimate)
+17:29:20.960153 [info ]: Cached model count updated: 1 models (accurate)
+17:29:20.960188 [info ]: Started scheduling
+17:29:20.960252 [info ]: Finished scheduling [  0.00s]
+17:29:20.960286 [debug]: Compilation - 0 nodes selected: {}
+17:29:20.960322 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+17:29:20.960349 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+17:29:20.960523 [info ]: Started scheduling
+17:29:20.960580 [info ]: Finished scheduling [  0.00s]
+17:29:20.967924 [debug]: No platform credentials found, skipping remote license
+17:29:23.032658 [debug]: Requesting trial license from https://cloud.getdbt.com/api/private/trial-licenses/
+17:29:23.442425 [debug]: Trial license retrieved
+17:29:23.660954 [debug]: License loaded from trial license server
+17:29:23.917245 [info ]: Started building task graph
+17:29:23.917294 [info ]: Finished building task graph [  0.00s]
+17:29:23.925490 [info ]: Started scheduling
+17:29:23.925554 [info ]: Finished scheduling [  0.00s]
+17:29:23.927204 [info ]: Cached model count updated: 1 models (accurate)
+17:29:23.927253 [info ]: Finished parsing [  3.64s]
+17:29:25.489994 [info ]: Started loading project
+17:29:25.491066 [info ]: Loading ~/.dbt/profiles.yml
+17:29:25.563646 [info ]: Cached model count updated: 1 models (estimate)
+17:29:25.563728 [info ]: Cached model count updated: 1 models (accurate)
+17:29:25.563800 [info ]: Started scheduling
+17:29:25.563920 [info ]: Finished scheduling [  0.00s]
+17:29:25.563988 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.stg_tips"}
+17:29:25.570242 [info ]: Started building task graph
+17:29:25.570375 [info ]: Finished building task graph [  0.00s]
+17:29:25.585649 [info ]: Started rendering (1 nodes)
+17:29:25.585703 [info ]: Started model main.stg_tips
+17:29:25.585733 [debug]: Started rendering model main.stg_tips
+17:29:25.585808 [info ]: Finished loading project [  0.10s]
+17:29:25.588274 [error]: [JinjaError (dbt1501)]: Failed to render SQL invalid operation: dbt was unable to infer all dependencies for the model "stg_tips". This typically happens when ref() is placed within a conditional block.
+To fix this, add the following hint to the top of the model "stg_tips":
+-- depends_on: {{ ref('stg_tips') }}
+(in models/staging/stg_tips.sql:17:6)
+  --> models/staging/stg_tips.sql:17:6
+17:29:25.588397 [info ]: Started analyzing (1 nodes)
+17:29:25.588421 [debug]: Started analyzing model main.stg_tips
+17:29:25.588464 [debug]: Finished analyzing [  0.00s] model main.stg_tips [skipped]
+17:29:25.588486 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+17:29:25.588506 [info ]:     Failed [  0.00s] model main.stg_tips (view)
+17:29:25.611905 [info ]: Started scheduling
+17:29:25.612088 [info ]: Finished scheduling [  0.00s]
+17:29:25.612542 [info ]: Cached model count updated: 1 models (accurate)
+17:29:25.612647 [debug]: Finished rendering [  0.03s] model main.stg_tips [error]
+17:29:25.612707 [info ]: Finished rendering [  0.03s] (1 nodes, 0 skipped, 1 errors)
+17:29:27.474604 [info ]: Started loading project
+17:29:27.475637 [info ]: Loading ~/.dbt/profiles.yml
+17:29:27.490397 [info ]: Started loading project
+17:29:27.491395 [info ]: Loading ~/.dbt/profiles.yml
+17:29:27.491755 [info ]: Finished loading project [  0.02s]
+17:29:27.503985 [debug]:    Started loading packages
+17:29:27.509184 [debug]:     Loaded [  0.01s] packages
+17:29:27.511032 [info ]: Finished loading project [  0.02s]
+17:29:27.511544 [info ]: Started parsing
+17:29:27.581448 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+17:29:27.893196 [error]: [CyclicDependency (dbt1022)]: Model 'stg_tips' cannot reference itself
+  --> models/staging/stg_tips.sql:17:6
+17:29:27.895401 [info ]: Cached model count updated: 1 models (estimate)
+17:29:27.895420 [info ]: Cached model count updated: 1 models (accurate)
+17:29:27.895437 [info ]: Started scheduling
+17:29:27.895471 [info ]: Finished scheduling [  0.00s]
+17:29:27.895488 [debug]: Compilation - 0 nodes selected: {}
+17:29:27.895507 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+17:29:27.895522 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+17:29:27.895669 [info ]: Started scheduling
+17:29:27.895704 [info ]: Finished scheduling [  0.00s]
+17:29:27.897241 [info ]: Started building task graph
+17:29:27.897264 [info ]: Finished building task graph [  0.00s]
+17:29:27.904811 [info ]: Started scheduling
+17:29:27.904872 [info ]: Finished scheduling [  0.00s]
+17:29:27.909548 [info ]: Cached model count updated: 1 models (accurate)
+17:29:27.909650 [info ]: Finished parsing [  0.40s]
+17:29:29.482342 [info ]: Started loading project
+17:29:29.484274 [info ]: Loading ~/.dbt/profiles.yml
+17:29:29.557651 [info ]: Cached model count updated: 1 models (estimate)
+17:29:29.557672 [info ]: Cached model count updated: 1 models (accurate)
+17:29:29.557711 [info ]: Started scheduling
+17:29:29.557765 [info ]: Finished scheduling [  0.00s]
+17:29:29.557792 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.stg_tips"}
+17:29:29.559572 [info ]: Started building task graph
+17:29:29.559625 [info ]: Finished building task graph [  0.00s]
+17:29:29.561407 [info ]: Started rendering (1 nodes)
+17:29:29.561440 [info ]: Started model main.stg_tips
+17:29:29.561456 [debug]: Started rendering model main.stg_tips
+17:29:29.561514 [info ]: Finished loading project [  0.08s]
+17:29:29.562467 [error]: [JinjaError (dbt1501)]: Failed to render SQL invalid operation: dbt was unable to infer all dependencies for the model "stg_tips". This typically happens when ref() is placed within a conditional block.
+To fix this, add the following hint to the top of the model "stg_tips":
+-- depends_on: {{ ref('stg_tips') }}
+(in models/staging/stg_tips.sql:17:6)
+  --> models/staging/stg_tips.sql:17:6
+17:29:29.562527 [info ]: Started analyzing (1 nodes)
+17:29:29.562541 [debug]: Started analyzing model main.stg_tips
+17:29:29.562561 [debug]: Finished analyzing [  0.00s] model main.stg_tips [skipped]
+17:29:29.562576 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+17:29:29.562585 [info ]:     Failed [  0.00s] model main.stg_tips (view)
+17:29:29.568908 [info ]: Started scheduling
+17:29:29.568966 [info ]: Finished scheduling [  0.00s]
+17:29:29.569187 [info ]: Cached model count updated: 1 models (accurate)
+17:29:29.569227 [debug]: Finished rendering [  0.01s] model main.stg_tips [error]
+17:29:29.569249 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 1 errors)
+17:29:38.305590 [info ]: Loading ~/.dbt/profiles.yml
+17:31:03.840477 [info ]: Started loading project
+17:31:03.841331 [info ]: Loading ~/.dbt/profiles.yml
+17:31:03.888004 [info ]: Finished loading project [  0.05s]
+17:31:03.888033 [info ]: Cached model count updated: 1 models (accurate)
+17:31:05.646639 [info ]: Started loading project
+17:31:05.647584 [info ]: Loading ~/.dbt/profiles.yml
+17:31:05.695882 [info ]: Cached model count updated: 1 models (estimate)
+17:31:05.695907 [info ]: Cached model count updated: 1 models (accurate)
+17:31:05.695958 [info ]: Started scheduling
+17:31:05.696028 [info ]: Finished scheduling [  0.00s]
+17:31:05.696048 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.stg_tips"}
+17:31:05.697953 [info ]: Started building task graph
+17:31:05.698013 [info ]: Finished building task graph [  0.00s]
+17:31:05.700023 [info ]: Started rendering (1 nodes)
+17:31:05.700114 [info ]: Started model main.stg_tips
+17:31:05.700146 [debug]: Started rendering model main.stg_tips
+17:31:05.700214 [info ]: Finished loading project [  0.05s]
+17:31:05.701476 [error]: [JinjaError (dbt1501)]: Failed to render SQL invalid operation: dbt was unable to infer all dependencies for the model "stg_tips". This typically happens when ref() is placed within a conditional block.
+To fix this, add the following hint to the top of the model "stg_tips":
+-- depends_on: {{ ref('stg_tips') }}
+(in models/staging/stg_tips.sql:17:6)
+  --> models/staging/stg_tips.sql:17:6
+17:31:05.701552 [info ]: Started analyzing (1 nodes)
+17:31:05.701576 [debug]: Started analyzing model main.stg_tips
+17:31:05.701610 [debug]: Finished analyzing [  0.00s] model main.stg_tips [skipped]
+17:31:05.701625 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+17:31:05.701635 [info ]:     Failed [  0.00s] model main.stg_tips (view)
+17:31:05.707146 [info ]: Started scheduling
+17:31:05.707205 [info ]: Finished scheduling [  0.00s]
+17:31:05.707387 [debug]: Finished rendering [  0.01s] model main.stg_tips [error]
+17:31:05.707413 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 1 errors)
+17:31:05.707374 [info ]: Cached model count updated: 1 models (accurate)
+17:31:15.579916 [info ]: Started loading project
+17:31:15.581167 [info ]: Loading ~/.dbt/profiles.yml
+17:31:15.598009 [info ]: Started loading project
+17:31:15.599197 [info ]: Loading ~/.dbt/profiles.yml
+17:31:15.601890 [info ]: Finished loading project [  0.02s]
+17:31:15.622159 [debug]:    Started loading packages
+17:31:15.630062 [debug]:     Loaded [  0.01s] packages
+17:31:15.631861 [info ]: Finished loading project [  0.03s]
+17:31:15.632361 [info ]: Started parsing
+17:31:15.788487 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+17:31:15.797961 [debug]: Finished parsing models/staging/stg_tips.sql [  0.01s]
+17:31:16.614390 [error]: [CyclicDependency (dbt1022)]: Model 'stg_tips' cannot reference itself
+  --> models/staging/stg_tips.sql:17:6
+17:31:16.616990 [info ]: Cached model count updated: 2 models (estimate)
+17:31:16.617012 [info ]: Cached model count updated: 2 models (accurate)
+17:31:16.617030 [info ]: Started scheduling
+17:31:16.617064 [info ]: Finished scheduling [  0.00s]
+17:31:16.617091 [debug]: Compilation - 0 nodes selected: {}
+17:31:16.617112 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+17:31:16.617126 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+17:31:16.617275 [info ]: Started scheduling
+17:31:16.617314 [info ]: Finished scheduling [  0.00s]
+17:31:16.618808 [info ]: Started building task graph
+17:31:16.618830 [info ]: Finished building task graph [  0.00s]
+17:31:16.627419 [info ]: Started scheduling
+17:31:16.627609 [info ]: Finished scheduling [  0.00s]
+17:31:16.633035 [info ]: Cached model count updated: 2 models (accurate)
+17:31:16.633113 [info ]: Finished parsing [  1.00s]
+17:31:16.878506 [info ]: Started loading project
+17:31:16.879827 [info ]: Loading ~/.dbt/profiles.yml
+17:31:16.933776 [info ]: Cached model count updated: 2 models (estimate)
+17:31:16.933800 [info ]: Cached model count updated: 2 models (accurate)
+17:31:16.933825 [info ]: Started scheduling
+17:31:16.933887 [info ]: Finished scheduling [  0.00s]
+17:31:16.933905 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.stg_tips"}
+17:31:16.935747 [info ]: Started building task graph
+17:31:16.935789 [info ]: Finished building task graph [  0.00s]
+17:31:16.937999 [info ]: Started rendering (1 nodes)
+17:31:16.938041 [info ]: Started model main.stg_tips
+17:31:16.938075 [debug]: Started rendering model main.stg_tips
+17:31:16.938143 [info ]: Finished loading project [  0.06s]
+17:31:16.939058 [error]: [JinjaError (dbt1501)]: Failed to render SQL invalid operation: dbt was unable to infer all dependencies for the model "stg_tips". This typically happens when ref() is placed within a conditional block.
+To fix this, add the following hint to the top of the model "stg_tips":
+-- depends_on: {{ ref('stg_tips') }}
+(in models/staging/stg_tips.sql:17:6)
+  --> models/staging/stg_tips.sql:17:6
+17:31:16.939119 [info ]: Started analyzing (1 nodes)
+17:31:16.939135 [debug]: Started analyzing model main.stg_tips
+17:31:16.939159 [debug]: Finished analyzing [  0.00s] model main.stg_tips [skipped]
+17:31:16.939176 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+17:31:16.939187 [info ]:     Failed [  0.00s] model main.stg_tips (view)
+17:31:16.945948 [info ]: Started scheduling
+17:31:16.946002 [info ]: Finished scheduling [  0.00s]
+17:31:16.946160 [info ]: Cached model count updated: 2 models (accurate)
+17:31:16.946255 [debug]: Finished rendering [  0.01s] model main.stg_tips [error]
+17:31:16.946282 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 1 errors)
+17:31:18.505048 [info ]: Started loading project
+17:31:18.506119 [info ]: Loading ~/.dbt/profiles.yml
+17:31:18.566366 [info ]: Cached model count updated: 2 models (estimate)
+17:31:18.566388 [info ]: Cached model count updated: 2 models (accurate)
+17:31:18.566428 [info ]: Started scheduling
+17:31:18.566498 [info ]: Finished scheduling [  0.00s]
+17:31:18.566523 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.stg_tips"}
+17:31:18.568357 [info ]: Started building task graph
+17:31:18.568415 [info ]: Finished building task graph [  0.00s]
+17:31:18.571925 [info ]: Started rendering (1 nodes)
+17:31:18.571969 [info ]: Started model main.stg_tips
+17:31:18.571984 [debug]: Started rendering model main.stg_tips
+17:31:18.572046 [info ]: Finished loading project [  0.07s]
+17:31:18.573024 [error]: [JinjaError (dbt1501)]: Failed to render SQL invalid operation: dbt was unable to infer all dependencies for the model "stg_tips". This typically happens when ref() is placed within a conditional block.
+To fix this, add the following hint to the top of the model "stg_tips":
+-- depends_on: {{ ref('stg_tips') }}
+(in models/staging/stg_tips.sql:17:6)
+  --> models/staging/stg_tips.sql:17:6
+17:31:18.573078 [info ]: Started analyzing (1 nodes)
+17:31:18.573093 [debug]: Started analyzing model main.stg_tips
+17:31:18.573120 [debug]: Finished analyzing [  0.00s] model main.stg_tips [skipped]
+17:31:18.573137 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+17:31:18.573149 [info ]:     Failed [  0.00s] model main.stg_tips (view)
+17:31:18.582146 [info ]: Started scheduling
+17:31:18.582196 [info ]: Finished scheduling [  0.00s]
+17:31:18.582343 [info ]: Cached model count updated: 2 models (accurate)
+17:31:18.582382 [debug]: Finished rendering [  0.01s] model main.stg_tips [error]
+17:31:18.582401 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 1 errors)
+17:31:24.602427 [info ]: Started loading project
+17:31:24.603221 [info ]: Loading ~/.dbt/profiles.yml
+17:31:24.652129 [info ]: Cached model count updated: 2 models (estimate)
+17:31:24.652151 [info ]: Cached model count updated: 2 models (accurate)
+17:31:24.652175 [info ]: Started scheduling
+17:31:24.652222 [info ]: Finished scheduling [  0.00s]
+17:31:24.652239 [debug]: Compilation - 0 nodes selected: {}
+17:31:24.652270 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+fqn:model.meu_projeto.fct_resumo' does not match any enabled nodes
+17:31:24.652282 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+17:31:24.655658 [info ]: Started building task graph
+17:31:24.655805 [info ]: Finished building task graph [  0.00s]
+17:31:24.663447 [info ]: Started scheduling
+17:31:24.663496 [info ]: Finished scheduling [  0.00s]
+17:31:24.663595 [info ]: Finished loading project [  0.06s]
+17:31:24.663612 [info ]: Cached model count updated: 2 models (accurate)
+17:31:26.229345 [info ]: Started loading project
+17:31:26.230595 [info ]: Loading ~/.dbt/profiles.yml
+17:31:26.278589 [info ]: Cached model count updated: 2 models (estimate)
+17:31:26.278610 [info ]: Cached model count updated: 2 models (accurate)
+17:31:26.278636 [info ]: Started scheduling
+17:31:26.278683 [info ]: Finished scheduling [  0.00s]
+17:31:26.278700 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.stg_tips"}
+17:31:26.280268 [info ]: Started building task graph
+17:31:26.280309 [info ]: Finished building task graph [  0.00s]
+17:31:26.282411 [info ]: Started rendering (1 nodes)
+17:31:26.282450 [info ]: Started model main.stg_tips
+17:31:26.282489 [debug]: Started rendering model main.stg_tips
+17:31:26.282554 [info ]: Finished loading project [  0.05s]
+17:31:26.283736 [error]: [JinjaError (dbt1501)]: Failed to render SQL invalid operation: dbt was unable to infer all dependencies for the model "stg_tips". This typically happens when ref() is placed within a conditional block.
+To fix this, add the following hint to the top of the model "stg_tips":
+-- depends_on: {{ ref('stg_tips') }}
+(in models/staging/stg_tips.sql:17:6)
+  --> models/staging/stg_tips.sql:17:6
+17:31:26.283810 [info ]: Started analyzing (1 nodes)
+17:31:26.283832 [debug]: Started analyzing model main.stg_tips
+17:31:26.283871 [debug]: Finished analyzing [  0.00s] model main.stg_tips [skipped]
+17:31:26.283896 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+17:31:26.283916 [info ]:     Failed [  0.00s] model main.stg_tips (view)
+17:31:26.291872 [info ]: Started scheduling
+17:31:26.291939 [info ]: Finished scheduling [  0.00s]
+17:31:26.292164 [info ]: Cached model count updated: 2 models (accurate)
+17:31:26.292236 [debug]: Finished rendering [  0.01s] model main.stg_tips [error]
+17:31:26.292259 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 1 errors)
+17:31:26.616986 [info ]: Started loading project
+17:31:26.617704 [info ]: Loading ~/.dbt/profiles.yml
+17:31:26.629644 [info ]: Started parsing
+17:31:26.703924 [info ]: Finished loading project [  0.09s]
+17:31:26.708883 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+17:31:27.046079 [error]: [CyclicDependency (dbt1022)]: Model 'stg_tips' cannot reference itself
+  --> models/staging/stg_tips.sql:17:6
+17:31:27.050409 [info ]: Cached model count updated: 2 models (estimate)
+17:31:27.050430 [info ]: Cached model count updated: 2 models (accurate)
+17:31:27.050454 [info ]: Started scheduling
+17:31:27.050524 [info ]: Finished scheduling [  0.00s]
+17:31:27.050543 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.stg_tips"}
+17:31:27.052483 [info ]: Started building task graph
+17:31:27.052647 [info ]: Finished building task graph [  0.00s]
+17:31:27.056153 [info ]: Started rendering (2 nodes)
+17:31:27.056196 [info ]: Started model main.fct_resumo
+17:31:27.056210 [debug]: Started rendering model main.fct_resumo
+17:31:27.056246 [info ]: Started model main.stg_tips
+17:31:27.056270 [debug]: Started rendering model main.stg_tips
+17:31:27.056288 [info ]: Finished parsing [  0.43s]
+17:31:27.057297 [error]: [JinjaError (dbt1501)]: Failed to render SQL invalid operation: dbt was unable to infer all dependencies for the model "stg_tips". This typically happens when ref() is placed within a conditional block.
+To fix this, add the following hint to the top of the model "stg_tips":
+-- depends_on: {{ ref('stg_tips') }}
+(in models/staging/stg_tips.sql:17:6)
+  --> models/staging/stg_tips.sql:17:6
+17:31:27.057376 [info ]: Started analyzing (2 nodes)
+17:31:27.057397 [debug]: Started analyzing model main.stg_tips
+17:31:27.057451 [debug]: Finished analyzing [  0.00s] model main.stg_tips [skipped]
+17:31:27.057495 [info ]:     Failed [  0.00s] model main.stg_tips (view)
+17:31:27.057604 [debug]: Finished rendering [  0.00s] model main.stg_tips [error]
+17:31:27.064203 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+17:31:27.064624 [debug]: Finished rendering [  0.01s] model main.fct_resumo [success]
+17:31:27.064657 [info ]: Finished rendering [  0.01s] (2 nodes, 0 skipped, 1 errors)
+17:31:27.064689 [debug]: Started analyzing model main.fct_resumo
+17:31:27.084081 [debug]: Finished analyzing [  0.02s] model main.fct_resumo [success]
+17:31:27.084126 [info ]: Finished analyzing [  0.03s] (2 nodes, 1 skipped, 0 errors)
+17:31:27.084144 [info ]:  Succeeded [  0.03s] model main.fct_resumo (view)
+17:31:27.095541 [info ]: Started scheduling
+17:31:27.095657 [info ]: Finished scheduling [  0.00s]
+17:31:27.098472 [info ]: Cached model count updated: 2 models (accurate)
+17:31:28.659145 [info ]: Started loading project
+17:31:28.660368 [info ]: Loading ~/.dbt/profiles.yml
+17:31:28.762227 [info ]: Cached model count updated: 2 models (estimate)
+17:31:28.762267 [info ]: Cached model count updated: 2 models (accurate)
+17:31:28.762309 [info ]: Started scheduling
+17:31:28.762415 [info ]: Finished scheduling [  0.00s]
+17:31:28.762444 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.stg_tips"}
+17:31:28.765710 [info ]: Started building task graph
+17:31:28.765798 [info ]: Finished building task graph [  0.00s]
+17:31:28.772636 [info ]: Started rendering (2 nodes)
+17:31:28.772684 [info ]: Started model main.fct_resumo
+17:31:28.772709 [debug]: Started rendering model main.fct_resumo
+17:31:28.772751 [info ]: Started model main.stg_tips
+17:31:28.772776 [debug]: Started rendering model main.stg_tips
+17:31:28.772778 [info ]: Finished loading project [  0.11s]
+17:31:28.773595 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+17:31:28.776561 [info ]: Started analyzing (2 nodes)
+17:31:28.776596 [debug]: Started analyzing model main.fct_resumo
+17:31:28.777322 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+17:31:28.777457 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+17:31:28.777492 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+17:31:28.778770 [error]: [JinjaError (dbt1501)]: Failed to render SQL invalid operation: dbt was unable to infer all dependencies for the model "stg_tips". This typically happens when ref() is placed within a conditional block.
+To fix this, add the following hint to the top of the model "stg_tips":
+-- depends_on: {{ ref('stg_tips') }}
+(in models/staging/stg_tips.sql:17:6)
+  --> models/staging/stg_tips.sql:17:6
+17:31:28.778850 [debug]: Started analyzing model main.stg_tips
+17:31:28.778892 [debug]: Finished analyzing [  0.00s] model main.stg_tips [skipped]
+17:31:28.778933 [info ]: Finished analyzing [  0.00s] (2 nodes, 1 skipped, 0 errors)
+17:31:28.778965 [info ]:     Failed [  0.01s] model main.stg_tips (view)
+17:31:28.788819 [info ]: Started scheduling
+17:31:28.788897 [info ]: Finished scheduling [  0.00s]
+17:31:28.789224 [info ]: Cached model count updated: 2 models (accurate)
+17:31:28.789267 [debug]: Finished rendering [  0.02s] model main.stg_tips [error]
+17:31:28.789306 [info ]: Finished rendering [  0.02s] (2 nodes, 0 skipped, 1 errors)
+17:31:31.566441 [info ]: Started loading project
+17:31:31.567522 [info ]: Loading ~/.dbt/profiles.yml
+17:31:31.583576 [info ]: Started parsing
+17:31:31.708555 [info ]: Finished loading project [  0.14s]
+17:31:31.716910 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+17:31:32.063947 [info ]: Finished parsing [  0.48s]
+17:31:32.074748 [info ]: Cached model count updated: 2 models (accurate)
+17:31:32.181667 [info ]: Started loading project
+17:31:32.182896 [info ]: Loading ~/.dbt/profiles.yml
+17:31:32.194351 [info ]: Started parsing
+17:31:32.274115 [info ]: Finished loading project [  0.09s]
+17:31:32.280716 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+17:31:32.637352 [info ]: Finished parsing [  0.44s]
+17:31:32.639926 [info ]: Cached model count updated: 2 models (estimate)
+17:31:32.639942 [info ]: Cached model count updated: 2 models (accurate)
+17:31:32.639971 [info ]: Started scheduling
+17:31:32.640004 [info ]: Finished scheduling [  0.00s]
+17:31:32.640019 [debug]: Compilation - 0 nodes selected: {}
+17:31:32.640039 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+17:31:32.640054 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+17:31:32.641560 [info ]: Started building task graph
+17:31:32.641586 [info ]: Finished building task graph [  0.00s]
+17:31:32.649499 [info ]: Started scheduling
+17:31:32.649602 [info ]: Finished scheduling [  0.00s]
+17:31:32.653861 [info ]: Cached model count updated: 2 models (accurate)
+17:31:34.286947 [info ]: Started loading project
+17:31:34.287949 [info ]: Loading ~/.dbt/profiles.yml
+17:31:34.332601 [info ]: Cached model count updated: 2 models (estimate)
+17:31:34.332621 [info ]: Cached model count updated: 2 models (accurate)
+17:31:34.332658 [info ]: Started scheduling
+17:31:34.332724 [info ]: Finished scheduling [  0.00s]
+17:31:34.332752 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.stg_tips"}
+17:31:34.334598 [info ]: Started building task graph
+17:31:34.334679 [info ]: Finished building task graph [  0.00s]
+17:31:34.337121 [info ]: Started rendering (2 nodes)
+17:31:34.337157 [info ]: Started model main.fct_resumo
+17:31:34.337172 [debug]: Started rendering model main.fct_resumo
+17:31:34.337207 [info ]: Started model main.stg_tips
+17:31:34.337228 [info ]: Finished loading project [  0.05s]
+17:31:34.337230 [debug]: Started rendering model main.stg_tips
+17:31:34.337835 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+17:31:34.337924 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+17:31:34.337966 [info ]: Started analyzing (2 nodes)
+17:31:34.337990 [debug]: Started analyzing model main.fct_resumo
+17:31:34.338586 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+17:31:34.338617 [info ]:  Succeeded [-------] model main.fct_resumo (view)
+17:31:34.340811 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+17:31:34.341104 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+17:31:34.341134 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+17:31:34.341166 [debug]: Started analyzing model main.stg_tips
+17:31:34.344618 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+17:31:34.344658 [info ]: Finished analyzing [  0.01s] (2 nodes, 0 skipped, 0 errors)
+17:31:34.344677 [info ]:  Succeeded [  0.01s] model main.stg_tips (view)
+17:31:34.355731 [info ]: Started scheduling
+17:31:34.355802 [info ]: Finished scheduling [  0.00s]
+17:31:34.355976 [info ]: Cached model count updated: 2 models (accurate)
+17:32:15.046920 [info ]: Started loading project
+17:32:15.047845 [info ]: Loading ~/.dbt/profiles.yml
+17:32:15.065469 [info ]: Started parsing
+17:32:15.191804 [info ]: Finished loading project [  0.14s]
+17:32:15.196621 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+17:32:15.685146 [info ]: Finished parsing [  0.62s]
+17:32:15.688972 [info ]: Cached model count updated: 2 models (estimate)
+17:32:15.689002 [info ]: Cached model count updated: 2 models (accurate)
+17:32:15.689042 [info ]: Started scheduling
+17:32:15.689127 [info ]: Finished scheduling [  0.00s]
+17:32:15.689155 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.fct_resumo"}
+17:32:15.691479 [info ]: Started building task graph
+17:32:15.691575 [info ]: Finished building task graph [  0.00s]
+17:32:15.695665 [info ]: Started rendering (1 nodes)
+17:32:15.695701 [info ]: Started model main.fct_resumo
+17:32:15.695716 [debug]: Started rendering model main.fct_resumo
+17:32:15.698153 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+17:32:15.698470 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+17:32:15.698504 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+17:32:15.698536 [info ]: Started analyzing (1 nodes)
+17:32:15.698553 [debug]: Started analyzing model main.fct_resumo
+17:32:15.699601 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+17:32:15.699642 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+17:32:15.699653 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+17:32:15.706976 [info ]: Started scheduling
+17:32:15.707079 [info ]: Finished scheduling [  0.00s]
+17:32:15.709836 [info ]: Cached model count updated: 2 models (accurate)
+17:32:17.391230 [info ]: Started loading project
+17:32:17.392333 [info ]: Loading ~/.dbt/profiles.yml
+17:32:17.458869 [info ]: Cached model count updated: 2 models (estimate)
+17:32:17.458900 [info ]: Cached model count updated: 2 models (accurate)
+17:32:17.458939 [info ]: Started scheduling
+17:32:17.459022 [info ]: Finished scheduling [  0.00s]
+17:32:17.459049 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.stg_tips"}
+17:32:17.461772 [info ]: Started building task graph
+17:32:17.461843 [info ]: Finished building task graph [  0.00s]
+17:32:17.466855 [info ]: Started rendering (2 nodes)
+17:32:17.466899 [info ]: Started model main.stg_tips
+17:32:17.466928 [debug]: Started rendering model main.stg_tips
+17:32:17.466975 [info ]: Started model main.fct_resumo
+17:32:17.467006 [info ]: Finished loading project [  0.08s]
+17:32:17.467056 [debug]: Started rendering model main.fct_resumo
+17:32:17.467775 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+17:32:17.467873 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+17:32:17.467923 [info ]: Started analyzing (2 nodes)
+17:32:17.467952 [debug]: Started analyzing model main.fct_resumo
+17:32:17.467953 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+17:32:17.468028 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+17:32:17.468053 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+17:32:17.468081 [debug]: Started analyzing model main.stg_tips
+17:32:17.468399 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+17:32:17.468450 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+17:32:17.468816 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+17:32:17.468846 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+17:32:17.468866 [info ]:  Succeeded [-------] model main.fct_resumo (view)
+17:32:17.475134 [info ]: Started scheduling
+17:32:17.475200 [info ]: Finished scheduling [  0.00s]
+17:32:17.475405 [info ]: Cached model count updated: 2 models (accurate)
+17:38:19.989691 [info ]: Started loading project
+17:38:19.990879 [info ]: Loading ~/.dbt/profiles.yml
+17:38:20.016830 [info ]: Started parsing
+17:38:20.162798 [info ]: Finished loading project [  0.17s]
+17:38:20.166615 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+17:38:20.514753 [info ]: Finished parsing [  0.50s]
+17:38:20.517945 [info ]: Cached model count updated: 2 models (estimate)
+17:38:20.517966 [info ]: Cached model count updated: 2 models (accurate)
+17:38:20.517996 [info ]: Started scheduling
+17:38:20.518093 [info ]: Finished scheduling [  0.00s]
+17:38:20.518112 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.stg_tips"}
+17:38:20.520264 [info ]: Started building task graph
+17:38:20.520479 [info ]: Finished building task graph [  0.00s]
+17:38:20.524512 [info ]: Started rendering (2 nodes)
+17:38:20.524597 [info ]: Started model main.fct_resumo
+17:38:20.524627 [debug]: Started rendering model main.fct_resumo
+17:38:20.524673 [info ]: Started model main.stg_tips
+17:38:20.524696 [debug]: Started rendering model main.stg_tips
+17:38:20.527704 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+17:38:20.527964 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+17:38:20.527990 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+17:38:20.528059 [info ]: Started analyzing (2 nodes)
+17:38:20.528081 [debug]: Started analyzing model main.fct_resumo
+17:38:20.528123 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+17:38:20.528144 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+17:38:20.528164 [debug]: Started analyzing model main.stg_tips
+17:38:20.528597 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+17:38:20.528629 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+17:38:20.528959 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+17:38:20.528989 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+17:38:20.529006 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+17:38:20.535736 [info ]: Started scheduling
+17:38:20.535853 [info ]: Finished scheduling [  0.00s]
+17:38:20.538329 [info ]: Cached model count updated: 2 models (accurate)
+17:38:22.102416 [info ]: Started loading project
+17:38:22.103204 [info ]: Loading ~/.dbt/profiles.yml
+17:38:22.168403 [info ]: Cached model count updated: 2 models (estimate)
+17:38:22.168433 [info ]: Cached model count updated: 2 models (accurate)
+17:38:22.168474 [info ]: Started scheduling
+17:38:22.168564 [info ]: Finished scheduling [  0.00s]
+17:38:22.168590 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.stg_tips"}
+17:38:22.172701 [info ]: Started building task graph
+17:38:22.172897 [info ]: Finished building task graph [  0.00s]
+17:38:22.180523 [info ]: Started rendering (2 nodes)
+17:38:22.180570 [info ]: Started model main.fct_resumo
+17:38:22.180594 [debug]: Started rendering model main.fct_resumo
+17:38:22.180659 [info ]: Finished loading project [  0.08s]
+17:38:22.180658 [info ]: Started model main.stg_tips
+17:38:22.181261 [debug]: Started rendering model main.stg_tips
+17:38:22.181401 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+17:38:22.182029 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+17:38:22.182072 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+17:38:22.182130 [info ]: Started analyzing (2 nodes)
+17:38:22.182186 [debug]: Started analyzing model main.fct_resumo
+17:38:22.182882 [debug]: Started analyzing model main.stg_tips
+17:38:22.183149 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+17:38:22.183181 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+17:38:22.183524 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+17:38:22.183535 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+17:38:22.183571 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+17:38:22.183672 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+17:38:22.183734 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+17:38:22.197113 [info ]: Started scheduling
+17:38:22.198437 [info ]: Finished scheduling [  0.00s]
+17:38:22.200021 [info ]: Cached model count updated: 2 models (accurate)
+17:40:19.731440 [info ]: Started loading project
+17:40:19.732374 [info ]: Loading ~/.dbt/profiles.yml
+17:40:19.755012 [info ]: Started parsing
+17:40:19.929448 [info ]: Finished loading project [  0.20s]
+17:40:19.932891 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+17:40:20.285502 [info ]: Finished parsing [  0.53s]
+17:40:20.289366 [info ]: Cached model count updated: 2 models (estimate)
+17:40:20.289388 [info ]: Cached model count updated: 2 models (accurate)
+17:40:20.289420 [info ]: Started scheduling
+17:40:20.289509 [info ]: Finished scheduling [  0.00s]
+17:40:20.289530 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.stg_tips"}
+17:40:20.291326 [info ]: Started building task graph
+17:40:20.291393 [info ]: Finished building task graph [  0.00s]
+17:40:20.295704 [info ]: Started rendering (1 nodes)
+17:40:20.295760 [info ]: Started model main.stg_tips
+17:40:20.295794 [debug]: Started rendering model main.stg_tips
+17:40:20.298447 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+17:40:20.298656 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+17:40:20.298689 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+17:40:20.298725 [info ]: Started analyzing (1 nodes)
+17:40:20.298742 [debug]: Started analyzing model main.stg_tips
+17:40:20.299242 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+17:40:20.299274 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+17:40:20.299292 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+17:40:20.305676 [info ]: Started scheduling
+17:40:20.305771 [info ]: Finished scheduling [  0.00s]
+17:40:20.308244 [info ]: Cached model count updated: 2 models (accurate)
+17:40:21.877739 [info ]: Started loading project
+17:40:21.878975 [info ]: Loading ~/.dbt/profiles.yml
+17:40:21.973682 [info ]: Cached model count updated: 2 models (estimate)
+17:40:21.973763 [info ]: Cached model count updated: 2 models (accurate)
+17:40:21.973837 [info ]: Started scheduling
+17:40:21.973958 [info ]: Finished scheduling [  0.00s]
+17:40:21.974020 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.stg_tips"}
+17:40:21.977241 [info ]: Started building task graph
+17:40:21.977324 [info ]: Finished building task graph [  0.00s]
+17:40:21.982351 [info ]: Started rendering (2 nodes)
+17:40:21.982399 [info ]: Started model main.fct_resumo
+17:40:21.982424 [debug]: Started rendering model main.fct_resumo
+17:40:21.982474 [info ]: Started model main.stg_tips
+17:40:21.982497 [debug]: Started rendering model main.stg_tips
+17:40:21.982496 [info ]: Finished loading project [  0.10s]
+17:40:21.983141 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+17:40:21.983141 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+17:40:21.983310 [info ]: Started analyzing (2 nodes)
+17:40:21.983367 [debug]: Started analyzing model main.stg_tips
+17:40:21.984016 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+17:40:21.984096 [info ]:  Succeeded [-------] model main.stg_tips (view)
+17:40:21.984273 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+17:40:21.984411 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+17:40:21.984437 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+17:40:21.984464 [debug]: Started analyzing model main.fct_resumo
+17:40:21.985230 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+17:40:21.985258 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+17:40:21.985276 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+17:40:21.993985 [info ]: Started scheduling
+17:40:21.994066 [info ]: Finished scheduling [  0.00s]
+17:40:21.994257 [info ]: Cached model count updated: 2 models (accurate)
+17:41:28.151419 [info ]: Started loading project
+17:41:28.152291 [info ]: Loading ~/.dbt/profiles.yml
+17:41:28.172443 [info ]: Started parsing
+17:41:28.323395 [info ]: Finished loading project [  0.17s]
+17:41:28.329151 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+17:41:28.618260 [info ]: Finished parsing [  0.45s]
+17:41:28.621448 [info ]: Cached model count updated: 2 models (estimate)
+17:41:28.621467 [info ]: Cached model count updated: 2 models (accurate)
+17:41:28.621491 [info ]: Started scheduling
+17:41:28.621549 [info ]: Finished scheduling [  0.00s]
+17:41:28.621566 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.stg_tips"}
+17:41:28.623067 [info ]: Started building task graph
+17:41:28.623106 [info ]: Finished building task graph [  0.00s]
+17:41:28.626320 [info ]: Started rendering (1 nodes)
+17:41:28.626346 [info ]: Started model main.stg_tips
+17:41:28.626361 [debug]: Started rendering model main.stg_tips
+17:41:28.628713 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+17:41:28.628907 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+17:41:28.628946 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+17:41:28.628982 [info ]: Started analyzing (1 nodes)
+17:41:28.629008 [debug]: Started analyzing model main.stg_tips
+17:41:28.629453 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+17:41:28.629489 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+17:41:28.629507 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+17:41:28.638490 [info ]: Started scheduling
+17:41:28.638618 [info ]: Finished scheduling [  0.00s]
+17:41:28.642325 [info ]: Cached model count updated: 2 models (accurate)
+17:41:30.210341 [info ]: Started loading project
+17:41:30.211501 [info ]: Loading ~/.dbt/profiles.yml
+17:41:30.258019 [info ]: Cached model count updated: 2 models (estimate)
+17:41:30.258044 [info ]: Cached model count updated: 2 models (accurate)
+17:41:30.258076 [info ]: Started scheduling
+17:41:30.258148 [info ]: Finished scheduling [  0.00s]
+17:41:30.258171 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.stg_tips"}
+17:41:30.260124 [info ]: Started building task graph
+17:41:30.260174 [info ]: Finished building task graph [  0.00s]
+17:41:30.264214 [info ]: Started rendering (2 nodes)
+17:41:30.264265 [info ]: Started model main.fct_resumo
+17:41:30.264353 [debug]: Started rendering model main.fct_resumo
+17:41:30.264449 [info ]: Started model main.stg_tips
+17:41:30.264473 [debug]: Started rendering model main.stg_tips
+17:41:30.264530 [info ]: Finished loading project [  0.05s]
+17:41:30.265870 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+17:41:30.265933 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+17:41:30.266118 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+17:41:30.266167 [info ]: Started analyzing (2 nodes)
+17:41:30.266187 [debug]: Started analyzing model main.fct_resumo
+17:41:30.266222 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+17:41:30.266242 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+17:41:30.266260 [debug]: Started analyzing model main.stg_tips
+17:41:30.266743 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+17:41:30.266775 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+17:41:30.267030 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+17:41:30.267055 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+17:41:30.267073 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+17:41:30.272902 [info ]: Started scheduling
+17:41:30.272952 [info ]: Finished scheduling [  0.00s]
+17:41:30.273108 [info ]: Cached model count updated: 2 models (accurate)
+17:42:06.334705 [info ]: Started loading project
+17:42:06.335792 [info ]: Loading ~/.dbt/profiles.yml
+17:42:06.364377 [info ]: Started parsing
+17:42:06.821041 [info ]: Finished loading project [  0.49s]
+17:42:06.835691 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+17:42:07.232069 [info ]: Finished parsing [  0.87s]
+17:42:07.236304 [info ]: Cached model count updated: 2 models (estimate)
+17:42:07.236330 [info ]: Cached model count updated: 2 models (accurate)
+17:42:07.236368 [info ]: Started scheduling
+17:42:07.236449 [info ]: Finished scheduling [  0.00s]
+17:42:07.236521 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.stg_tips"}
+17:42:07.238230 [info ]: Started building task graph
+17:42:07.238280 [info ]: Finished building task graph [  0.00s]
+17:42:07.242060 [info ]: Started rendering (1 nodes)
+17:42:07.242105 [info ]: Started model main.stg_tips
+17:42:07.242123 [debug]: Started rendering model main.stg_tips
+17:42:07.244710 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+17:42:07.245160 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+17:42:07.245196 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+17:42:07.245238 [info ]: Started analyzing (1 nodes)
+17:42:07.245255 [debug]: Started analyzing model main.stg_tips
+17:42:07.245634 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+17:42:07.245656 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+17:42:07.245672 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+17:42:07.252741 [info ]: Started scheduling
+17:42:07.252847 [info ]: Finished scheduling [  0.00s]
+17:42:07.256034 [info ]: Cached model count updated: 2 models (accurate)
+17:42:08.815520 [info ]: Started loading project
+17:42:08.816719 [info ]: Loading ~/.dbt/profiles.yml
+17:42:08.863937 [info ]: Cached model count updated: 2 models (estimate)
+17:42:08.863978 [info ]: Cached model count updated: 2 models (accurate)
+17:42:08.864005 [info ]: Started scheduling
+17:42:08.864091 [info ]: Finished scheduling [  0.00s]
+17:42:08.864120 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.stg_tips"}
+17:42:08.866094 [info ]: Started building task graph
+17:42:08.866148 [info ]: Finished building task graph [  0.00s]
+17:42:08.870012 [info ]: Started rendering (2 nodes)
+17:42:08.870065 [info ]: Started model main.fct_resumo
+17:42:08.870091 [debug]: Started rendering model main.fct_resumo
+17:42:08.870143 [info ]: Started model main.stg_tips
+17:42:08.870167 [debug]: Started rendering model main.stg_tips
+17:42:08.870168 [info ]: Finished loading project [  0.05s]
+17:42:08.872589 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+17:42:08.872715 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+17:42:08.872777 [info ]: Started analyzing (2 nodes)
+17:42:08.872798 [debug]: Started analyzing model main.fct_resumo
+17:42:08.873946 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+17:42:08.873968 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+17:42:08.874002 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+17:42:08.874453 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+17:42:08.874484 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+17:42:08.874513 [debug]: Started analyzing model main.stg_tips
+17:42:08.874838 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+17:42:08.874864 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+17:42:08.874882 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+17:42:08.881151 [info ]: Started scheduling
+17:42:08.881227 [info ]: Finished scheduling [  0.00s]
+17:42:08.881421 [info ]: Cached model count updated: 2 models (accurate)
+17:43:23.834622 [info ]: Started loading project
+17:43:23.835855 [info ]: Loading ~/.dbt/profiles.yml
+17:43:23.862256 [info ]: Started parsing
+17:43:24.047646 [info ]: Finished loading project [  0.21s]
+17:43:24.051910 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+17:43:24.350235 [info ]: Finished parsing [  0.49s]
+17:43:24.354681 [info ]: Cached model count updated: 2 models (estimate)
+17:43:24.354705 [info ]: Cached model count updated: 2 models (accurate)
+17:43:24.354732 [info ]: Started scheduling
+17:43:24.354800 [info ]: Finished scheduling [  0.00s]
+17:43:24.354822 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.stg_tips"}
+17:43:24.356526 [info ]: Started building task graph
+17:43:24.356572 [info ]: Finished building task graph [  0.00s]
+17:43:24.359934 [info ]: Started rendering (1 nodes)
+17:43:24.359961 [info ]: Started model main.stg_tips
+17:43:24.359976 [debug]: Started rendering model main.stg_tips
+17:43:24.362429 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+17:43:24.362764 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+17:43:24.362808 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+17:43:24.362847 [info ]: Started analyzing (1 nodes)
+17:43:24.362870 [debug]: Started analyzing model main.stg_tips
+17:43:24.363389 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+17:43:24.363422 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+17:43:24.363444 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+17:43:24.371027 [info ]: Started scheduling
+17:43:24.371170 [info ]: Finished scheduling [  0.00s]
+17:43:24.374144 [info ]: Cached model count updated: 2 models (accurate)
+17:43:26.037902 [info ]: Started loading project
+17:43:26.038979 [info ]: Loading ~/.dbt/profiles.yml
+17:43:26.089725 [info ]: Cached model count updated: 2 models (estimate)
+17:43:26.089747 [info ]: Cached model count updated: 2 models (accurate)
+17:43:26.089772 [info ]: Started scheduling
+17:43:26.089828 [info ]: Finished scheduling [  0.00s]
+17:43:26.089846 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.stg_tips"}
+17:43:26.091609 [info ]: Started building task graph
+17:43:26.091661 [info ]: Finished building task graph [  0.00s]
+17:43:26.094881 [info ]: Started rendering (2 nodes)
+17:43:26.094908 [info ]: Started model main.fct_resumo
+17:43:26.094924 [debug]: Started rendering model main.fct_resumo
+17:43:26.094962 [info ]: Started model main.stg_tips
+17:43:26.094984 [debug]: Started rendering model main.stg_tips
+17:43:26.094988 [info ]: Finished loading project [  0.06s]
+17:43:26.095640 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+17:43:26.095722 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+17:43:26.095733 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+17:43:26.095774 [info ]: Started analyzing (2 nodes)
+17:43:26.095794 [debug]: Started analyzing model main.fct_resumo
+17:43:26.095833 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+17:43:26.095855 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+17:43:26.095874 [debug]: Started analyzing model main.stg_tips
+17:43:26.096133 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+17:43:26.096161 [info ]:  Succeeded [-------] model main.stg_tips (view)
+17:43:26.096473 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+17:43:26.096499 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+17:43:26.096519 [info ]:  Succeeded [-------] model main.fct_resumo (view)
+17:43:26.101866 [info ]: Started scheduling
+17:43:26.101944 [info ]: Finished scheduling [  0.00s]
+17:43:26.102269 [info ]: Cached model count updated: 2 models (accurate)

@@ -1,0 +1,8 @@
+name: 'meu_projeto' 
+version: '1.0.0' 
+config-version: 2 
+profile: 'meu_projeto' 
+model-paths: ['models'] 
+models: 
+  meu_projeto: 
+    +materialized: view

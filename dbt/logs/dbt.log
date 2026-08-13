@@ -1,0 +1,1246 @@
+==================== 2026-08-13T17:27:03.348073Z | 019ffc29-c3af-7060-8c5d-f865b1703082 ====================
+17:27:03.348305 [info ]: dbt-fusion 2.0.0-preview.205
+17:27:03.349146 [info ]: Started loading project
+17:27:03.353568 [info ]: Loading ~/.dbt/profiles.yml
+17:27:03.355480 [info ]: Finished loading project [  0.01s]
+17:27:03.355782 [info ]: Started debugging
+17:27:03.355961 [info ]: Debugging profile: dev
+17:27:03.356232 [info ]: Debugging dbt version: 2.0.0-preview.205
+17:27:03.356394 [info ]: Debugging platform: windows x86_64 (windows)
+17:27:03.356659 [info ]: Debugging adapter type: duckdb (remote)
+17:27:03.462921 [info ]: Debugging dependencies:
+  git: OK
+17:27:03.468725 [info ]: Debugging connection:
+  "path": "meu_banco.duckdb"
+17:27:07.933366 [debug]: Query executed on node unknown:
+select 1 as id
+17:27:07.933533 [info ]: Debugging connection test: OK
+17:27:07.942381 [info ]: Debugged All checks passed!
+17:27:07.953489 [info ]: Finished debugging [  4.60s]
+17:27:08.746287 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' successfully for target 'dev' [5.4s]
+==================== 2026-08-13T17:28:03.428718Z | 019ffc2a-ae60-79f2-aecd-c9af433f09c2 ====================
+17:28:03.428998 [info ]: dbt-fusion 2.0.0-preview.205
+17:28:03.429814 [info ]: Started loading project
+17:28:03.434470 [info ]: Loading ~/.dbt/profiles.yml
+17:28:03.450884 [debug]:    Started loading packages
+17:28:03.454622 [debug]:     Loaded [  0.00s] packages
+17:28:03.456031 [info ]: Finished loading project [  0.03s]
+17:28:03.457390 [info ]: Started parsing
+17:28:03.519012 [error]: [SerializationError (dbt1013)]: Invalid model definition `meu_projeto.+ materialized`: models.meu_projeto.+ materialized: invalid type: string "view", expected struct ProjectModelConfig at line 8 column 21
+  --> dbt_project.yml:8:21
+17:28:03.526404 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+17:28:03.952031 [error]: [CyclicDependency (dbt1022)]: Model 'stg_tips' cannot reference itself
+  --> models/staging/stg_tips.sql:17:6
+17:28:03.953856 [info ]: Finished parsing [  0.50s]
+17:28:04.979568 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+17:28:04.979568 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 2 errors for target 'dev' [1.6s]
+==================== 2026-08-13T17:31:48.917727Z | 019ffc2e-1f32-7b33-9309-340b46da471f ====================
+17:31:48.917975 [info ]: dbt-fusion 2.0.0-preview.205
+17:31:48.918624 [info ]: Started loading project
+17:31:48.923754 [info ]: Loading ~/.dbt/profiles.yml
+17:31:48.935293 [debug]:    Started loading packages
+17:31:48.940397 [debug]:     Loaded [  0.01s] packages
+17:31:48.942380 [info ]: Finished loading project [  0.02s]
+17:31:48.945155 [info ]: Started parsing
+17:31:49.012488 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+17:31:49.013326 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+17:31:49.361778 [info ]: Finished parsing [  0.42s]
+17:31:49.363077 [info ]: Started scheduling
+17:31:49.363593 [info ]: Finished scheduling [  0.00s]
+17:31:49.394010 [debug]: No platform credentials found, skipping remote license
+17:31:49.394384 [debug]: License check failed: Feature not licensed: 'lineage'
+17:31:49.394944 [info ]: Started building task graph
+17:31:49.395208 [info ]: Finished building task graph [  0.00s]
+17:31:49.449676 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"meu_banco"'
+    
+  
+  
+17:31:49.452576 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='meu_banco'
+        and type='sqlite'
+    
+  
+17:31:49.455201 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "meu_banco"."main"
+    
+17:31:49.455476 [info ]: Started rendering (2 nodes)
+17:31:49.455704 [info ]: Started model main.stg_tips
+17:31:49.455739 [debug]: Started rendering model main.stg_tips
+17:31:49.461636 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\compiled\meu_projeto\models\staging\stg_tips.sql
+17:31:49.462242 [debug]: Finished rendering [  0.01s] model main.stg_tips [success]
+17:31:49.462900 [info ]: Started analyzing (2 nodes)
+17:31:49.463153 [debug]: Started analyzing model main.stg_tips
+17:31:49.478667 [debug]: Finished analyzing [  0.02s] model main.stg_tips [success]
+17:31:49.479138 [info ]: Started running (2 nodes)
+17:31:49.480938 [info ]: Started running model main.stg_tips
+17:31:49.496464 [debug]: Query executed on node model.meu_projeto.stg_tips:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+17:31:49.502437 [debug]: Writing runtime sql for node "model.meu_projeto.stg_tips"
+17:31:49.512712 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_tips__dbt_tmp" as (
+    select
+    total_bill,
+    tip,
+    sex,
+    day,
+    total_bill + tip as valor_total
+from read_csv_auto('../tips.csv')
+  );
+
+17:31:50.530125 [error]: [DbDriverFailed (dbt1308)]: Database Error in model stg_tips (target\run\meu_projeto\models\staging\stg_tips.sql)
+  IO Error: No files found that match the pattern "../tips.csv"
+  
+  LINE 11: from read_csv_auto('../tips.csv')
+                ^
+  (in run\meu_projeto\models/staging\stg_tips.sql)
+17:31:50.530274 [info ]: Finished running [  1.05s] model main.stg_tips [error]
+17:31:50.589543 [info ]:     Failed [  1.07s] model main.stg_tips (view)
+17:31:50.596293 [info ]: Started model main.fct_resumo
+17:31:50.596332 [debug]: Started rendering model main.fct_resumo
+17:31:50.596387 [debug]: Finished rendering [  0.00s] model main.fct_resumo [skipped]
+17:31:50.596505 [info ]: Finished rendering [  1.14s] (2 nodes, 1 skipped, 0 errors)
+17:31:50.597267 [debug]: Started analyzing model main.fct_resumo
+17:31:50.597319 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [skipped]
+17:31:50.597447 [info ]: Finished analyzing [  1.13s] (2 nodes, 1 skipped, 0 errors)
+17:31:50.598031 [info ]: Started running model main.fct_resumo
+17:31:50.598082 [info ]: Finished running [  0.00s] model main.fct_resumo [skipped]
+17:31:50.598180 [info ]: Finished running [  1.12s] (2 nodes, 1 skipped, 1 errors)
+17:31:50.598582 [info ]:    Skipped [-------] model main.fct_resumo (view)
+17:31:50.802132 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error for target 'dev' [1.9s]
+Processed: 2 models
+Summary: 2 total | 1 error | 1 skipped
+==================== 2026-08-13T17:32:18.160307Z | 019ffc2e-916c-7f63-9753-0bd7f274f42d ====================
+17:32:18.160641 [info ]: dbt-fusion 2.0.0-preview.205
+17:32:18.161384 [info ]: Started loading project
+17:32:18.166934 [info ]: Loading ~/.dbt/profiles.yml
+17:32:18.182774 [debug]:    Started loading packages
+17:32:18.189267 [debug]:     Loaded [  0.01s] packages
+17:32:18.191387 [info ]: Finished loading project [  0.03s]
+17:32:18.193007 [info ]: Started parsing
+17:32:18.282925 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+17:32:18.284114 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+17:32:18.729962 [info ]: Finished parsing [  0.54s]
+17:32:18.731556 [info ]: Started scheduling
+17:32:18.731934 [info ]: Finished scheduling [  0.00s]
+17:32:18.749708 [debug]: No platform credentials found, skipping remote license
+17:32:18.750185 [debug]: License check failed: Feature not licensed: 'lineage'
+17:32:18.750780 [info ]: Started building task graph
+17:32:18.751180 [info ]: Finished building task graph [  0.00s]
+17:32:19.045512 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"meu_banco"'
+    
+  
+  
+17:32:19.048891 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='meu_banco'
+        and type='sqlite'
+    
+  
+17:32:19.050262 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "meu_banco"."main"
+    
+17:32:19.050513 [info ]: Started rendering (2 nodes)
+17:32:19.050795 [info ]: Started model main.stg_tips
+17:32:19.050831 [debug]: Started rendering model main.stg_tips
+17:32:19.050880 [info ]: Started model main.fct_resumo
+17:32:19.050901 [debug]: Started rendering model main.fct_resumo
+17:32:19.053573 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\compiled\meu_projeto\models\staging\stg_tips.sql
+17:32:19.054406 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\compiled\meu_projeto\models\marts\fct_resumo.sql
+17:32:19.053779 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+17:32:19.055809 [info ]: Started analyzing (2 nodes)
+17:32:19.056019 [debug]: Started analyzing model main.stg_tips
+17:32:19.056104 [debug]: Finished rendering [  0.01s] model main.fct_resumo [success]
+17:32:19.060821 [info ]: Finished rendering [  0.01s] (2 nodes, 0 skipped, 0 errors)
+17:32:19.061378 [debug]: Started analyzing model main.fct_resumo
+17:32:19.069882 [debug]: Finished analyzing [  0.01s] model main.stg_tips [success]
+17:32:19.076348 [info ]: Started running (2 nodes)
+17:32:19.076601 [info ]: Started running model main.stg_tips
+17:32:19.076672 [debug]: Finished analyzing [  0.02s] model main.fct_resumo [success]
+17:32:19.077449 [info ]: Finished analyzing [  0.02s] (2 nodes, 0 skipped, 0 errors)
+17:32:19.077900 [info ]: Started running model main.fct_resumo
+17:32:19.096210 [debug]: Query executed on node model.meu_projeto.stg_tips:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+17:32:19.096280 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+17:32:19.103297 [debug]: Writing runtime sql for node "model.meu_projeto.fct_resumo"
+17:32:19.107275 [debug]: Writing runtime sql for node "model.meu_projeto.stg_tips"
+17:32:19.133438 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."fct_resumo__dbt_tmp" as (
+    select
+    day,
+    sex,
+    sum(valor_total) as total_vendas,
+    avg(valor_total) as media_vendas,
+    count(*) as quantidade
+from stg_tips
+group by 1,2
+  );
+
+17:32:19.133438 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_tips__dbt_tmp" as (
+    select
+    total_bill,
+    tip,
+    sex,
+    day,
+    total_bill + tip as valor_total
+from read_csv_auto('../tips.csv')
+  );
+
+17:32:20.134291 [error]: [DbDriverFailed (dbt1308)]: Database Error in model fct_resumo (target\run\meu_projeto\models\marts\fct_resumo.sql)
+  Catalog Error: Table with name stg_tips does not exist!
+  Did you mean "pg_settings"?
+  
+  LINE 11: from stg_tips
+                ^
+  (in run\meu_projeto\models/marts\fct_resumo.sql)
+17:32:20.134291 [error]: [DbDriverFailed (dbt1308)]: Database Error in model stg_tips (target\run\meu_projeto\models\staging\stg_tips.sql)
+  IO Error: No files found that match the pattern "../tips.csv"
+  
+  LINE 11: from read_csv_auto('../tips.csv')
+                ^
+  (in run\meu_projeto\models/staging\stg_tips.sql)
+17:32:20.134496 [info ]: Finished running [  1.06s] model main.fct_resumo [error]
+17:32:20.134996 [info ]:     Failed [  1.08s] model main.fct_resumo (view)
+17:32:20.135592 [info ]: Finished running [  1.06s] model main.stg_tips [error]
+17:32:20.136061 [info ]: Finished running [  1.06s] (2 nodes, 0 skipped, 2 errors)
+17:32:20.136674 [info ]:     Failed [  1.07s] model main.stg_tips (view)
+17:32:20.298644 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 2 errors for target 'dev' [2.1s]
+Processed: 2 models
+Summary: 2 total | 2 error
+==================== 2026-08-13T17:32:48.586577Z | 019ffc2f-0846-7093-a112-4ba2ef814073 ====================
+17:32:48.586789 [info ]: dbt-fusion 2.0.0-preview.205
+17:32:48.587567 [info ]: Started loading project
+17:32:48.591917 [info ]: Loading ~/.dbt/profiles.yml
+17:32:48.608563 [debug]:    Started loading packages
+17:32:48.613341 [debug]:     Loaded [  0.00s] packages
+17:32:48.616742 [info ]: Finished loading project [  0.03s]
+17:32:48.617615 [info ]: Started parsing
+17:32:48.681633 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+17:32:48.682502 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+17:32:49.166618 [info ]: Finished parsing [  0.55s]
+17:32:49.167882 [info ]: Started scheduling
+17:32:49.168290 [info ]: Finished scheduling [  0.00s]
+17:32:49.188725 [debug]: No platform credentials found, skipping remote license
+17:32:49.189247 [debug]: License check failed: Feature not licensed: 'lineage'
+17:32:49.189842 [info ]: Started building task graph
+17:32:49.190089 [info ]: Finished building task graph [  0.00s]
+17:32:49.250841 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"meu_banco"'
+    
+  
+  
+17:32:49.252581 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='meu_banco'
+        and type='sqlite'
+    
+  
+17:32:49.253407 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "meu_banco"."main"
+    
+17:32:49.253591 [info ]: Started rendering (2 nodes)
+17:32:49.253799 [info ]: Started model main.stg_tips
+17:32:49.253832 [debug]: Started rendering model main.stg_tips
+17:32:49.253938 [info ]: Started model main.fct_resumo
+17:32:49.254006 [debug]: Started rendering model main.fct_resumo
+17:32:49.256169 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\compiled\meu_projeto\models\staging\stg_tips.sql
+17:32:49.256451 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+17:32:49.257400 [info ]: Started analyzing (2 nodes)
+17:32:49.257602 [debug]: Started analyzing model main.stg_tips
+17:32:49.260637 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\compiled\meu_projeto\models\marts\fct_resumo.sql
+17:32:49.260954 [debug]: Finished rendering [  0.01s] model main.fct_resumo [success]
+17:32:49.262873 [info ]: Finished rendering [  0.01s] (2 nodes, 0 skipped, 0 errors)
+17:32:49.266601 [debug]: Started analyzing model main.fct_resumo
+17:32:49.273675 [debug]: Finished analyzing [  0.02s] model main.stg_tips [success]
+17:32:49.275437 [info ]: Started running (2 nodes)
+17:32:49.275791 [info ]: Started running model main.stg_tips
+17:32:49.279312 [debug]: Finished analyzing [  0.01s] model main.fct_resumo [success]
+17:32:49.279678 [info ]: Finished analyzing [  0.02s] (2 nodes, 0 skipped, 0 errors)
+17:32:49.280056 [info ]: Started running model main.fct_resumo
+17:32:49.291080 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+17:32:49.291098 [debug]: Query executed on node model.meu_projeto.stg_tips:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+17:32:49.296270 [debug]: Writing runtime sql for node "model.meu_projeto.stg_tips"
+17:32:49.296270 [debug]: Writing runtime sql for node "model.meu_projeto.fct_resumo"
+17:32:49.300999 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."fct_resumo__dbt_tmp" as (
+    select
+    day,
+    sex,
+    sum(valor_total) as total_vendas,
+    avg(valor_total) as media_vendas,
+    count(*) as quantidade
+from stg_tips
+group by 1,2
+  );
+
+17:32:49.302944 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_tips__dbt_tmp" as (
+    select
+    total_bill,
+    tip,
+    sex,
+    day,
+    total_bill + tip as valor_total
+from read_csv_auto('../tips.csv')
+  );
+
+17:32:50.301839 [error]: [DbDriverFailed (dbt1308)]: Database Error in model fct_resumo (target\run\meu_projeto\models\marts\fct_resumo.sql)
+  Catalog Error: Table with name stg_tips does not exist!
+  Did you mean "pg_settings"?
+  
+  LINE 11: from stg_tips
+                ^
+  (in run\meu_projeto\models/marts\fct_resumo.sql)
+17:32:50.302012 [info ]: Finished running [  1.02s] model main.fct_resumo [error]
+17:32:50.303055 [info ]:     Failed [  1.04s] model main.fct_resumo (view)
+17:32:50.304121 [error]: [DbDriverFailed (dbt1308)]: Database Error in model stg_tips (target\run\meu_projeto\models\staging\stg_tips.sql)
+  IO Error: No files found that match the pattern "../tips.csv"
+  
+  LINE 11: from read_csv_auto('../tips.csv')
+                ^
+  (in run\meu_projeto\models/staging\stg_tips.sql)
+17:32:50.304290 [info ]: Finished running [  1.03s] model main.stg_tips [error]
+17:32:50.304927 [info ]: Finished running [  1.03s] (2 nodes, 0 skipped, 2 errors)
+17:32:50.305799 [info ]:     Failed [  1.05s] model main.stg_tips (view)
+17:32:50.497455 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 2 errors for target 'dev' [1.9s]
+Processed: 2 models
+Summary: 2 total | 2 error
+==================== 2026-08-13T17:40:28.443419Z | 019ffc36-0c97-72a0-ba55-aae548bba34c ====================
+17:40:28.443641 [info ]: dbt-fusion 2.0.0-preview.205
+17:40:28.444616 [info ]: Started loading project
+17:40:28.449046 [info ]: Loading ~/.dbt/profiles.yml
+17:40:28.467147 [debug]:    Started loading packages
+17:40:28.473009 [debug]:     Loaded [  0.01s] packages
+17:40:28.475414 [info ]: Finished loading project [  0.03s]
+17:40:28.476472 [info ]: Started parsing
+17:40:28.542892 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+17:40:28.543855 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+17:40:28.875350 [info ]: Finished parsing [  0.40s]
+17:40:28.876721 [info ]: Started scheduling
+17:40:28.877237 [info ]: Finished scheduling [  0.00s]
+17:40:28.891105 [debug]: No platform credentials found, skipping remote license
+17:40:28.891493 [debug]: License check failed: Feature not licensed: 'lineage'
+17:40:28.892054 [info ]: Started building task graph
+17:40:28.892326 [info ]: Finished building task graph [  0.00s]
+17:40:28.953866 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"meu_banco"'
+    
+  
+  
+17:40:28.956398 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='meu_banco'
+        and type='sqlite'
+    
+  
+17:40:28.957240 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "meu_banco"."main"
+    
+17:40:28.957418 [info ]: Started rendering (2 nodes)
+17:40:28.957628 [info ]: Started model main.stg_tips
+17:40:28.957662 [debug]: Started rendering model main.stg_tips
+17:40:28.959680 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\compiled\meu_projeto\models\staging\stg_tips.sql
+17:40:28.959939 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+17:40:28.960340 [info ]: Started analyzing (2 nodes)
+17:40:28.960703 [debug]: Started analyzing model main.stg_tips
+17:40:28.972240 [debug]: Finished analyzing [  0.01s] model main.stg_tips [success]
+17:40:28.973097 [info ]: Started running (2 nodes)
+17:40:28.973325 [info ]: Started running model main.stg_tips
+17:40:28.985191 [debug]: Query executed on node model.meu_projeto.stg_tips:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+17:40:28.990964 [debug]: Writing runtime sql for node "model.meu_projeto.stg_tips"
+17:40:28.994934 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_tips__dbt_tmp" as (
+    select
+    total_bill,
+    tip,
+    sex,
+    day,
+    total_bill + tip as valor_total
+from read_csv_auto('../../../pandas/tips.csv')
+  );
+
+17:40:29.996145 [error]: [DbDriverFailed (dbt1308)]: Database Error in model stg_tips (target\run\meu_projeto\models\staging\stg_tips.sql)
+  IO Error: No files found that match the pattern "../../../pandas/tips.csv"
+  
+  LINE 11: from read_csv_auto('../../../pandas/tips.csv')
+                ^
+  (in run\meu_projeto\models/staging\stg_tips.sql)
+17:40:29.996316 [info ]: Finished running [  1.02s] model main.stg_tips [error]
+17:40:29.997977 [info ]:     Failed [  1.03s] model main.stg_tips (view)
+17:40:29.999376 [info ]: Started model main.fct_resumo
+17:40:29.999413 [debug]: Started rendering model main.fct_resumo
+17:40:29.999475 [debug]: Finished rendering [  0.00s] model main.fct_resumo [skipped]
+17:40:30.000071 [info ]: Finished rendering [  1.04s] (2 nodes, 1 skipped, 0 errors)
+17:40:30.001009 [debug]: Started analyzing model main.fct_resumo
+17:40:30.001066 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [skipped]
+17:40:30.001200 [info ]: Finished analyzing [  1.04s] (2 nodes, 1 skipped, 0 errors)
+17:40:30.001954 [info ]: Started running model main.fct_resumo
+17:40:30.002011 [info ]: Finished running [  0.00s] model main.fct_resumo [skipped]
+17:40:30.002143 [info ]: Finished running [  1.03s] (2 nodes, 1 skipped, 1 errors)
+17:40:30.002705 [info ]:    Skipped [-------] model main.fct_resumo (view)
+17:40:30.189999 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error for target 'dev' [1.7s]
+Processed: 2 models
+Summary: 2 total | 1 error | 1 skipped
+==================== 2026-08-13T17:41:53.827172Z | 019ffc37-5a1f-73e1-a289-32dd3da44030 ====================
+17:41:53.827431 [info ]: dbt-fusion 2.0.0-preview.205
+17:41:53.828057 [info ]: Started loading project
+17:41:53.833106 [info ]: Loading ~/.dbt/profiles.yml
+17:41:53.847190 [debug]:    Started loading packages
+17:41:53.855458 [debug]:     Loaded [  0.01s] packages
+17:41:53.857263 [info ]: Finished loading project [  0.03s]
+17:41:53.858312 [info ]: Started parsing
+17:41:53.927439 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+17:41:53.928079 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+17:41:54.251824 [info ]: Finished parsing [  0.39s]
+17:41:54.253322 [info ]: Started scheduling
+17:41:54.253699 [info ]: Finished scheduling [  0.00s]
+17:41:54.267838 [debug]: No platform credentials found, skipping remote license
+17:41:54.268182 [debug]: License check failed: Feature not licensed: 'lineage'
+17:41:54.268690 [info ]: Started building task graph
+17:41:54.268998 [info ]: Finished building task graph [  0.00s]
+17:41:54.333381 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"meu_banco"'
+    
+  
+  
+17:41:54.335326 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='meu_banco'
+        and type='sqlite'
+    
+  
+17:41:54.336117 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "meu_banco"."main"
+    
+17:41:54.336340 [info ]: Started rendering (2 nodes)
+17:41:54.336522 [info ]: Started model main.stg_tips
+17:41:54.336542 [debug]: Started rendering model main.stg_tips
+17:41:54.339447 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\compiled\meu_projeto\models\staging\stg_tips.sql
+17:41:54.339650 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+17:41:54.340323 [info ]: Started analyzing (2 nodes)
+17:41:54.340539 [debug]: Started analyzing model main.stg_tips
+17:41:54.353634 [debug]: Finished analyzing [  0.01s] model main.stg_tips [success]
+17:41:54.354353 [info ]: Started running (2 nodes)
+17:41:54.354547 [info ]: Started running model main.stg_tips
+17:41:54.366577 [debug]: Query executed on node model.meu_projeto.stg_tips:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+17:41:54.371964 [debug]: Writing runtime sql for node "model.meu_projeto.stg_tips"
+17:41:54.375251 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_tips__dbt_tmp" as (
+    select
+    total_bill,
+    tip,
+    sex,
+    day,
+    total_bill + tip as valor_total
+from read_csv_auto('../../pandas/tips.csv')
+  );
+
+17:41:55.376639 [error]: [DbDriverFailed (dbt1308)]: Database Error in model stg_tips (target\run\meu_projeto\models\staging\stg_tips.sql)
+  IO Error: No files found that match the pattern "../../pandas/tips.csv"
+  
+  LINE 11: from read_csv_auto('../../pandas/tips.csv')
+                ^
+  (in run\meu_projeto\models/staging\stg_tips.sql)
+17:41:55.377434 [info ]: Finished running [  1.02s] model main.stg_tips [error]
+17:41:55.378498 [info ]:     Failed [  1.04s] model main.stg_tips (view)
+17:41:55.380214 [info ]: Started model main.fct_resumo
+17:41:55.380272 [debug]: Started rendering model main.fct_resumo
+17:41:55.380353 [debug]: Finished rendering [  0.00s] model main.fct_resumo [skipped]
+17:41:55.381368 [info ]: Finished rendering [  1.05s] (2 nodes, 1 skipped, 0 errors)
+17:41:55.383074 [debug]: Started analyzing model main.fct_resumo
+17:41:55.383163 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [skipped]
+17:41:55.383395 [info ]: Finished analyzing [  1.04s] (2 nodes, 1 skipped, 0 errors)
+17:41:55.384711 [info ]: Started running model main.fct_resumo
+17:41:55.384850 [info ]: Finished running [  0.00s] model main.fct_resumo [skipped]
+17:41:55.385091 [info ]: Finished running [  1.03s] (2 nodes, 1 skipped, 1 errors)
+17:41:55.386452 [info ]:    Skipped [-------] model main.fct_resumo (view)
+17:41:55.558848 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error for target 'dev' [1.7s]
+Processed: 2 models
+Summary: 2 total | 1 error | 1 skipped
+==================== 2026-08-13T17:42:17.794047Z | 019ffc37-b7be-7ee1-a566-b964809251c3 ====================
+17:42:17.794361 [info ]: dbt-fusion 2.0.0-preview.205
+17:42:17.795160 [info ]: Started loading project
+17:42:17.800913 [info ]: Loading ~/.dbt/profiles.yml
+17:42:17.819063 [debug]:    Started loading packages
+17:42:17.823030 [debug]:     Loaded [  0.00s] packages
+17:42:17.824735 [info ]: Finished loading project [  0.03s]
+17:42:17.825955 [info ]: Started parsing
+17:42:17.897392 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+17:42:17.898463 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+17:42:18.355737 [info ]: Finished parsing [  0.53s]
+17:42:18.356971 [info ]: Started scheduling
+17:42:18.357369 [info ]: Finished scheduling [  0.00s]
+17:42:18.372447 [debug]: No platform credentials found, skipping remote license
+17:42:18.372798 [debug]: License check failed: Feature not licensed: 'lineage'
+17:42:18.373171 [info ]: Started building task graph
+17:42:18.373399 [info ]: Finished building task graph [  0.00s]
+17:42:18.433422 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"meu_banco"'
+    
+  
+  
+17:42:18.435635 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='meu_banco'
+        and type='sqlite'
+    
+  
+17:42:18.436709 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "meu_banco"."main"
+    
+17:42:18.436995 [info ]: Started rendering (2 nodes)
+17:42:18.437214 [info ]: Started model main.stg_tips
+17:42:18.437238 [debug]: Started rendering model main.stg_tips
+17:42:18.439764 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\compiled\meu_projeto\models\staging\stg_tips.sql
+17:42:18.439926 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+17:42:18.440638 [info ]: Started analyzing (2 nodes)
+17:42:18.440797 [debug]: Started analyzing model main.stg_tips
+17:42:18.453233 [debug]: Finished analyzing [  0.01s] model main.stg_tips [success]
+17:42:18.453675 [info ]: Started running (2 nodes)
+17:42:18.453874 [info ]: Started running model main.stg_tips
+17:42:18.466480 [debug]: Query executed on node model.meu_projeto.stg_tips:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+17:42:18.471711 [debug]: Writing runtime sql for node "model.meu_projeto.stg_tips"
+17:42:18.475904 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_tips__dbt_tmp" as (
+    select
+    total_bill,
+    tip,
+    sex,
+    day,
+    total_bill + tip as valor_total
+from read_csv_auto('../../../pandas/tips.csv')
+  );
+
+17:42:19.477116 [error]: [DbDriverFailed (dbt1308)]: Database Error in model stg_tips (target\run\meu_projeto\models\staging\stg_tips.sql)
+  IO Error: No files found that match the pattern "../../../pandas/tips.csv"
+  
+  LINE 11: from read_csv_auto('../../../pandas/tips.csv')
+                ^
+  (in run\meu_projeto\models/staging\stg_tips.sql)
+17:42:19.477584 [info ]: Finished running [  1.02s] model main.stg_tips [error]
+17:42:19.479106 [info ]:     Failed [  1.04s] model main.stg_tips (view)
+17:42:19.480517 [info ]: Started model main.fct_resumo
+17:42:19.480556 [debug]: Started rendering model main.fct_resumo
+17:42:19.480609 [debug]: Finished rendering [  0.00s] model main.fct_resumo [skipped]
+17:42:19.480773 [info ]: Finished rendering [  1.04s] (2 nodes, 1 skipped, 0 errors)
+17:42:19.482039 [debug]: Started analyzing model main.fct_resumo
+17:42:19.482115 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [skipped]
+17:42:19.482296 [info ]: Finished analyzing [  1.04s] (2 nodes, 1 skipped, 0 errors)
+17:42:19.483114 [info ]: Started running model main.fct_resumo
+17:42:19.483150 [info ]: Finished running [  0.00s] model main.fct_resumo [skipped]
+17:42:19.483270 [info ]: Finished running [  1.03s] (2 nodes, 1 skipped, 1 errors)
+17:42:19.483706 [info ]:    Skipped [-------] model main.fct_resumo (view)
+17:42:19.661974 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error for target 'dev' [1.9s]
+Processed: 2 models
+Summary: 2 total | 1 error | 1 skipped
+==================== 2026-08-13T17:43:29.013725Z | 019ffc38-cdf1-78d2-b27f-5673e38ae86d ====================
+17:43:29.014048 [info ]: dbt-fusion 2.0.0-preview.205
+17:43:29.014750 [info ]: Started loading project
+17:43:29.019602 [info ]: Loading ~/.dbt/profiles.yml
+17:43:29.038413 [debug]:    Started loading packages
+17:43:29.042398 [debug]:     Loaded [  0.00s] packages
+17:43:29.043656 [info ]: Finished loading project [  0.03s]
+17:43:29.044747 [info ]: Started parsing
+17:43:29.115116 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+17:43:29.116253 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+17:43:29.451931 [info ]: Finished parsing [  0.41s]
+17:43:29.453534 [info ]: Started scheduling
+17:43:29.454767 [info ]: Finished scheduling [  0.00s]
+17:43:29.473376 [debug]: No platform credentials found, skipping remote license
+17:43:29.473791 [debug]: License check failed: Feature not licensed: 'lineage'
+17:43:29.474363 [info ]: Started building task graph
+17:43:29.475487 [info ]: Finished building task graph [  0.00s]
+17:43:29.528829 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"meu_banco"'
+    
+  
+  
+17:43:29.530588 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='meu_banco'
+        and type='sqlite'
+    
+  
+17:43:29.531441 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "meu_banco"."main"
+    
+17:43:29.531649 [info ]: Started rendering (2 nodes)
+17:43:29.531854 [info ]: Started model main.stg_tips
+17:43:29.531885 [debug]: Started rendering model main.stg_tips
+17:43:29.534862 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\compiled\meu_projeto\models\staging\stg_tips.sql
+17:43:29.535124 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+17:43:29.537879 [info ]: Started analyzing (2 nodes)
+17:43:29.538064 [debug]: Started analyzing model main.stg_tips
+17:43:29.547654 [debug]: Finished analyzing [  0.01s] model main.stg_tips [success]
+17:43:29.549159 [info ]: Started running (2 nodes)
+17:43:29.551239 [info ]: Started running model main.stg_tips
+17:43:29.569032 [debug]: Query executed on node model.meu_projeto.stg_tips:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+17:43:29.577223 [debug]: Writing runtime sql for node "model.meu_projeto.stg_tips"
+17:43:29.648920 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_tips__dbt_tmp" as (
+    select
+    total_bill,
+    tip,
+    sex,
+    day,
+    total_bill + tip as valor_total
+from read_csv_auto('C:/Users/tl100/OneDrive/Documents/Carreira dados/teste-volta/pandas/tips.csv')
+  );
+
+17:43:29.657602 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips__dbt_tmp" rename to "stg_tips"
+17:43:29.664845 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."stg_tips__dbt_backup" cascade
+    
+17:43:29.666274 [info ]: Finished running [  0.12s] model main.stg_tips [success]
+17:43:29.666973 [info ]:  Succeeded [  0.13s] model main.stg_tips (view)
+17:43:29.667830 [info ]: Started model main.fct_resumo
+17:43:29.667923 [debug]: Started rendering model main.fct_resumo
+17:43:29.670340 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\compiled\meu_projeto\models\marts\fct_resumo.sql
+17:43:29.670581 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+17:43:29.672107 [info ]: Finished rendering [  0.14s] (2 nodes, 0 skipped, 0 errors)
+17:43:29.673866 [debug]: Started analyzing model main.fct_resumo
+17:43:29.681458 [debug]: Finished analyzing [  0.01s] model main.fct_resumo [success]
+17:43:29.681817 [info ]: Finished analyzing [  0.14s] (2 nodes, 0 skipped, 0 errors)
+17:43:29.682431 [info ]: Started running model main.fct_resumo
+17:43:29.689246 [debug]: Writing runtime sql for node "model.meu_projeto.fct_resumo"
+17:43:29.722944 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."fct_resumo__dbt_tmp" as (
+    select
+    day,
+    sex,
+    sum(valor_total) as total_vendas,
+    avg(valor_total) as media_vendas,
+    count(*) as quantidade
+from "meu_banco"."main"."stg_tips"
+group by 1,2
+  );
+
+17:43:29.731459 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo__dbt_tmp" rename to "fct_resumo"
+17:43:29.738802 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."fct_resumo__dbt_backup" cascade
+    
+17:43:29.739846 [info ]: Finished running [  0.06s] model main.fct_resumo [success]
+17:43:29.740239 [info ]: Finished running [  0.19s] (2 nodes, 0 skipped, 0 errors)
+17:43:29.740822 [info ]:  Succeeded [  0.07s] model main.fct_resumo (view)
+17:43:30.008147 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [994ms]
+Processed: 2 models
+Summary: 2 total | 2 success
+==================== 2026-08-13T17:46:59.139683Z | 019ffc3c-02bf-7a63-afc7-1d2336b69116 ====================
+17:46:59.140005 [info ]: dbt-fusion 2.0.0-preview.205
+17:46:59.140669 [info ]: Started loading project
+17:46:59.145869 [info ]: Loading ~/.dbt/profiles.yml
+17:46:59.162865 [debug]:    Started loading packages
+17:46:59.168855 [debug]:     Loaded [  0.01s] packages
+17:46:59.171204 [info ]: Finished loading project [  0.03s]
+17:46:59.172375 [info ]: Started parsing
+17:46:59.244163 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+17:46:59.244949 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+17:46:59.585546 [info ]: Finished parsing [  0.41s]
+17:46:59.586760 [info ]: Started scheduling
+17:46:59.587104 [info ]: Finished scheduling [  0.00s]
+17:46:59.607548 [debug]: No platform credentials found, skipping remote license
+17:46:59.607922 [debug]: License check failed: Feature not licensed: 'lineage'
+17:46:59.608471 [info ]: Started building task graph
+17:46:59.608763 [info ]: Finished building task graph [  0.00s]
+17:46:59.670470 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"meu_banco"'
+    
+  
+  
+17:46:59.672721 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='meu_banco'
+        and type='sqlite'
+    
+  
+17:46:59.673616 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "meu_banco"."main"
+    
+17:46:59.673844 [info ]: Started rendering (2 nodes)
+17:46:59.674072 [info ]: Started model main.stg_tips
+17:46:59.674100 [debug]: Started rendering model main.stg_tips
+17:46:59.676419 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\compiled\meu_projeto\models\staging\stg_tips.sql
+17:46:59.676709 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+17:46:59.677470 [info ]: Started analyzing (2 nodes)
+17:46:59.677660 [debug]: Started analyzing model main.stg_tips
+17:46:59.689826 [debug]: Finished analyzing [  0.01s] model main.stg_tips [success]
+17:46:59.690222 [info ]: Started running (2 nodes)
+17:46:59.690385 [info ]: Started running model main.stg_tips
+17:46:59.712224 [debug]: Query executed on node model.meu_projeto.stg_tips:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+17:46:59.718636 [debug]: Writing runtime sql for node "model.meu_projeto.stg_tips"
+17:46:59.739610 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_tips__dbt_tmp" as (
+    select
+    total_bill,
+    tip,
+    sex,
+    day,
+    total_bill + tip as valor_total
+from read_csv_auto('C:/Users/tl100/OneDrive/Documents/Carreira dados/teste-volta/pandas/tips.csv')
+  );
+
+17:46:59.745940 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips" rename to "stg_tips__dbt_backup"
+17:46:59.751812 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips__dbt_tmp" rename to "stg_tips"
+17:46:59.757586 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."stg_tips__dbt_backup" cascade
+    
+17:46:59.758666 [info ]: Finished running [  0.07s] model main.stg_tips [success]
+17:46:59.759150 [info ]:  Succeeded [  0.08s] model main.stg_tips (view)
+17:46:59.760207 [info ]: Started model main.fct_resumo
+17:46:59.760241 [debug]: Started rendering model main.fct_resumo
+17:46:59.763038 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\compiled\meu_projeto\models\marts\fct_resumo.sql
+17:46:59.763349 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+17:46:59.765163 [info ]: Finished rendering [  0.09s] (2 nodes, 0 skipped, 0 errors)
+17:46:59.766744 [debug]: Started analyzing model main.fct_resumo
+17:46:59.779844 [debug]: Finished analyzing [  0.01s] model main.fct_resumo [success]
+17:46:59.780214 [info ]: Finished analyzing [  0.10s] (2 nodes, 0 skipped, 0 errors)
+17:46:59.780890 [info ]: Started running model main.fct_resumo
+17:46:59.786169 [debug]: Writing runtime sql for node "model.meu_projeto.fct_resumo"
+17:46:59.805750 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."fct_resumo__dbt_tmp" as (
+    select
+    day,
+    sex,
+    sum(valor_total) as total_vendas,
+    avg(valor_total) as media_vendas,
+    count(*) as quantidade
+from "meu_banco"."main"."stg_tips"
+group by 1,2
+  );
+
+17:46:59.813516 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo" rename to "fct_resumo__dbt_backup"
+17:46:59.820164 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo__dbt_tmp" rename to "fct_resumo"
+17:46:59.826280 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."fct_resumo__dbt_backup" cascade
+    
+17:46:59.827666 [info ]: Finished running [  0.05s] model main.fct_resumo [success]
+17:46:59.828212 [info ]: Finished running [  0.14s] (2 nodes, 0 skipped, 0 errors)
+17:46:59.828807 [info ]:  Succeeded [  0.06s] model main.fct_resumo (view)
+17:47:00.273725 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [1.1s]
+Processed: 2 models
+Summary: 2 total | 2 success
+==================== 2026-08-13T17:48:31.362161Z | 019ffc3d-6afe-72e1-8d90-95ed4300395d ====================
+17:48:31.362363 [warn ]: [DocsGenerateWarning (dbt1705)]: `dbt docs generate` is not supported. Use `dbt compile --write-catalog` to write catalog.json. To host docs locally, use the dbt Core index.html with catalog.json and manifest.json in the same directory: https://github.com/dbt-labs/dbt-core/blob/main/core/dbt/task/docs/index.html
+17:48:32.282463 [info ]: 
+==================== Execution Summary =====================
+Finished 'docs' with 1 warning [920ms]
+==================== 2026-08-13T17:48:55.473555Z | 019ffc3d-c92d-70f2-bf52-fdf8ee05af46 ====================
+17:48:55.473795 [info ]: dbt-fusion 2.0.0-preview.205
+17:48:55.474430 [info ]: Started loading project
+17:48:55.478981 [info ]: Loading ~/.dbt/profiles.yml
+17:48:55.493633 [debug]:    Started loading packages
+17:48:55.499442 [debug]:     Loaded [  0.01s] packages
+17:48:55.500714 [info ]: Finished loading project [  0.03s]
+17:48:55.501698 [info ]: Started parsing
+17:48:55.565660 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+17:48:55.566632 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+17:48:55.917225 [info ]: Finished parsing [  0.42s]
+17:48:55.918446 [info ]: Started scheduling
+17:48:55.918788 [info ]: Finished scheduling [  0.00s]
+17:48:55.923922 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "meu_banco", schema: "main", table: "stg_tips" }) and interval: None
+17:48:55.931661 [debug]: No platform credentials found, skipping remote license
+17:48:55.932059 [debug]: License check failed: Feature not licensed: 'lineage'
+17:48:55.932464 [info ]: Started building task graph
+17:48:55.932658 [info ]: Finished building task graph [  0.00s]
+17:48:55.937279 [info ]: Started rendering (1 nodes)
+17:48:55.937476 [info ]: Started model main.fct_resumo
+17:48:55.937507 [debug]: Started rendering model main.fct_resumo
+17:48:55.940052 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\compiled\meu_projeto\models\marts\fct_resumo.sql
+17:48:55.940260 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+17:48:55.943850 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 0 errors)
+17:48:55.944234 [info ]: Started analyzing (1 nodes)
+17:48:55.944608 [debug]: Started analyzing model main.fct_resumo
+17:48:55.959691 [debug]: Finished analyzing [  0.02s] model main.fct_resumo [success]
+17:48:55.959973 [info ]: Finished analyzing [  0.02s] (1 nodes, 0 skipped, 0 errors)
+17:48:55.960330 [info ]: Started running (1 nodes)
+17:48:55.960467 [info ]: Started running model main.fct_resumo
+17:48:56.147982 [debug]: Query executed on node unknown:
+
+  
+  select
+    day,
+    sex,
+    sum(valor_total) as total_vendas,
+    avg(valor_total) as media_vendas,
+    count(*) as quantidade
+from "meu_banco"."main"."stg_tips"
+group by 1,2
+  
+  limit 10
+
+17:48:56.149151 [info ]: [34m[1mQuery[0m [1mshow_model_meu_projeto_fct_resumo[0m
+┌──────┬────────┬────────────────────┬────────────────────┬────────────┐
+│[1m day  [0m┆[1m sex    [0m┆[1m total_vendas       [0m┆[1m media_vendas       [0m┆[1m quantidade [0m│
+╞══════╪════════╪════════════════════╪════════════════════╪════════════╡
+│ Thur ┆ Male   ┆ 650.85             ┆ 21.695             ┆ 30         │
+│ Thur ┆ Female ┆ 617.31             ┆ 19.2909375         ┆ 32         │
+│ Sun  ┆ Female ┆ 418.30999999999995 ┆ 23.23944444444444  ┆ 18         │
+│ Sun  ┆ Male   ┆ 1456.24            ┆ 25.107586206896553 ┆ 58         │
+│ Sat  ┆ Male   ┆ 1409.2999999999997 ┆ 23.886440677966096 ┆ 59         │
+│ Sat  ┆ Female ┆ 629.4999999999999  ┆ 22.482142857142854 ┆ 28         │
+│ Fri  ┆ Male   ┆ 225.5              ┆ 22.55              ┆ 10         │
+│ Fri  ┆ Female ┆ 152.34             ┆ 16.926666666666666 ┆ 9          │
+└──────┴────────┴────────────────────┴────────────────────┴────────────┘
+8 rows.
+17:48:56.152910 [info ]: Finished running [  0.19s] model main.fct_resumo [success]
+17:48:56.153245 [info ]: Finished running [  0.19s] (1 nodes, 0 skipped, 0 errors)
+17:48:56.153851 [info ]:  Succeeded [  0.21s] model main.fct_resumo (view)
+17:48:56.486405 [info ]: 
+==================== Execution Summary =====================
+Finished 'show' successfully for target 'dev' [1.0s]
+==================== 2026-08-13T17:49:28.825254Z | 019ffc3e-4b75-7481-b2ce-9c7021c002bb ====================
+17:49:28.825457 [info ]: dbt-fusion 2.0.0-preview.205
+17:49:28.826121 [info ]: Started loading project
+17:49:28.830337 [info ]: Loading ~/.dbt/profiles.yml
+17:49:28.847038 [debug]:    Started loading packages
+17:49:28.852189 [debug]:     Loaded [  0.01s] packages
+17:49:28.853484 [info ]: Finished loading project [  0.03s]
+17:49:28.854537 [info ]: Started parsing
+17:49:28.916668 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+17:49:28.917711 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+17:49:29.269573 [info ]: Finished parsing [  0.42s]
+17:49:29.270996 [info ]: Started scheduling
+17:49:29.271353 [info ]: Finished scheduling [  0.00s]
+17:49:29.277500 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "meu_banco", schema: "main", table: "stg_tips" }) and interval: None
+17:49:29.286705 [debug]: No platform credentials found, skipping remote license
+17:49:29.287050 [debug]: License check failed: Feature not licensed: 'lineage'
+17:49:29.287426 [info ]: Started building task graph
+17:49:29.287628 [info ]: Finished building task graph [  0.00s]
+17:49:29.291898 [info ]: Started rendering (1 nodes)
+17:49:29.292145 [info ]: Started model main.fct_resumo
+17:49:29.292189 [debug]: Started rendering model main.fct_resumo
+17:49:29.295076 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\compiled\meu_projeto\models\marts\fct_resumo.sql
+17:49:29.295423 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+17:49:29.297601 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 0 errors)
+17:49:29.298278 [info ]: Started analyzing (1 nodes)
+17:49:29.301163 [debug]: Started analyzing model main.fct_resumo
+17:49:29.316176 [debug]: Finished analyzing [  0.02s] model main.fct_resumo [success]
+17:49:29.316519 [info ]: Finished analyzing [  0.02s] (1 nodes, 0 skipped, 0 errors)
+17:49:29.316861 [info ]: Started running (1 nodes)
+17:49:29.317116 [info ]: Started running model main.fct_resumo
+17:49:29.403757 [debug]: Query executed on node unknown:
+
+  
+  select
+    day,
+    sex,
+    sum(valor_total) as total_vendas,
+    avg(valor_total) as media_vendas,
+    count(*) as quantidade
+from "meu_banco"."main"."stg_tips"
+group by 1,2
+  
+  limit 10
+
+17:49:29.404670 [info ]: [34m[1mQuery[0m [1mshow_model_meu_projeto_fct_resumo[0m
+┌──────┬────────┬────────────────────┬────────────────────┬────────────┐
+│[1m day  [0m┆[1m sex    [0m┆[1m total_vendas       [0m┆[1m media_vendas       [0m┆[1m quantidade [0m│
+╞══════╪════════╪════════════════════╪════════════════════╪════════════╡
+│ Sat  ┆ Male   ┆ 1409.2999999999997 ┆ 23.886440677966096 ┆ 59         │
+│ Sat  ┆ Female ┆ 629.4999999999999  ┆ 22.482142857142854 ┆ 28         │
+│ Fri  ┆ Male   ┆ 225.5              ┆ 22.55              ┆ 10         │
+│ Fri  ┆ Female ┆ 152.34             ┆ 16.926666666666666 ┆ 9          │
+│ Sun  ┆ Female ┆ 418.30999999999995 ┆ 23.23944444444444  ┆ 18         │
+│ Sun  ┆ Male   ┆ 1456.24            ┆ 25.107586206896553 ┆ 58         │
+│ Thur ┆ Male   ┆ 650.85             ┆ 21.695             ┆ 30         │
+│ Thur ┆ Female ┆ 617.31             ┆ 19.2909375         ┆ 32         │
+└──────┴────────┴────────────────────┴────────────────────┴────────────┘
+8 rows.
+17:49:29.405358 [info ]: Finished running [  0.09s] model main.fct_resumo [success]
+17:49:29.405833 [info ]: Finished running [  0.09s] (1 nodes, 0 skipped, 0 errors)
+17:49:29.407139 [info ]:  Succeeded [  0.11s] model main.fct_resumo (view)
+17:49:29.706282 [info ]: 
+==================== Execution Summary =====================
+Finished 'show' successfully for target 'dev' [881ms]
+==================== 2026-08-13T17:50:51.565073Z | 019ffc3f-8ea9-7492-a46d-ad513f49db1c ====================
+17:50:51.565339 [info ]: dbt-fusion 2.0.0-preview.205
+17:50:51.565969 [info ]: Started loading project
+17:50:51.570969 [info ]: Loading ~/.dbt/profiles.yml
+17:50:51.584591 [debug]:    Started loading packages
+17:50:51.591252 [debug]:     Loaded [  0.01s] packages
+17:50:51.593091 [info ]: Finished loading project [  0.03s]
+17:50:51.594205 [info ]: Started parsing
+17:50:51.657559 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+17:50:51.658665 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+17:50:51.980352 [info ]: Finished parsing [  0.39s]
+17:50:51.981600 [info ]: Started scheduling
+17:50:51.981827 [info ]: Finished scheduling [  0.00s]
+17:50:51.981951 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+17:50:51.989997 [debug]: No platform credentials found, skipping remote license
+17:50:51.990371 [debug]: License check failed: Feature not licensed: 'lineage'
+17:50:52.451749 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' with 1 warning for target 'dev' [886ms]
+==================== 2026-08-13T17:56:36.706264Z | 019ffc44-d2de-76a2-bda3-c3d6ea49b9bb ====================
+17:56:36.706513 [info ]: dbt-fusion 2.0.0-preview.205
+17:56:36.707342 [info ]: Started loading project
+17:56:36.711885 [info ]: Loading ~/.dbt/profiles.yml
+17:56:36.727916 [debug]:    Started loading packages
+17:56:36.733079 [debug]:     Loaded [  0.01s] packages
+17:56:36.734800 [info ]: Finished loading project [  0.03s]
+17:56:36.735668 [info ]: Started parsing
+17:56:36.797424 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+17:56:36.800239 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+17:56:36.800954 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+17:56:36.831619 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_day.sql [  0.02s]
+17:56:36.832639 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_sex.sql [  0.00s]
+17:56:36.833860 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_tip.sql [  0.00s]
+17:56:36.834944 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_total_bill.sql [  0.00s]
+17:56:37.318041 [info ]: Finished parsing [  0.58s]
+17:56:37.319366 [info ]: Started scheduling
+17:56:37.319648 [info ]: Finished scheduling [  0.00s]
+17:56:37.324476 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "meu_banco", schema: "main", table: "stg_tips" }) and interval: None
+17:56:37.332856 [debug]: No platform credentials found, skipping remote license
+17:56:37.333383 [debug]: License check failed: Feature not licensed: 'lineage'
+17:56:37.333922 [info ]: Started building task graph
+17:56:37.334244 [info ]: Finished building task graph [  0.00s]
+17:56:37.339798 [info ]: Started rendering (4 nodes)
+17:56:37.340045 [info ]: Started test main_dbt_test__audit.not_null_stg_tips_total_bill
+17:56:37.340065 [debug]: Started rendering test main_dbt_test__audit.not_null_stg_tips_total_bill
+17:56:37.340120 [info ]: Started test main_dbt_test__audit.not_null_stg_tips_tip
+17:56:37.340142 [debug]: Started rendering test main_dbt_test__audit.not_null_stg_tips_tip
+17:56:37.340180 [info ]: Started test main_dbt_test__audit.not_null_stg_tips_sex
+17:56:37.340199 [debug]: Started rendering test main_dbt_test__audit.not_null_stg_tips_sex
+17:56:37.340231 [info ]: Started test main_dbt_test__audit.not_null_stg_tips_day
+17:56:37.340273 [debug]: Started rendering test main_dbt_test__audit.not_null_stg_tips_day
+17:56:37.350924 [debug]: Compiled SQL for node test.meu_projeto.not_null_stg_tips_tip.7e96fc4398 at target\compiled\meu_projeto\target\generic_tests\not_null_stg_tips_tip.sql
+17:56:37.359168 [debug]: Compiled SQL for node test.meu_projeto.not_null_stg_tips_total_bill.b143e0cef2 at target\compiled\meu_projeto\target\generic_tests\not_null_stg_tips_total_bill.sql
+17:56:37.359969 [debug]: Compiled SQL for node test.meu_projeto.not_null_stg_tips_sex.155f420c48 at target\compiled\meu_projeto\target\generic_tests\not_null_stg_tips_sex.sql
+17:56:37.361938 [debug]: Compiled SQL for node test.meu_projeto.not_null_stg_tips_day.484c9f4d2b at target\compiled\meu_projeto\target\generic_tests\not_null_stg_tips_day.sql
+17:56:37.351236 [debug]: Finished rendering [  0.01s] test main_dbt_test__audit.not_null_stg_tips_tip [success]
+17:56:37.367815 [info ]: Started analyzing (4 nodes)
+17:56:37.368085 [debug]: Started analyzing test main_dbt_test__audit.not_null_stg_tips_tip
+17:56:37.368154 [debug]: Finished rendering [  0.03s] test main_dbt_test__audit.not_null_stg_tips_total_bill [success]
+17:56:37.368925 [debug]: Started analyzing test main_dbt_test__audit.not_null_stg_tips_total_bill
+17:56:37.368980 [debug]: Finished rendering [  0.03s] test main_dbt_test__audit.not_null_stg_tips_sex [success]
+17:56:37.369595 [debug]: Started analyzing test main_dbt_test__audit.not_null_stg_tips_sex
+17:56:37.369643 [debug]: Finished rendering [  0.03s] test main_dbt_test__audit.not_null_stg_tips_day [success]
+17:56:37.372337 [info ]: Finished rendering [  0.03s] (4 nodes, 0 skipped, 0 errors)
+17:56:37.372727 [debug]: Started analyzing test main_dbt_test__audit.not_null_stg_tips_day
+17:56:37.381305 [debug]: Finished analyzing [  0.01s] test main_dbt_test__audit.not_null_stg_tips_tip [success]
+17:56:37.387917 [info ]: Started running (4 nodes)
+17:56:37.414434 [info ]: Started running test main_dbt_test__audit.not_null_stg_tips_tip
+17:56:37.414504 [debug]: Finished analyzing [  0.04s] test main_dbt_test__audit.not_null_stg_tips_sex [success]
+17:56:37.415349 [info ]: Started running test main_dbt_test__audit.not_null_stg_tips_sex
+17:56:37.415419 [debug]: Finished analyzing [  0.05s] test main_dbt_test__audit.not_null_stg_tips_total_bill [success]
+17:56:37.418956 [info ]: Started running test main_dbt_test__audit.not_null_stg_tips_total_bill
+17:56:37.419050 [debug]: Writing runtime sql for node "test.meu_projeto.not_null_stg_tips_tip.7e96fc4398"
+17:56:37.420773 [debug]: Writing runtime sql for node "test.meu_projeto.not_null_stg_tips_sex.155f420c48"
+17:56:37.424725 [debug]: Writing runtime sql for node "test.meu_projeto.not_null_stg_tips_total_bill.b143e0cef2"
+17:56:37.419015 [debug]: Finished analyzing [  0.05s] test main_dbt_test__audit.not_null_stg_tips_day [success]
+17:56:37.426245 [info ]: Finished analyzing [  0.06s] (4 nodes, 0 skipped, 0 errors)
+17:56:37.427273 [info ]: Started running test main_dbt_test__audit.not_null_stg_tips_day
+17:56:37.434913 [debug]: Writing runtime sql for node "test.meu_projeto.not_null_stg_tips_day.484c9f4d2b"
+17:56:37.592405 [debug]: Query executed on node test.meu_projeto.not_null_stg_tips_day.484c9f4d2b:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.meu_projeto.not_null_stg_tips_day.484c9f4d2b", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select day
+from "meu_banco"."main"."stg_tips"
+where day is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+17:56:37.593656 [info ]: Finished running [  0.17s] test main_dbt_test__audit.not_null_stg_tips_day [pass]
+17:56:37.599466 [debug]: Query executed on node test.meu_projeto.not_null_stg_tips_total_bill.b143e0cef2:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.meu_projeto.not_null_stg_tips_total_bill.b143e0cef2", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select total_bill
+from "meu_banco"."main"."stg_tips"
+where total_bill is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+17:56:37.598969 [info ]:     Passed [  0.24s] test  not_null_stg_tips_day
+17:56:37.601644 [debug]: Query executed on node test.meu_projeto.not_null_stg_tips_sex.155f420c48:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.meu_projeto.not_null_stg_tips_sex.155f420c48", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sex
+from "meu_banco"."main"."stg_tips"
+where sex is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+17:56:37.601461 [info ]: Finished running [  0.18s] test main_dbt_test__audit.not_null_stg_tips_total_bill [pass]
+17:56:37.603831 [debug]: Query executed on node test.meu_projeto.not_null_stg_tips_tip.7e96fc4398:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.meu_projeto.not_null_stg_tips_tip.7e96fc4398", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select tip
+from "meu_banco"."main"."stg_tips"
+where tip is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+17:56:37.602139 [info ]:     Passed [  0.26s] test  not_null_stg_tips_total_bill
+17:56:37.604239 [info ]: Finished running [  0.19s] test main_dbt_test__audit.not_null_stg_tips_sex [pass]
+17:56:37.604589 [info ]:     Passed [  0.26s] test  not_null_stg_tips_sex
+17:56:37.606021 [info ]: Finished running [  0.19s] test main_dbt_test__audit.not_null_stg_tips_tip [pass]
+17:56:37.606380 [info ]: Finished running [  0.22s] (4 nodes, 0 skipped, 0 errors)
+17:56:37.606804 [info ]:     Passed [  0.21s] test  not_null_stg_tips_tip
+17:56:37.893687 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' successfully for target 'dev' [1.2s]
+Processed: 4 tests
+Summary: 4 total | 4 success
