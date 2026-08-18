@@ -16,3 +16,21 @@ INSERT INTO SALES_ANALYTICS.RAW.VENDAS (ID, CLIENTE, CATEGORIA, VALOR, DATA_VEND
 
 select cliente, sum(valor) over() as total_vendas, avg(valor) over() as media_venda, last_value(valor) over(order by data_venda desc ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) as ultima_venda, dense_rank() over(order by valor desc) as ranking_do_cliente from SALES_ANALYTICS.RAW.VENDAS
 
+CREATE FILE FORMAT csv_format
+TYPE = CSV
+FIELD_OPTIONALLY_ENCLOSED_BY = '"'
+SKIP_HEADER = 1;
+
+CREATE STAGE vendas_stage
+FILE_FORMAT = csv_format;
+
+PUT file':///vendas_stage.csv' @vendas_stage 
+    AUTO_COMPRESS = TRUE;
+    
+LIST @vendas_stage;
+
+COPY INTO SALES_ANALYTICS.RAW.VENDAS
+FROM @vendas_stage;
+
+SELECT *
+FROM SALES_ANALYTICS.RAW.VENDAS;
