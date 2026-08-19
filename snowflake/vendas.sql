@@ -10,11 +10,11 @@ CREATE TABLE SALES_ANALYTICS.RAW.VENDAS (
 );
 
 INSERT INTO SALES_ANALYTICS.RAW.VENDAS (ID, CLIENTE, CATEGORIA, VALOR, DATA_VENDA) VALUES (1, 'Adriana', 'A', '500', '2026-05-16');
-INSERT INTO SALES_ANALYTICS.RAW.VENDAS (ID, CLIENTE, CATEGORIA, VALOR, DATA_VENDA) VALUES (1, 'Augusto', 'A', '300', '2026-07-15');
-INSERT INTO SALES_ANALYTICS.RAW.VENDAS (ID, CLIENTE, CATEGORIA, VALOR, DATA_VENDA) VALUES (1, 'Everton', 'E', '700', '2026-03-25');
-INSERT INTO SALES_ANALYTICS.RAW.VENDAS (ID, CLIENTE, CATEGORIA, VALOR, DATA_VENDA) VALUES (1, 'Mariana', 'C', '150', '2026-06-18');
+INSERT INTO SALES_ANALYTICS.RAW.VENDAS (ID, CLIENTE, CATEGORIA, VALOR, DATA_VENDA) VALUES (2, 'Augusto', 'A', '300', '2026-07-15');
+INSERT INTO SALES_ANALYTICS.RAW.VENDAS (ID, CLIENTE, CATEGORIA, VALOR, DATA_VENDA) VALUES (3, 'Everton', 'E', '700', '2026-03-25');
+INSERT INTO SALES_ANALYTICS.RAW.VENDAS (ID, CLIENTE, CATEGORIA, VALOR, DATA_VENDA) VALUES (4, 'Mariana', 'C', '150', '2026-06-18');
 
-select cliente, sum(valor) over() as total_vendas, avg(valor) over() as media_venda, last_value(valor) over(order by data_venda desc ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) as ultima_venda, dense_rank() over(order by valor desc) as ranking_do_cliente from SALES_ANALYTICS.RAW.VENDAS
+select cliente, sum(valor) over() as total_vendas, avg(valor) over() as media_venda, last_value(valor) over(order by data_venda desc ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) as ultima_venda, dense_rank() over(order by sum(valor) desc) as ranking_do_cliente from SALES_ANALYTICS.RAW.VENDAS
 
 CREATE FILE FORMAT csv_format
 TYPE = CSV

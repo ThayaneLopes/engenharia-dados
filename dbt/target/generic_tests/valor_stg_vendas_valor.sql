@@ -1,0 +1,1 @@
+{{ test_valor(column_name="valor", model=get_where_subquery(ref('stg_vendas'))) }}

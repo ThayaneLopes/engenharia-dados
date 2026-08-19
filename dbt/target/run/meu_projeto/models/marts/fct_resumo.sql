@@ -1,7 +1,12 @@
 
   
-  create view "meu_banco"."main"."fct_resumo__dbt_tmp" as (
-    select
+    
+    
+    create  table
+      "meu_banco"."main"."fct_resumo__dbt_tmp"
+  
+    as (
+      select
     day,
     sex,
     sum(valor_total) as total_vendas,
@@ -9,4 +14,7 @@
     count(*) as quantidade
 from "meu_banco"."main"."stg_tips"
 group by 1,2
-  );
+    );
+  
+    
+  

@@ -4,5 +4,8 @@ config-version: 2
 profile: 'meu_projeto' 
 model-paths: ['models'] 
 models: 
-  meu_projeto: 
-    +materialized: view
+  meu_projeto:  
+    staging: 
+      +materialized: view
+    marts:
+      +materialized: table
