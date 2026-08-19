@@ -2756,3 +2756,1076 @@ To fix this, add the following hint to the top of the model "stg_tips":
 15:38:00.302278 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
 15:38:00.303488 [debug]: Finished parsing models/staging/stg_vendas.sql [  0.00s]
 15:38:00.304269 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.03s]
+15:38:01.157475 [info ]: Finished parsing [  1.28s]
+15:38:01.158534 [info ]: Cached model count updated: 4 models (estimate)
+15:38:01.158555 [info ]: Cached model count updated: 4 models (accurate)
+15:38:01.158585 [info ]: Started scheduling
+15:38:01.158624 [info ]: Finished scheduling [  0.00s]
+15:38:01.158639 [debug]: Compilation - 0 nodes selected: {}
+15:38:01.158659 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+15:38:01.158674 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:38:01.158911 [info ]: Started scheduling
+15:38:01.158974 [info ]: Finished scheduling [  0.00s]
+15:38:01.163498 [info ]: Started building task graph
+15:38:01.163546 [info ]: Finished building task graph [  0.00s]
+15:38:01.171337 [info ]: Started scheduling
+15:38:01.171391 [info ]: Finished scheduling [  0.00s]
+15:38:01.173063 [info ]: Cached model count updated: 4 models (accurate)
+15:38:02.714175 [info ]: Started loading project
+15:38:02.715217 [info ]: Loading ~/.dbt/profiles.yml
+15:38:02.756167 [info ]: Cached model count updated: 4 models (estimate)
+15:38:02.756188 [info ]: Cached model count updated: 4 models (accurate)
+15:38:02.756228 [info ]: Started scheduling
+15:38:02.756305 [info ]: Finished scheduling [  0.00s]
+15:38:02.756333 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:38:02.757957 [info ]: Started building task graph
+15:38:02.758029 [info ]: Finished building task graph [  0.00s]
+15:38:02.761322 [info ]: Started rendering (4 nodes)
+15:38:02.761355 [info ]: Started model main.fct_vendas
+15:38:02.761369 [debug]: Started rendering model main.fct_vendas
+15:38:02.761404 [info ]: Started model main.stg_vendas
+15:38:02.761423 [debug]: Started rendering model main.stg_vendas
+15:38:02.761426 [info ]: Finished loading project [  0.05s]
+15:38:02.761448 [info ]: Started model main.fct_resumo
+15:38:02.761465 [debug]: Started rendering model main.fct_resumo
+15:38:02.761486 [info ]: Started model main.stg_tips
+15:38:02.761501 [debug]: Started rendering model main.stg_tips
+15:38:02.763949 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:38:02.764124 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:38:02.764387 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:38:02.764435 [info ]: Started analyzing (4 nodes)
+15:38:02.764453 [debug]: Started analyzing model main.fct_vendas
+15:38:02.764567 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:38:02.764599 [debug]: Started analyzing model main.fct_resumo
+15:38:02.765076 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:38:02.765266 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:38:02.765292 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:38:02.765331 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:38:02.765349 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:38:02.765385 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:38:02.765412 [debug]: Started analyzing model main.stg_vendas
+15:38:02.765591 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:38:02.765614 [info ]:  Succeeded [  0.00s] model main.stg_vendas (view)
+15:38:02.769533 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:38:02.769799 [debug]: Finished rendering [  0.01s] model main.stg_tips [success]
+15:38:02.769837 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 0 errors)
+15:38:02.769873 [debug]: Started analyzing model main.stg_tips
+15:38:02.770234 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:38:02.770259 [info ]: Finished analyzing [  0.01s] (4 nodes, 0 skipped, 0 errors)
+15:38:02.770281 [info ]:  Succeeded [  0.01s] model main.stg_tips (view)
+15:38:02.775145 [info ]: Started scheduling
+15:38:02.775209 [info ]: Finished scheduling [  0.00s]
+15:38:02.775432 [info ]: Cached model count updated: 4 models (accurate)
+15:38:41.883373 [info ]: Started loading project
+15:38:41.884688 [info ]: Loading ~/.dbt/profiles.yml
+15:38:41.898298 [info ]: Started parsing
+15:38:41.989472 [info ]: Finished loading project [  0.11s]
+15:38:41.992303 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:38:41.994996 [debug]: Finished parsing models/staging/stg_vendas.sql [  0.00s]
+15:38:42.300873 [info ]: Finished parsing [  0.40s]
+15:38:42.304474 [info ]: Cached model count updated: 4 models (estimate)
+15:38:42.304494 [info ]: Cached model count updated: 4 models (accurate)
+15:38:42.304532 [info ]: Started scheduling
+15:38:42.304604 [info ]: Finished scheduling [  0.00s]
+15:38:42.304630 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.stg_vendas"}
+15:38:42.306213 [info ]: Started building task graph
+15:38:42.306260 [info ]: Finished building task graph [  0.00s]
+15:38:42.309550 [info ]: Started rendering (1 nodes)
+15:38:42.309585 [info ]: Started model main.stg_vendas
+15:38:42.309599 [debug]: Started rendering model main.stg_vendas
+15:38:42.311763 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:38:42.312076 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:38:42.312164 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:38:42.312338 [info ]: Started analyzing (1 nodes)
+15:38:42.312412 [debug]: Started analyzing model main.stg_vendas
+15:38:42.312815 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:38:42.312854 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:38:42.312873 [info ]:  Succeeded [  0.00s] model main.stg_vendas (view)
+15:38:42.317602 [info ]: Started scheduling
+15:38:42.317721 [info ]: Finished scheduling [  0.00s]
+15:38:42.320217 [info ]: Cached model count updated: 4 models (accurate)
+15:38:44.066748 [info ]: Started loading project
+15:38:44.068210 [info ]: Loading ~/.dbt/profiles.yml
+15:38:44.196731 [info ]: Cached model count updated: 4 models (estimate)
+15:38:44.196828 [info ]: Cached model count updated: 4 models (accurate)
+15:38:44.196916 [info ]: Started scheduling
+15:38:44.197072 [info ]: Finished scheduling [  0.00s]
+15:38:44.197145 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:38:44.202173 [info ]: Started building task graph
+15:38:44.202348 [info ]: Finished building task graph [  0.00s]
+15:38:44.207421 [info ]: Started rendering (4 nodes)
+15:38:44.207534 [info ]: Started model main.fct_vendas
+15:38:44.207604 [debug]: Started rendering model main.fct_vendas
+15:38:44.207715 [info ]: Finished loading project [  0.14s]
+15:38:44.209228 [info ]: Started model main.stg_vendas
+15:38:44.209317 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:38:44.209543 [debug]: Started rendering model main.stg_vendas
+15:38:44.209733 [info ]: Started model main.fct_resumo
+15:38:44.209814 [debug]: Started rendering model main.fct_resumo
+15:38:44.210109 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:38:44.210302 [info ]: Started model main.stg_tips
+15:38:44.210381 [debug]: Started rendering model main.stg_tips
+15:38:44.210425 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:38:44.211095 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:38:44.211185 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:38:44.211228 [info ]: Started analyzing (4 nodes)
+15:38:44.211247 [debug]: Started analyzing model main.fct_vendas
+15:38:44.211313 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:38:44.211399 [debug]: Started analyzing model main.stg_vendas
+15:38:44.211478 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:38:44.211556 [debug]: Started analyzing model main.fct_resumo
+15:38:44.211649 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:38:44.211714 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:38:44.211782 [debug]: Started analyzing model main.stg_tips
+15:38:44.211971 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:38:44.212048 [info ]:  Succeeded [  0.00s] model main.stg_vendas (view)
+15:38:44.212097 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:38:44.212128 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:38:44.212177 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:38:44.212207 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:38:44.212270 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:38:44.212295 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:38:44.212314 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:38:44.221887 [info ]: Started scheduling
+15:38:44.222047 [info ]: Finished scheduling [  0.00s]
+15:38:44.224157 [info ]: Cached model count updated: 4 models (accurate)
+15:38:45.617509 [info ]: Started loading project
+15:38:45.618567 [info ]: Loading ~/.dbt/profiles.yml
+15:38:45.637331 [info ]: Started parsing
+15:38:45.796402 [info ]: Finished loading project [  0.18s]
+15:38:45.818835 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:38:46.308702 [info ]: Finished parsing [  0.67s]
+15:38:46.312044 [info ]: Cached model count updated: 4 models (estimate)
+15:38:46.312068 [info ]: Cached model count updated: 4 models (accurate)
+15:38:46.312106 [info ]: Started scheduling
+15:38:46.312203 [info ]: Finished scheduling [  0.00s]
+15:38:46.312230 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_vendas", "model.meu_projeto.stg_vendas"}
+15:38:46.315286 [info ]: Started building task graph
+15:38:46.315402 [info ]: Finished building task graph [  0.00s]
+15:38:46.320445 [info ]: Started rendering (2 nodes)
+15:38:46.320490 [info ]: Started model main.fct_vendas
+15:38:46.320514 [debug]: Started rendering model main.fct_vendas
+15:38:46.320568 [info ]: Started model main.stg_vendas
+15:38:46.320594 [debug]: Started rendering model main.stg_vendas
+15:38:46.321080 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:38:46.321173 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:38:46.321214 [info ]: Started analyzing (2 nodes)
+15:38:46.321231 [debug]: Started analyzing model main.stg_vendas
+15:38:46.321502 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:38:46.321531 [info ]:  Succeeded [-------] model main.stg_vendas (view)
+15:38:46.323083 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:38:46.323330 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:38:46.323361 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:38:46.323392 [debug]: Started analyzing model main.fct_vendas
+15:38:46.338592 [warn ]: [SyntaxInvalid (dbt0101)]: mismatched input 'as' expecting one of <EOF>, ';'
+  --> models/marts/fct_vendas.sql:7:5 (target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql:7:5)
+15:38:46.339506 [info ]:  Succeeded [  0.02s] model main.fct_vendas (view)
+15:38:46.339529 [debug]: Finished analyzing [  0.02s] model main.fct_vendas [success]
+15:38:46.339553 [info ]: Finished analyzing [  0.02s] (2 nodes, 0 skipped, 0 errors)
+15:38:46.347219 [info ]: Started scheduling
+15:38:46.347385 [info ]: Finished scheduling [  0.00s]
+15:38:46.350001 [info ]: Cached model count updated: 4 models (accurate)
+15:38:47.919431 [info ]: Started loading project
+15:38:47.920478 [info ]: Loading ~/.dbt/profiles.yml
+15:38:47.987289 [info ]: Cached model count updated: 4 models (estimate)
+15:38:47.987323 [info ]: Cached model count updated: 4 models (accurate)
+15:38:47.987371 [info ]: Started scheduling
+15:38:47.987493 [info ]: Finished scheduling [  0.00s]
+15:38:47.987527 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:38:47.990287 [info ]: Started building task graph
+15:38:47.990385 [info ]: Finished building task graph [  0.00s]
+15:38:47.995572 [info ]: Started rendering (4 nodes)
+15:38:47.995664 [info ]: Started model main.fct_vendas
+15:38:47.995709 [debug]: Started rendering model main.fct_vendas
+15:38:47.995795 [info ]: Finished loading project [  0.08s]
+15:38:47.995919 [info ]: Started model main.stg_vendas
+15:38:47.995995 [debug]: Started rendering model main.stg_vendas
+15:38:47.996192 [info ]: Started model main.fct_resumo
+15:38:47.996271 [debug]: Started rendering model main.fct_resumo
+15:38:47.996395 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:38:47.996501 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:38:47.996605 [info ]: Started model main.stg_tips
+15:38:47.996636 [debug]: Started rendering model main.stg_tips
+15:38:47.996810 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:38:47.996924 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:38:47.997108 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:38:47.997151 [info ]: Started analyzing (4 nodes)
+15:38:47.997174 [debug]: Started analyzing model main.fct_vendas
+15:38:47.997218 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:38:47.997278 [debug]: Started analyzing model main.stg_vendas
+15:38:47.997405 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:38:47.997488 [debug]: Started analyzing model main.fct_resumo
+15:38:47.997624 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:38:47.997710 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:38:47.998248 [debug]: Started analyzing model main.stg_tips
+15:38:47.998500 [warn ]: [SyntaxInvalid (dbt0101)]: mismatched input 'as' expecting one of <EOF>, ';'
+  --> models/marts/fct_vendas.sql:7:5 (target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql:7:5)
+15:38:47.998509 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:38:47.998619 [info ]:  Succeeded [  0.00s] model main.stg_vendas (view)
+15:38:47.998924 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:38:47.998951 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:38:47.999011 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:38:47.999036 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:38:47.999096 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:38:47.999118 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:38:47.999133 [info ]:  Succeeded [-------] model main.stg_tips (view)
+15:38:48.006243 [info ]: Started scheduling
+15:38:48.006364 [info ]: Finished scheduling [  0.00s]
+15:38:48.007155 [info ]: Cached model count updated: 4 models (accurate)
+15:40:01.141180 [info ]: Started loading project
+15:40:01.142319 [info ]: Loading ~/.dbt/profiles.yml
+15:40:01.159131 [info ]: Started parsing
+15:40:01.259389 [info ]: Finished loading project [  0.12s]
+15:40:01.260836 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:40:01.263753 [debug]: Finished parsing models/staging/stg_vendas.sql [  0.00s]
+15:40:01.698201 [info ]: Finished parsing [  0.54s]
+15:40:01.701808 [info ]: Cached model count updated: 4 models (estimate)
+15:40:01.701828 [info ]: Cached model count updated: 4 models (accurate)
+15:40:01.701865 [info ]: Started scheduling
+15:40:01.701936 [info ]: Finished scheduling [  0.00s]
+15:40:01.701964 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.stg_vendas"}
+15:40:01.703967 [info ]: Started building task graph
+15:40:01.704063 [info ]: Finished building task graph [  0.00s]
+15:40:01.707521 [info ]: Started rendering (1 nodes)
+15:40:01.707554 [info ]: Started model main.stg_vendas
+15:40:01.707570 [debug]: Started rendering model main.stg_vendas
+15:40:01.709962 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:40:01.710257 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:40:01.710299 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:40:01.710331 [info ]: Started analyzing (1 nodes)
+15:40:01.710350 [debug]: Started analyzing model main.stg_vendas
+15:40:01.711626 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:40:01.711669 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:40:01.711690 [info ]:  Succeeded [  0.00s] model main.stg_vendas (view)
+15:40:01.717193 [info ]: Started scheduling
+15:40:01.717314 [info ]: Finished scheduling [  0.00s]
+15:40:01.719886 [info ]: Cached model count updated: 4 models (accurate)
+15:40:03.286690 [info ]: Started loading project
+15:40:03.287474 [info ]: Loading ~/.dbt/profiles.yml
+15:40:03.330999 [info ]: Cached model count updated: 4 models (estimate)
+15:40:03.331030 [info ]: Cached model count updated: 4 models (accurate)
+15:40:03.331078 [info ]: Started scheduling
+15:40:03.331199 [info ]: Finished scheduling [  0.00s]
+15:40:03.331226 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:40:03.333273 [info ]: Started building task graph
+15:40:03.333364 [info ]: Finished building task graph [  0.00s]
+15:40:03.336601 [info ]: Started rendering (4 nodes)
+15:40:03.336636 [info ]: Started model main.fct_vendas
+15:40:03.336652 [debug]: Started rendering model main.fct_vendas
+15:40:03.336689 [info ]: Started model main.stg_vendas
+15:40:03.336711 [debug]: Started rendering model main.stg_vendas
+15:40:03.336712 [info ]: Finished loading project [  0.05s]
+15:40:03.336743 [info ]: Started model main.fct_resumo
+15:40:03.336764 [debug]: Started rendering model main.fct_resumo
+15:40:03.336804 [info ]: Started model main.stg_tips
+15:40:03.336841 [debug]: Started rendering model main.stg_tips
+15:40:03.337325 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:40:03.337402 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:40:03.337440 [info ]: Started analyzing (4 nodes)
+15:40:03.337455 [debug]: Started analyzing model main.stg_vendas
+15:40:03.337714 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:40:03.337743 [info ]:  Succeeded [-------] model main.stg_vendas (view)
+15:40:03.337782 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:40:03.337863 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:40:03.337897 [debug]: Started analyzing model main.stg_tips
+15:40:03.338119 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:40:03.338166 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:40:03.338194 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:40:03.338233 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:40:03.338294 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:40:03.338324 [debug]: Started analyzing model main.fct_vendas
+15:40:03.338362 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:40:03.338383 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:40:03.338403 [debug]: Started analyzing model main.fct_resumo
+15:40:03.339170 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:40:03.339209 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:40:03.339716 [warn ]: [SyntaxInvalid (dbt0101)]: mismatched input 'as' expecting one of <EOF>, ';'
+  --> models/marts/fct_vendas.sql:7:5 (target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql:7:5)
+15:40:03.339816 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:40:03.339849 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:40:03.339864 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:40:03.345031 [info ]: Started scheduling
+15:40:03.345125 [info ]: Finished scheduling [  0.00s]
+15:40:03.345419 [info ]: Cached model count updated: 4 models (accurate)
+15:40:36.272693 [info ]: Started loading project
+15:40:36.273570 [info ]: Loading ~/.dbt/profiles.yml
+15:40:36.290788 [info ]: Started parsing
+15:40:36.415068 [info ]: Finished loading project [  0.14s]
+15:40:36.417265 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:40:36.419628 [debug]: Finished parsing models/staging/stg_vendas.sql [  0.00s]
+15:40:36.699651 [info ]: Finished parsing [  0.41s]
+15:40:36.702691 [info ]: Cached model count updated: 4 models (estimate)
+15:40:36.702708 [info ]: Cached model count updated: 4 models (accurate)
+15:40:36.702748 [info ]: Started scheduling
+15:40:36.702822 [info ]: Finished scheduling [  0.00s]
+15:40:36.702848 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.stg_vendas"}
+15:40:36.704576 [info ]: Started building task graph
+15:40:36.704629 [info ]: Finished building task graph [  0.00s]
+15:40:36.707814 [info ]: Started rendering (1 nodes)
+15:40:36.707848 [info ]: Started model main.stg_vendas
+15:40:36.707863 [debug]: Started rendering model main.stg_vendas
+15:40:36.710241 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:40:36.710555 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:40:36.710644 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:40:36.710867 [info ]: Started analyzing (1 nodes)
+15:40:36.710936 [debug]: Started analyzing model main.stg_vendas
+15:40:36.711321 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:40:36.711361 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:40:36.711382 [info ]:  Succeeded [  0.00s] model main.stg_vendas (view)
+15:40:36.715711 [info ]: Started scheduling
+15:40:36.715816 [info ]: Finished scheduling [  0.00s]
+15:40:36.717970 [info ]: Cached model count updated: 4 models (accurate)
+15:40:38.403154 [info ]: Started loading project
+15:40:38.404221 [info ]: Loading ~/.dbt/profiles.yml
+15:40:38.445402 [info ]: Cached model count updated: 4 models (estimate)
+15:40:38.445423 [info ]: Cached model count updated: 4 models (accurate)
+15:40:38.445466 [info ]: Started scheduling
+15:40:38.445548 [info ]: Finished scheduling [  0.00s]
+15:40:38.445577 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:40:38.447250 [info ]: Started building task graph
+15:40:38.447341 [info ]: Finished building task graph [  0.00s]
+15:40:38.450570 [info ]: Started rendering (4 nodes)
+15:40:38.450603 [info ]: Started model main.fct_vendas
+15:40:38.450618 [debug]: Started rendering model main.fct_vendas
+15:40:38.450653 [info ]: Started model main.stg_vendas
+15:40:38.450673 [debug]: Started rendering model main.stg_vendas
+15:40:38.450675 [info ]: Finished loading project [  0.05s]
+15:40:38.450701 [info ]: Started model main.fct_resumo
+15:40:38.450718 [debug]: Started rendering model main.fct_resumo
+15:40:38.450740 [info ]: Started model main.stg_tips
+15:40:38.450759 [debug]: Started rendering model main.stg_tips
+15:40:38.451315 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:40:38.451399 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:40:38.451410 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:40:38.451438 [info ]: Started analyzing (4 nodes)
+15:40:38.451455 [debug]: Started analyzing model main.stg_vendas
+15:40:38.451721 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:40:38.451747 [info ]:  Succeeded [-------] model main.stg_vendas (view)
+15:40:38.451788 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:40:38.451842 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:40:38.451922 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:40:38.451955 [debug]: Started analyzing model main.stg_tips
+15:40:38.451987 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:40:38.452010 [debug]: Started analyzing model main.fct_vendas
+15:40:38.452037 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:40:38.452053 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:40:38.452069 [debug]: Started analyzing model main.fct_resumo
+15:40:38.452219 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:40:38.452240 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:40:38.452787 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:40:38.452818 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:40:38.453202 [warn ]: [SyntaxInvalid (dbt0101)]: mismatched input 'as' expecting one of <EOF>, ';'
+  --> models/marts/fct_vendas.sql:7:5 (target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql:7:5)
+15:40:38.453288 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:40:38.453319 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:40:38.453345 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:40:38.459034 [info ]: Started scheduling
+15:40:38.459100 [info ]: Finished scheduling [  0.00s]
+15:40:38.459325 [info ]: Cached model count updated: 4 models (accurate)
+15:41:03.535292 [info ]: Started loading project
+15:41:03.536063 [info ]: Loading ~/.dbt/profiles.yml
+15:41:03.554611 [info ]: Started parsing
+15:41:03.688235 [info ]: Finished loading project [  0.15s]
+15:41:03.691642 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:41:03.695542 [debug]: Finished parsing models/staging/stg_vendas.sql [  0.00s]
+15:41:04.016782 [info ]: Finished parsing [  0.46s]
+15:41:04.020628 [info ]: Cached model count updated: 4 models (estimate)
+15:41:04.020660 [info ]: Cached model count updated: 4 models (accurate)
+15:41:04.020707 [info ]: Started scheduling
+15:41:04.020818 [info ]: Finished scheduling [  0.00s]
+15:41:04.020848 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.stg_vendas"}
+15:41:04.023581 [info ]: Started building task graph
+15:41:04.023696 [info ]: Finished building task graph [  0.00s]
+15:41:04.028173 [info ]: Started rendering (1 nodes)
+15:41:04.028210 [info ]: Started model main.stg_vendas
+15:41:04.028224 [debug]: Started rendering model main.stg_vendas
+15:41:04.030334 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:41:04.030661 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:41:04.030747 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:41:04.030844 [info ]: Started analyzing (1 nodes)
+15:41:04.030913 [debug]: Started analyzing model main.stg_vendas
+15:41:04.031328 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:41:04.031370 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:41:04.031390 [info ]:  Succeeded [  0.00s] model main.stg_vendas (view)
+15:41:04.035549 [info ]: Started scheduling
+15:41:04.035670 [info ]: Finished scheduling [  0.00s]
+15:41:04.038338 [info ]: Cached model count updated: 4 models (accurate)
+15:41:05.604062 [info ]: Started loading project
+15:41:05.604924 [info ]: Loading ~/.dbt/profiles.yml
+15:41:05.649415 [info ]: Cached model count updated: 4 models (estimate)
+15:41:05.649436 [info ]: Cached model count updated: 4 models (accurate)
+15:41:05.649479 [info ]: Started scheduling
+15:41:05.649568 [info ]: Finished scheduling [  0.00s]
+15:41:05.649606 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:41:05.651445 [info ]: Started building task graph
+15:41:05.651529 [info ]: Finished building task graph [  0.00s]
+15:41:05.654693 [info ]: Started rendering (4 nodes)
+15:41:05.654728 [info ]: Started model main.fct_vendas
+15:41:05.654742 [debug]: Started rendering model main.fct_vendas
+15:41:05.654776 [info ]: Started model main.stg_vendas
+15:41:05.654796 [debug]: Started rendering model main.stg_vendas
+15:41:05.654799 [info ]: Finished loading project [  0.05s]
+15:41:05.654824 [info ]: Started model main.fct_resumo
+15:41:05.654842 [debug]: Started rendering model main.fct_resumo
+15:41:05.654865 [info ]: Started model main.stg_tips
+15:41:05.654883 [debug]: Started rendering model main.stg_tips
+15:41:05.655357 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:41:05.655507 [info ]: Started analyzing (4 nodes)
+15:41:05.655528 [debug]: Started analyzing model main.stg_vendas
+15:41:05.655583 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:41:05.655766 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:41:05.655848 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:41:05.655883 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:41:05.655912 [debug]: Started analyzing model main.stg_tips
+15:41:05.655946 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:41:05.655972 [info ]:  Succeeded [-------] model main.stg_vendas (view)
+15:41:05.656011 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:41:05.656035 [debug]: Started analyzing model main.fct_vendas
+15:41:05.656163 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:41:05.656189 [info ]:  Succeeded [-------] model main.stg_tips (view)
+15:41:05.656786 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:41:05.656890 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:41:05.656920 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:41:05.656948 [debug]: Started analyzing model main.fct_resumo
+15:41:05.657170 [warn ]: [SyntaxInvalid (dbt0101)]: mismatched input 'as' expecting one of <EOF>, ';'
+  --> models/marts/fct_vendas.sql:7:5 (target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql:7:5)
+15:41:05.657272 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:41:05.657295 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:41:05.657554 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:41:05.657579 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:41:05.657600 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:41:05.663375 [info ]: Started scheduling
+15:41:05.663455 [info ]: Finished scheduling [  0.00s]
+15:41:05.663716 [info ]: Cached model count updated: 4 models (accurate)
+15:46:02.921483 [info ]: Started loading project
+15:46:02.922346 [info ]: Loading ~/.dbt/profiles.yml
+15:46:02.943104 [info ]: Started parsing
+15:46:03.142095 [info ]: Finished loading project [  0.22s]
+15:46:03.148597 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:46:03.530590 [info ]: Finished parsing [  0.59s]
+15:46:03.535202 [info ]: Cached model count updated: 4 models (estimate)
+15:46:03.535297 [info ]: Cached model count updated: 4 models (accurate)
+15:46:03.535392 [info ]: Started scheduling
+15:46:03.535678 [info ]: Finished scheduling [  0.00s]
+15:46:03.535711 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_vendas", "model.meu_projeto.stg_vendas"}
+15:46:03.538994 [info ]: Started building task graph
+15:46:03.539244 [info ]: Finished building task graph [  0.00s]
+15:46:03.543313 [info ]: Started rendering (2 nodes)
+15:46:03.543362 [info ]: Started model main.fct_vendas
+15:46:03.543397 [debug]: Started rendering model main.fct_vendas
+15:46:03.543454 [info ]: Started model main.stg_vendas
+15:46:03.543536 [debug]: Started rendering model main.stg_vendas
+15:46:03.544194 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:46:03.544293 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:46:03.544343 [info ]: Started analyzing (2 nodes)
+15:46:03.544416 [debug]: Started analyzing model main.stg_vendas
+15:46:03.544824 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:46:03.544855 [info ]:  Succeeded [-------] model main.stg_vendas (view)
+15:46:03.546134 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:46:03.546312 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:46:03.546345 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:46:03.546379 [debug]: Started analyzing model main.fct_vendas
+15:46:03.560008 [debug]: Finished analyzing [  0.01s] model main.fct_vendas [success]
+15:46:03.560058 [info ]: Finished analyzing [  0.02s] (2 nodes, 0 skipped, 0 errors)
+15:46:03.560083 [info ]:  Succeeded [  0.01s] model main.fct_vendas (view)
+15:46:03.571023 [info ]: Started scheduling
+15:46:03.572449 [info ]: Finished scheduling [  0.00s]
+15:46:03.575952 [info ]: Cached model count updated: 4 models (accurate)
+15:46:05.403538 [info ]: Started loading project
+15:46:05.405662 [info ]: Loading ~/.dbt/profiles.yml
+15:46:05.449221 [info ]: Cached model count updated: 4 models (estimate)
+15:46:05.449242 [info ]: Cached model count updated: 4 models (accurate)
+15:46:05.449273 [info ]: Started scheduling
+15:46:05.449347 [info ]: Finished scheduling [  0.00s]
+15:46:05.449365 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:46:05.451242 [info ]: Started building task graph
+15:46:05.451320 [info ]: Finished building task graph [  0.00s]
+15:46:05.454571 [info ]: Started rendering (4 nodes)
+15:46:05.454605 [info ]: Started model main.fct_vendas
+15:46:05.454620 [debug]: Started rendering model main.fct_vendas
+15:46:05.454654 [info ]: Started model main.stg_vendas
+15:46:05.454675 [debug]: Started rendering model main.stg_vendas
+15:46:05.454676 [info ]: Finished loading project [  0.05s]
+15:46:05.454704 [info ]: Started model main.fct_resumo
+15:46:05.454721 [debug]: Started rendering model main.fct_resumo
+15:46:05.454743 [info ]: Started model main.stg_tips
+15:46:05.454761 [debug]: Started rendering model main.stg_tips
+15:46:05.455229 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:46:05.455229 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:46:05.455377 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:46:05.455415 [info ]: Started analyzing (4 nodes)
+15:46:05.455432 [debug]: Started analyzing model main.fct_vendas
+15:46:05.455477 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:46:05.455504 [debug]: Started analyzing model main.stg_vendas
+15:46:05.455668 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:46:05.455734 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:46:05.455770 [debug]: Started analyzing model main.stg_tips
+15:46:05.456053 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:46:05.456084 [info ]:  Succeeded [-------] model main.stg_tips (view)
+15:46:05.456271 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:46:05.456305 [info ]:  Succeeded [-------] model main.stg_vendas (view)
+15:46:05.456346 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:46:05.456370 [info ]:  Succeeded [-------] model main.fct_vendas (view)
+15:46:05.457036 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:46:05.457119 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:46:05.457148 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:46:05.457174 [debug]: Started analyzing model main.fct_resumo
+15:46:05.457681 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:46:05.457708 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:46:05.457720 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:46:05.461706 [info ]: Started scheduling
+15:46:05.461769 [info ]: Finished scheduling [  0.00s]
+15:46:05.461946 [info ]: Cached model count updated: 4 models (accurate)
+15:49:53.394745 [info ]: Started loading project
+15:49:53.395513 [info ]: Loading ~/.dbt/profiles.yml
+15:49:53.418407 [info ]: Started parsing
+15:49:53.640528 [info ]: Finished loading project [  0.25s]
+15:49:53.650456 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:49:54.053385 [info ]: Finished parsing [  0.63s]
+15:49:54.058771 [info ]: Cached model count updated: 4 models (estimate)
+15:49:54.058798 [info ]: Cached model count updated: 4 models (accurate)
+15:49:54.058843 [info ]: Started scheduling
+15:49:54.058953 [info ]: Finished scheduling [  0.00s]
+15:49:54.059001 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_vendas", "model.meu_projeto.stg_vendas"}
+15:49:54.061874 [info ]: Started building task graph
+15:49:54.061974 [info ]: Finished building task graph [  0.00s]
+15:49:54.067342 [info ]: Started rendering (2 nodes)
+15:49:54.067392 [info ]: Started model main.fct_vendas
+15:49:54.067432 [debug]: Started rendering model main.fct_vendas
+15:49:54.067489 [info ]: Started model main.stg_vendas
+15:49:54.067518 [debug]: Started rendering model main.stg_vendas
+15:49:54.068034 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:49:54.068163 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:49:54.068206 [info ]: Started analyzing (2 nodes)
+15:49:54.068225 [debug]: Started analyzing model main.stg_vendas
+15:49:54.068521 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:49:54.068551 [info ]:  Succeeded [-------] model main.stg_vendas (view)
+15:49:54.070269 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:49:54.070470 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:49:54.070505 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:49:54.070536 [debug]: Started analyzing model main.fct_vendas
+15:49:54.074415 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:49:54.074470 [info ]: Finished analyzing [  0.01s] (2 nodes, 0 skipped, 0 errors)
+15:49:54.074492 [info ]:  Succeeded [  0.01s] model main.fct_vendas (view)
+15:49:54.082702 [info ]: Started scheduling
+15:49:54.082833 [info ]: Finished scheduling [  0.00s]
+15:49:54.085590 [info ]: Cached model count updated: 4 models (accurate)
+15:49:55.647006 [info ]: Started loading project
+15:49:55.647950 [info ]: Loading ~/.dbt/profiles.yml
+15:49:55.694305 [info ]: Cached model count updated: 4 models (estimate)
+15:49:55.694329 [info ]: Cached model count updated: 4 models (accurate)
+15:49:55.694377 [info ]: Started scheduling
+15:49:55.694474 [info ]: Finished scheduling [  0.00s]
+15:49:55.694501 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:49:55.696411 [info ]: Started building task graph
+15:49:55.696501 [info ]: Finished building task graph [  0.00s]
+15:49:55.700065 [info ]: Started rendering (4 nodes)
+15:49:55.700105 [info ]: Started model main.fct_vendas
+15:49:55.700140 [debug]: Started rendering model main.fct_vendas
+15:49:55.700189 [info ]: Started model main.stg_vendas
+15:49:55.700216 [debug]: Started rendering model main.stg_vendas
+15:49:55.700221 [info ]: Finished loading project [  0.05s]
+15:49:55.700244 [info ]: Started model main.fct_resumo
+15:49:55.700272 [debug]: Started rendering model main.fct_resumo
+15:49:55.700295 [info ]: Started model main.stg_tips
+15:49:55.700355 [debug]: Started rendering model main.stg_tips
+15:49:55.700821 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:49:55.700828 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:49:55.700968 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:49:55.701007 [info ]: Started analyzing (4 nodes)
+15:49:55.701023 [debug]: Started analyzing model main.fct_vendas
+15:49:55.701075 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:49:55.701106 [debug]: Started analyzing model main.stg_vendas
+15:49:55.701306 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:49:55.701319 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:49:55.701342 [info ]:  Succeeded [-------] model main.stg_vendas (view)
+15:49:55.701464 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:49:55.701496 [debug]: Started analyzing model main.fct_resumo
+15:49:55.701813 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:49:55.701947 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:49:55.701970 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:49:55.701994 [debug]: Started analyzing model main.stg_tips
+15:49:55.702033 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:49:55.702055 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:49:55.702089 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:49:55.702108 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:49:55.702267 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:49:55.702299 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:49:55.702318 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:49:55.708277 [info ]: Started scheduling
+15:49:55.708358 [info ]: Finished scheduling [  0.00s]
+15:49:55.708595 [info ]: Cached model count updated: 4 models (accurate)
+15:50:24.407777 [info ]: Started loading project
+15:50:24.408596 [info ]: Loading ~/.dbt/profiles.yml
+15:50:24.430865 [info ]: Started parsing
+15:50:24.626929 [info ]: Finished loading project [  0.22s]
+15:50:24.634981 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:50:25.010870 [info ]: Finished parsing [  0.58s]
+15:50:25.014681 [info ]: Cached model count updated: 4 models (estimate)
+15:50:25.014701 [info ]: Cached model count updated: 4 models (accurate)
+15:50:25.014730 [info ]: Started scheduling
+15:50:25.014808 [info ]: Finished scheduling [  0.00s]
+15:50:25.014828 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_vendas", "model.meu_projeto.stg_vendas"}
+15:50:25.016513 [info ]: Started building task graph
+15:50:25.016584 [info ]: Finished building task graph [  0.00s]
+15:50:25.020121 [info ]: Started rendering (2 nodes)
+15:50:25.020157 [info ]: Started model main.fct_vendas
+15:50:25.020171 [debug]: Started rendering model main.fct_vendas
+15:50:25.020203 [info ]: Started model main.stg_vendas
+15:50:25.020248 [debug]: Started rendering model main.stg_vendas
+15:50:25.020760 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:50:25.020851 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:50:25.020897 [info ]: Started analyzing (2 nodes)
+15:50:25.020917 [debug]: Started analyzing model main.stg_vendas
+15:50:25.021204 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:50:25.021236 [info ]:  Succeeded [-------] model main.stg_vendas (view)
+15:50:25.022608 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:50:25.022869 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:50:25.022903 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:50:25.022938 [debug]: Started analyzing model main.fct_vendas
+15:50:25.028446 [debug]: Finished analyzing [  0.01s] model main.fct_vendas [success]
+15:50:25.028490 [info ]: Finished analyzing [  0.01s] (2 nodes, 0 skipped, 0 errors)
+15:50:25.028513 [info ]:  Succeeded [  0.01s] model main.fct_vendas (view)
+15:50:25.035805 [info ]: Started scheduling
+15:50:25.035915 [info ]: Finished scheduling [  0.00s]
+15:50:25.038279 [info ]: Cached model count updated: 4 models (accurate)
+15:50:26.614136 [info ]: Started loading project
+15:50:26.615476 [info ]: Loading ~/.dbt/profiles.yml
+15:50:26.666350 [info ]: Cached model count updated: 4 models (estimate)
+15:50:26.666373 [info ]: Cached model count updated: 4 models (accurate)
+15:50:26.666406 [info ]: Started scheduling
+15:50:26.666485 [info ]: Finished scheduling [  0.00s]
+15:50:26.666513 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:50:26.668174 [info ]: Started building task graph
+15:50:26.668242 [info ]: Finished building task graph [  0.00s]
+15:50:26.671470 [info ]: Started rendering (4 nodes)
+15:50:26.671504 [info ]: Started model main.fct_vendas
+15:50:26.671520 [debug]: Started rendering model main.fct_vendas
+15:50:26.671556 [info ]: Started model main.stg_vendas
+15:50:26.671577 [debug]: Started rendering model main.stg_vendas
+15:50:26.671581 [info ]: Finished loading project [  0.06s]
+15:50:26.671607 [info ]: Started model main.fct_resumo
+15:50:26.671637 [debug]: Started rendering model main.fct_resumo
+15:50:26.671871 [info ]: Started model main.stg_tips
+15:50:26.672029 [debug]: Started rendering model main.stg_tips
+15:50:26.672169 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:50:26.672194 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:50:26.672370 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:50:26.672478 [info ]: Started analyzing (4 nodes)
+15:50:26.672547 [debug]: Started analyzing model main.fct_vendas
+15:50:26.672647 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:50:26.672734 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:50:26.672769 [debug]: Started analyzing model main.stg_vendas
+15:50:26.672824 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:50:26.672906 [debug]: Started analyzing model main.fct_resumo
+15:50:26.673035 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:50:26.673110 [info ]:  Succeeded [  0.00s] model main.stg_vendas (view)
+15:50:26.673532 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:50:26.673559 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:50:26.673564 [info ]:  Succeeded [-------] model main.fct_vendas (view)
+15:50:26.673603 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:50:26.673627 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:50:26.673667 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:50:26.673687 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:50:26.673711 [debug]: Started analyzing model main.stg_tips
+15:50:26.674070 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:50:26.674095 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:50:26.674111 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:50:26.678740 [info ]: Started scheduling
+15:50:26.678797 [info ]: Finished scheduling [  0.00s]
+15:50:26.678954 [info ]: Cached model count updated: 4 models (accurate)
+15:50:55.463980 [info ]: Started loading project
+15:50:55.464850 [info ]: Loading ~/.dbt/profiles.yml
+15:50:55.488708 [info ]: Started parsing
+15:50:55.702606 [info ]: Finished loading project [  0.24s]
+15:50:55.705638 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:50:56.018291 [info ]: Finished parsing [  0.53s]
+15:50:56.023229 [info ]: Cached model count updated: 4 models (estimate)
+15:50:56.023259 [info ]: Cached model count updated: 4 models (accurate)
+15:50:56.023288 [info ]: Started scheduling
+15:50:56.023372 [info ]: Finished scheduling [  0.00s]
+15:50:56.023400 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_vendas", "model.meu_projeto.stg_vendas"}
+15:50:56.024946 [info ]: Started building task graph
+15:50:56.025003 [info ]: Finished building task graph [  0.00s]
+15:50:56.028207 [info ]: Started rendering (2 nodes)
+15:50:56.028257 [info ]: Started model main.fct_vendas
+15:50:56.028285 [debug]: Started rendering model main.fct_vendas
+15:50:56.028317 [info ]: Started model main.stg_vendas
+15:50:56.028334 [debug]: Started rendering model main.stg_vendas
+15:50:56.028855 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:50:56.028944 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:50:56.028990 [info ]: Started analyzing (2 nodes)
+15:50:56.029008 [debug]: Started analyzing model main.stg_vendas
+15:50:56.029271 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:50:56.029300 [info ]:  Succeeded [-------] model main.stg_vendas (view)
+15:50:56.030742 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:50:56.030974 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:50:56.031009 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:50:56.031039 [debug]: Started analyzing model main.fct_vendas
+15:50:56.031958 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:50:56.031996 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:50:56.032017 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:50:56.039256 [info ]: Started scheduling
+15:50:56.039396 [info ]: Finished scheduling [  0.00s]
+15:50:56.043295 [info ]: Cached model count updated: 4 models (accurate)
+15:50:57.630508 [info ]: Started loading project
+15:50:57.631934 [info ]: Loading ~/.dbt/profiles.yml
+15:50:57.676458 [info ]: Cached model count updated: 4 models (estimate)
+15:50:57.676478 [info ]: Cached model count updated: 4 models (accurate)
+15:50:57.676518 [info ]: Started scheduling
+15:50:57.676598 [info ]: Finished scheduling [  0.00s]
+15:50:57.676625 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:50:57.678264 [info ]: Started building task graph
+15:50:57.678336 [info ]: Finished building task graph [  0.00s]
+15:50:57.681557 [info ]: Started rendering (4 nodes)
+15:50:57.681590 [info ]: Started model main.fct_vendas
+15:50:57.681605 [debug]: Started rendering model main.fct_vendas
+15:50:57.681638 [info ]: Started model main.stg_vendas
+15:50:57.681660 [debug]: Started rendering model main.stg_vendas
+15:50:57.681662 [info ]: Finished loading project [  0.05s]
+15:50:57.681689 [info ]: Started model main.fct_resumo
+15:50:57.681706 [debug]: Started rendering model main.fct_resumo
+15:50:57.681727 [info ]: Started model main.stg_tips
+15:50:57.681742 [debug]: Started rendering model main.stg_tips
+15:50:57.682226 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:50:57.682287 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:50:57.682408 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:50:57.682517 [info ]: Started analyzing (4 nodes)
+15:50:57.682538 [debug]: Started analyzing model main.stg_vendas
+15:50:57.682602 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:50:57.682619 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:50:57.682754 [debug]: Started analyzing model main.fct_resumo
+15:50:57.682827 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:50:57.682954 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:50:57.683019 [debug]: Started analyzing model main.fct_vendas
+15:50:57.683147 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:50:57.683240 [info ]:  Succeeded [-------] model main.stg_vendas (view)
+15:50:57.683379 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:50:57.683465 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:50:57.683501 [debug]: Started analyzing model main.stg_tips
+15:50:57.683630 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:50:57.683725 [info ]:  Succeeded [-------] model main.fct_resumo (view)
+15:50:57.683777 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:50:57.683805 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:50:57.683845 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:50:57.683866 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:50:57.683884 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:50:57.688775 [info ]: Started scheduling
+15:50:57.688828 [info ]: Finished scheduling [  0.00s]
+15:50:57.688985 [info ]: Cached model count updated: 4 models (accurate)
+15:51:09.998875 [info ]: Started loading project
+15:51:09.999663 [info ]: Loading ~/.dbt/profiles.yml
+15:51:10.021835 [info ]: Started parsing
+15:51:10.230034 [info ]: Finished loading project [  0.23s]
+15:51:10.232944 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:51:10.524749 [info ]: Finished parsing [  0.50s]
+15:51:10.528838 [info ]: Cached model count updated: 4 models (estimate)
+15:51:10.528866 [info ]: Cached model count updated: 4 models (accurate)
+15:51:10.528952 [info ]: Started scheduling
+15:51:10.529040 [info ]: Finished scheduling [  0.00s]
+15:51:10.529060 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_vendas", "model.meu_projeto.stg_vendas"}
+15:51:10.530738 [info ]: Started building task graph
+15:51:10.530787 [info ]: Finished building task graph [  0.00s]
+15:51:10.534082 [info ]: Started rendering (2 nodes)
+15:51:10.534105 [info ]: Started model main.fct_vendas
+15:51:10.534122 [debug]: Started rendering model main.fct_vendas
+15:51:10.534156 [info ]: Started model main.stg_vendas
+15:51:10.534178 [debug]: Started rendering model main.stg_vendas
+15:51:10.534707 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:51:10.534793 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:51:10.534839 [info ]: Started analyzing (2 nodes)
+15:51:10.534857 [debug]: Started analyzing model main.stg_vendas
+15:51:10.535101 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:51:10.535128 [info ]:  Succeeded [-------] model main.stg_vendas (view)
+15:51:10.536391 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:51:10.536633 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:51:10.536668 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:51:10.536702 [debug]: Started analyzing model main.fct_vendas
+15:51:10.537664 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:51:10.537697 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:51:10.537711 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:51:10.542124 [info ]: Started scheduling
+15:51:10.542213 [info ]: Finished scheduling [  0.00s]
+15:51:10.544145 [info ]: Cached model count updated: 4 models (accurate)
+15:51:12.121979 [info ]: Started loading project
+15:51:12.123477 [info ]: Loading ~/.dbt/profiles.yml
+15:51:12.163432 [info ]: Cached model count updated: 4 models (estimate)
+15:51:12.163452 [info ]: Cached model count updated: 4 models (accurate)
+15:51:12.163495 [info ]: Started scheduling
+15:51:12.163576 [info ]: Finished scheduling [  0.00s]
+15:51:12.163605 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:51:12.165323 [info ]: Started building task graph
+15:51:12.165414 [info ]: Finished building task graph [  0.00s]
+15:51:12.168601 [info ]: Started rendering (4 nodes)
+15:51:12.168626 [info ]: Started model main.fct_vendas
+15:51:12.168641 [debug]: Started rendering model main.fct_vendas
+15:51:12.168674 [info ]: Started model main.stg_vendas
+15:51:12.168695 [debug]: Started rendering model main.stg_vendas
+15:51:12.168697 [info ]: Finished loading project [  0.05s]
+15:51:12.168721 [info ]: Started model main.fct_resumo
+15:51:12.168740 [debug]: Started rendering model main.fct_resumo
+15:51:12.168760 [info ]: Started model main.stg_tips
+15:51:12.168800 [debug]: Started rendering model main.stg_tips
+15:51:12.169261 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:51:12.169349 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:51:12.169370 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:51:12.169443 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:51:12.169493 [info ]: Started analyzing (4 nodes)
+15:51:12.169509 [debug]: Started analyzing model main.stg_vendas
+15:51:12.169546 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:51:12.169573 [debug]: Started analyzing model main.stg_tips
+15:51:12.169602 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:51:12.169625 [debug]: Started analyzing model main.fct_resumo
+15:51:12.169759 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:51:12.169782 [info ]:  Succeeded [-------] model main.stg_vendas (view)
+15:51:12.169917 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:51:12.169937 [info ]:  Succeeded [-------] model main.stg_tips (view)
+15:51:12.170101 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:51:12.170179 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:51:12.170207 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:51:12.170233 [debug]: Started analyzing model main.fct_vendas
+15:51:12.170420 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:51:12.170453 [info ]:  Succeeded [-------] model main.fct_resumo (view)
+15:51:12.170906 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:51:12.170932 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:51:12.170952 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:51:12.175263 [info ]: Started scheduling
+15:51:12.175327 [info ]: Finished scheduling [  0.00s]
+15:51:12.175532 [info ]: Cached model count updated: 4 models (accurate)
+15:51:15.707355 [info ]: Started loading project
+15:51:15.708575 [info ]: Loading ~/.dbt/profiles.yml
+15:51:15.743664 [info ]: Started parsing
+15:51:15.994347 [info ]: Finished loading project [  0.29s]
+15:51:15.997974 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:51:16.327957 [info ]: Finished parsing [  0.58s]
+15:51:16.331715 [info ]: Cached model count updated: 4 models (estimate)
+15:51:16.331734 [info ]: Cached model count updated: 4 models (accurate)
+15:51:16.331774 [info ]: Started scheduling
+15:51:16.331859 [info ]: Finished scheduling [  0.00s]
+15:51:16.331887 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_vendas", "model.meu_projeto.stg_vendas"}
+15:51:16.333519 [info ]: Started building task graph
+15:51:16.333578 [info ]: Finished building task graph [  0.00s]
+15:51:16.336944 [info ]: Started rendering (2 nodes)
+15:51:16.336980 [info ]: Started model main.fct_vendas
+15:51:16.336997 [debug]: Started rendering model main.fct_vendas
+15:51:16.337047 [info ]: Started model main.stg_vendas
+15:51:16.337095 [debug]: Started rendering model main.stg_vendas
+15:51:16.337583 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:51:16.337675 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:51:16.337715 [info ]: Started analyzing (2 nodes)
+15:51:16.337734 [debug]: Started analyzing model main.stg_vendas
+15:51:16.337991 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:51:16.338022 [info ]:  Succeeded [-------] model main.stg_vendas (view)
+15:51:16.339563 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:51:16.339824 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:51:16.339860 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:51:16.339892 [debug]: Started analyzing model main.fct_vendas
+15:51:16.341373 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:51:16.341442 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:51:16.341486 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:51:16.346988 [info ]: Started scheduling
+15:51:16.347100 [info ]: Finished scheduling [  0.00s]
+15:51:16.349570 [info ]: Cached model count updated: 4 models (accurate)
+15:51:17.912623 [info ]: Started loading project
+15:51:17.913476 [info ]: Loading ~/.dbt/profiles.yml
+15:51:17.955082 [info ]: Cached model count updated: 4 models (estimate)
+15:51:17.955103 [info ]: Cached model count updated: 4 models (accurate)
+15:51:17.955145 [info ]: Started scheduling
+15:51:17.955231 [info ]: Finished scheduling [  0.00s]
+15:51:17.955259 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:51:17.957617 [info ]: Started building task graph
+15:51:17.957716 [info ]: Finished building task graph [  0.00s]
+15:51:17.961373 [info ]: Started rendering (4 nodes)
+15:51:17.961412 [info ]: Started model main.fct_vendas
+15:51:17.961429 [debug]: Started rendering model main.fct_vendas
+15:51:17.961465 [info ]: Started model main.stg_vendas
+15:51:17.961487 [debug]: Started rendering model main.stg_vendas
+15:51:17.961488 [info ]: Finished loading project [  0.05s]
+15:51:17.961520 [info ]: Started model main.fct_resumo
+15:51:17.961544 [debug]: Started rendering model main.fct_resumo
+15:51:17.961603 [info ]: Started model main.stg_tips
+15:51:17.961643 [debug]: Started rendering model main.stg_tips
+15:51:17.962057 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:51:17.962100 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:51:17.962150 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:51:17.962266 [info ]: Started analyzing (4 nodes)
+15:51:17.962285 [debug]: Started analyzing model main.stg_vendas
+15:51:17.962293 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:51:17.962316 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:51:17.962339 [debug]: Started analyzing model main.fct_resumo
+15:51:17.962484 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:51:17.962528 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:51:17.962549 [info ]:  Succeeded [-------] model main.stg_vendas (view)
+15:51:17.962616 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:51:17.962652 [debug]: Started analyzing model main.stg_tips
+15:51:17.962743 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:51:17.962830 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:51:17.962914 [debug]: Started analyzing model main.fct_vendas
+15:51:17.962999 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:51:17.963026 [info ]:  Succeeded [-------] model main.stg_tips (view)
+15:51:17.963061 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:51:17.963081 [info ]:  Succeeded [-------] model main.fct_resumo (view)
+15:51:17.963521 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:51:17.963545 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:51:17.963563 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:51:17.967667 [info ]: Started scheduling
+15:51:17.967719 [info ]: Finished scheduling [  0.00s]
+15:51:17.967900 [info ]: Cached model count updated: 4 models (accurate)
+15:51:48.562936 [info ]: Started loading project
+15:51:48.563798 [info ]: Loading ~/.dbt/profiles.yml
+15:51:48.595361 [info ]: Started parsing
+15:51:48.847505 [info ]: Finished loading project [  0.28s]
+15:51:48.851524 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:51:49.137595 [info ]: Finished parsing [  0.54s]
+15:51:49.142578 [info ]: Cached model count updated: 4 models (estimate)
+15:51:49.142601 [info ]: Cached model count updated: 4 models (accurate)
+15:51:49.142644 [info ]: Started scheduling
+15:51:49.142746 [info ]: Finished scheduling [  0.00s]
+15:51:49.142772 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_vendas", "model.meu_projeto.stg_vendas"}
+15:51:49.144577 [info ]: Started building task graph
+15:51:49.144657 [info ]: Finished building task graph [  0.00s]
+15:51:49.149206 [info ]: Started rendering (2 nodes)
+15:51:49.149251 [info ]: Started model main.fct_vendas
+15:51:49.149274 [debug]: Started rendering model main.fct_vendas
+15:51:49.149327 [info ]: Started model main.stg_vendas
+15:51:49.149352 [debug]: Started rendering model main.stg_vendas
+15:51:49.149873 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:51:49.149955 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:51:49.149995 [info ]: Started analyzing (2 nodes)
+15:51:49.150012 [debug]: Started analyzing model main.stg_vendas
+15:51:49.150258 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:51:49.150284 [info ]:  Succeeded [-------] model main.stg_vendas (view)
+15:51:49.151717 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:51:49.152545 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:51:49.152654 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:51:49.152688 [debug]: Started analyzing model main.fct_vendas
+15:51:49.155258 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:51:49.155331 [info ]: Finished analyzing [  0.01s] (2 nodes, 0 skipped, 0 errors)
+15:51:49.155353 [info ]:  Succeeded [  0.01s] model main.fct_vendas (view)
+15:51:49.162766 [info ]: Started scheduling
+15:51:49.162900 [info ]: Finished scheduling [  0.00s]
+15:51:49.165917 [info ]: Cached model count updated: 4 models (accurate)
+15:51:50.732748 [info ]: Started loading project
+15:51:50.734275 [info ]: Loading ~/.dbt/profiles.yml
+15:51:50.787708 [info ]: Cached model count updated: 4 models (estimate)
+15:51:50.787741 [info ]: Cached model count updated: 4 models (accurate)
+15:51:50.787773 [info ]: Started scheduling
+15:51:50.787858 [info ]: Finished scheduling [  0.00s]
+15:51:50.787887 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:51:50.789611 [info ]: Started building task graph
+15:51:50.789681 [info ]: Finished building task graph [  0.00s]
+15:51:50.792809 [info ]: Started rendering (4 nodes)
+15:51:50.792842 [info ]: Started model main.fct_vendas
+15:51:50.792856 [debug]: Started rendering model main.fct_vendas
+15:51:50.792890 [info ]: Started model main.stg_vendas
+15:51:50.792914 [info ]: Finished loading project [  0.06s]
+15:51:50.792913 [debug]: Started rendering model main.stg_vendas
+15:51:50.792943 [info ]: Started model main.fct_resumo
+15:51:50.792976 [debug]: Started rendering model main.fct_resumo
+15:51:50.793436 [info ]: Started model main.stg_tips
+15:51:50.793494 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:51:50.793504 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:51:50.793701 [debug]: Started rendering model main.stg_tips
+15:51:50.793884 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:51:50.793988 [info ]: Started analyzing (4 nodes)
+15:51:50.794094 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:51:50.794057 [debug]: Started analyzing model main.stg_vendas
+15:51:50.794211 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:51:50.794342 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:51:50.794378 [debug]: Started analyzing model main.fct_vendas
+15:51:50.794453 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:51:50.794527 [debug]: Started analyzing model main.fct_resumo
+15:51:50.794613 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:51:50.794706 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:51:50.794782 [debug]: Started analyzing model main.stg_tips
+15:51:50.795102 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:51:50.795149 [info ]:  Succeeded [  0.00s] model main.stg_vendas (view)
+15:51:50.795204 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:51:50.795230 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:51:50.795268 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:51:50.795290 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:51:50.795338 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:51:50.795357 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:51:50.795368 [info ]:  Succeeded [-------] model main.stg_tips (view)
+15:51:50.799409 [info ]: Started scheduling
+15:51:50.799470 [info ]: Finished scheduling [  0.00s]
+15:51:50.799664 [info ]: Cached model count updated: 4 models (accurate)
+15:53:21.430231 [info ]: Started loading project
+15:53:21.431110 [info ]: Loading ~/.dbt/profiles.yml
+15:53:21.463050 [info ]: Started parsing
+15:53:21.719216 [info ]: Finished loading project [  0.29s]
+15:53:21.724964 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:53:22.212670 [info ]: Finished parsing [  0.75s]
+15:53:22.216966 [info ]: Cached model count updated: 4 models (estimate)
+15:53:22.216985 [info ]: Cached model count updated: 4 models (accurate)
+15:53:22.217012 [info ]: Started scheduling
+15:53:22.217091 [info ]: Finished scheduling [  0.00s]
+15:53:22.217109 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_vendas", "model.meu_projeto.stg_vendas"}
+15:53:22.218821 [info ]: Started building task graph
+15:53:22.218872 [info ]: Finished building task graph [  0.00s]
+15:53:22.222255 [info ]: Started rendering (2 nodes)
+15:53:22.222280 [info ]: Started model main.fct_vendas
+15:53:22.222407 [debug]: Started rendering model main.fct_vendas
+15:53:22.222519 [info ]: Started model main.stg_vendas
+15:53:22.222555 [debug]: Started rendering model main.stg_vendas
+15:53:22.224769 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:53:22.225387 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:53:22.225424 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:53:22.225491 [info ]: Started analyzing (2 nodes)
+15:53:22.225528 [debug]: Started analyzing model main.stg_vendas
+15:53:22.225795 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:53:22.225823 [info ]:  Succeeded [  0.00s] model main.stg_vendas (view)
+15:53:22.225893 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:53:22.225916 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:53:22.225938 [debug]: Started analyzing model main.fct_vendas
+15:53:22.226950 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:53:22.226993 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:53:22.227012 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:53:22.235035 [info ]: Started scheduling
+15:53:22.235168 [info ]: Finished scheduling [  0.00s]
+15:53:22.237963 [info ]: Cached model count updated: 4 models (accurate)
+15:53:23.800858 [info ]: Started loading project
+15:53:23.801815 [info ]: Loading ~/.dbt/profiles.yml
+15:53:23.868883 [info ]: Cached model count updated: 4 models (estimate)
+15:53:23.868912 [info ]: Cached model count updated: 4 models (accurate)
+15:53:23.868956 [info ]: Started scheduling
+15:53:23.869076 [info ]: Finished scheduling [  0.00s]
+15:53:23.869105 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:53:23.873044 [info ]: Started building task graph
+15:53:23.873301 [info ]: Finished building task graph [  0.00s]
+15:53:23.880031 [info ]: Started rendering (4 nodes)
+15:53:23.880076 [info ]: Started model main.fct_vendas
+15:53:23.880103 [debug]: Started rendering model main.fct_vendas
+15:53:23.880148 [info ]: Started model main.stg_vendas
+15:53:23.880169 [debug]: Started rendering model main.stg_vendas
+15:53:23.880182 [info ]: Finished loading project [  0.08s]
+15:53:23.880198 [info ]: Started model main.fct_resumo
+15:53:23.880220 [debug]: Started rendering model main.fct_resumo
+15:53:23.880248 [info ]: Started model main.stg_tips
+15:53:23.880266 [debug]: Started rendering model main.stg_tips
+15:53:23.880894 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:53:23.880950 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:53:23.881369 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:53:23.881582 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:53:23.881619 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:53:23.881755 [info ]: Started analyzing (4 nodes)
+15:53:23.881777 [debug]: Started analyzing model main.fct_vendas
+15:53:23.881829 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:53:23.881913 [debug]: Started analyzing model main.stg_vendas
+15:53:23.882224 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:53:23.882306 [debug]: Started analyzing model main.stg_tips
+15:53:23.882714 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:53:23.882794 [info ]:  Succeeded [  0.00s] model main.stg_vendas (view)
+15:53:23.882857 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:53:23.882886 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:53:23.882932 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:53:23.882958 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:53:23.882997 [debug]: Started analyzing model main.fct_resumo
+15:53:23.883083 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:53:23.883111 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:53:23.883592 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:53:23.883616 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:53:23.883635 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:53:23.889411 [info ]: Started scheduling
+15:53:23.889493 [info ]: Finished scheduling [  0.00s]
+15:53:23.889739 [info ]: Cached model count updated: 4 models (accurate)
