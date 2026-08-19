@@ -1244,3 +1244,1849 @@ where tip is null
 Finished 'test' successfully for target 'dev' [1.2s]
 Processed: 4 tests
 Summary: 4 total | 4 success
+==================== 2026-08-19T15:20:12.864304Z | 01a01a9b-cb3a-7782-879a-0cfa0c186957 ====================
+15:20:12.866625 [info ]: dbt-fusion 2.0.0-preview.205
+15:20:12.870695 [info ]: Started loading project
+15:20:12.883852 [info ]: Loading ~/.dbt/profiles.yml
+15:20:12.908746 [debug]:    Started loading packages
+15:20:12.916993 [debug]:     Loaded [  0.01s] packages
+15:20:12.919331 [info ]: Finished loading project [  0.05s]
+15:20:12.922025 [info ]: Started parsing
+15:20:13.008640 [error]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key `"columns"`. YAML path: `columns`.
+  --> models\staging\schema.yml:1:1
+15:20:13.009611 [debug]: Finished parsing models/staging/schema.yml [  0.00s]
+15:20:13.010164 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:20:13.010818 [error]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key `"columns"`. YAML path: `columns`.
+  --> tests\test.yaml:1:1
+15:20:13.010874 [debug]: Finished parsing tests/test.yaml [  0.00s]
+15:20:13.014903 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:20:13.016417 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:20:13.018287 [debug]: Finished parsing models/staging/raw_vendas.sql [  0.00s]
+15:20:13.020254 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:20:13.057274 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_day.sql [  0.02s]
+15:20:13.058714 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_sex.sql [  0.00s]
+15:20:13.060187 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_tip.sql [  0.00s]
+15:20:13.068227 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_total_bill.sql [  0.01s]
+15:20:13.523125 [error]: [DependencyNotFound (dbt1048)]: Ref 'stg_vendas' not found in project. Searched for 'meu_projeto.stg_vendas, stg_vendas'
+  --> models/marts/fct_vendas.sql:7:6
+15:20:13.524833 [info ]: Finished parsing [  0.60s]
+15:20:14.282172 [info ]: New version available 2.0.0-preview.210 (run `dbt system update`)
+15:20:14.515821 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+15:20:14.515821 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 3 errors for target 'dev' [1.7s]
+==================== 2026-08-19T15:21:35.229949Z | 01a01a9d-0ca2-7850-8604-ebd7daf0c2c9 ====================
+15:21:35.230282 [info ]: dbt-fusion 2.0.0-preview.205
+15:21:35.231577 [info ]: Started loading project
+15:21:35.236520 [info ]: Loading ~/.dbt/profiles.yml
+15:21:35.254963 [debug]:    Started loading packages
+15:21:35.261541 [debug]:     Loaded [  0.01s] packages
+15:21:35.263828 [info ]: Finished loading project [  0.03s]
+15:21:35.265920 [info ]: Started parsing
+15:21:35.343324 [error]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key `"columns"`. YAML path: `columns`.
+  --> models\staging\schema.yml:1:1
+15:21:35.343479 [debug]: Finished parsing models/staging/schema.yml [  0.00s]
+15:21:35.344030 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:21:35.346638 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:21:35.347507 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:21:35.348281 [debug]: Finished parsing models/staging/raw_vendas.sql [  0.00s]
+15:21:35.349123 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:21:35.363443 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_day.sql [  0.00s]
+15:21:35.364434 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_sex.sql [  0.00s]
+15:21:35.365302 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_tip.sql [  0.00s]
+15:21:35.366145 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_total_bill.sql [  0.00s]
+15:21:35.727059 [error]: [DependencyNotFound (dbt1048)]: Ref 'stg_vendas' not found in project. Searched for 'meu_projeto.stg_vendas, stg_vendas'
+  --> models/marts/fct_vendas.sql:7:6
+15:21:35.728971 [info ]: Finished parsing [  0.46s]
+15:21:36.013764 [info ]: New version available 2.0.0-preview.210 (run `dbt system update`)
+15:21:36.125355 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+15:21:36.125355 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 2 errors for target 'dev' [895ms]
+==================== 2026-08-19T15:29:26.807248Z | 01a01aa4-3f12-7ed2-8e59-4060fa799e59 ====================
+15:29:26.807517 [info ]: dbt-fusion 2.0.0-preview.205
+15:29:26.808464 [info ]: Started loading project
+15:29:26.812714 [info ]: Loading ~/.dbt/profiles.yml
+15:29:26.828918 [debug]:    Started loading packages
+15:29:26.834244 [debug]:     Loaded [  0.01s] packages
+15:29:26.835578 [info ]: Finished loading project [  0.03s]
+15:29:26.836693 [info ]: Started parsing
+15:29:26.899408 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:29:26.900063 [error]: [SerializationError (dbt1013)]: YAML error: models: invalid type: map, expected a sequence
+  --> models\staging\stg_vendas.yml:2:3
+15:29:26.900152 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:29:26.902535 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:29:26.903654 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:29:26.904644 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:29:26.905502 [debug]: Finished parsing models/staging/stg_vendas.sql [  0.00s]
+15:29:26.920001 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_day.sql [  0.00s]
+15:29:26.921007 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_sex.sql [  0.00s]
+15:29:26.922141 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_tip.sql [  0.00s]
+15:29:26.923982 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_total_bill.sql [  0.00s]
+15:29:27.275853 [info ]: Finished parsing [  0.44s]
+15:29:27.843706 [info ]: New version available 2.0.0-preview.210 (run `dbt system update`)
+15:29:28.007857 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+15:29:28.007857 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error for target 'dev' [1.2s]
+==================== 2026-08-19T15:32:09.574851Z | 01a01aa6-bae2-7223-ac32-5c1a93ce7e60 ====================
+15:32:09.575109 [info ]: dbt-fusion 2.0.0-preview.205
+15:32:09.576136 [info ]: Started loading project
+15:32:09.580630 [info ]: Loading ~/.dbt/profiles.yml
+15:32:09.594170 [debug]:    Started loading packages
+15:32:09.600451 [debug]:     Loaded [  0.01s] packages
+15:32:09.602401 [info ]: Finished loading project [  0.03s]
+15:32:09.603243 [info ]: Started parsing
+15:32:09.660875 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:32:09.661215 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:32:09.663739 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:32:09.664726 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:32:09.665643 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:32:09.666455 [debug]: Finished parsing models/staging/stg_vendas.sql [  0.00s]
+15:32:09.683156 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_day.sql [  0.00s]
+15:32:09.684622 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_sex.sql [  0.00s]
+15:32:09.686079 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_tip.sql [  0.00s]
+15:32:09.687438 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_total_bill.sql [  0.00s]
+15:32:09.698986 [debug]: Finished parsing target\generic_tests\unique_stg_vendas_id.sql [  0.01s]
+15:32:09.699921 [debug]: Finished parsing target\generic_tests\not_null_stg_vendas_id.sql [  0.00s]
+15:32:10.062740 [info ]: Finished parsing [  0.46s]
+15:32:10.064838 [info ]: Started scheduling
+15:32:10.067010 [info ]: Finished scheduling [  0.00s]
+15:32:10.086995 [debug]: No platform credentials found, skipping remote license
+15:32:10.090005 [debug]: License check failed: Feature not licensed: 'lineage'
+15:32:10.092446 [info ]: Started building task graph
+15:32:10.100532 [info ]: Finished building task graph [  0.01s]
+15:32:10.883313 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"meu_banco"'
+    
+  
+  
+15:32:10.905404 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='meu_banco'
+        and type='sqlite'
+    
+  
+15:32:10.910695 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "meu_banco"."main"
+    
+15:32:10.914135 [info ]: Started rendering (4 nodes)
+15:32:10.914640 [info ]: Started model main.stg_vendas
+15:32:10.914665 [debug]: Started rendering model main.stg_vendas
+15:32:10.914729 [info ]: Started model main.stg_tips
+15:32:10.914764 [debug]: Started rendering model main.stg_tips
+15:32:10.918742 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:32:10.918915 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\compiled\meu_projeto\models\staging\stg_tips.sql
+15:32:10.919091 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:32:10.920225 [info ]: Started analyzing (4 nodes)
+15:32:10.920854 [debug]: Started analyzing model main.stg_vendas
+15:32:10.920925 [debug]: Finished rendering [  0.01s] model main.stg_tips [success]
+15:32:10.921354 [debug]: Started analyzing model main.stg_tips
+15:32:10.934038 [debug]: Finished analyzing [  0.01s] model main.stg_vendas [success]
+15:32:10.935056 [info ]: Started running (4 nodes)
+15:32:10.935319 [info ]: Started running model main.stg_vendas
+15:32:10.935378 [debug]: Finished analyzing [  0.01s] model main.stg_tips [success]
+15:32:10.936901 [info ]: Started running model main.stg_tips
+15:32:11.061844 [debug]: Query executed on node model.meu_projeto.stg_tips:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+15:32:11.061874 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+15:32:11.085635 [debug]: Writing runtime sql for node "model.meu_projeto.stg_vendas"
+15:32:11.085653 [debug]: Writing runtime sql for node "model.meu_projeto.stg_tips"
+15:32:11.125899 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_vendas__dbt_tmp" as (
+    SELECT
+    id,
+    cliente,
+    categoria,
+    valor,
+    data_venda
+FROM stg_vendas
+  );
+
+15:32:11.133003 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_tips__dbt_tmp" as (
+    select
+    total_bill,
+    tip,
+    sex,
+    day,
+    total_bill + tip as valor_total
+from read_csv_auto('C:/Users/tl100/OneDrive/Documents/Carreira dados/teste-volta/pandas/tips.csv')
+  );
+
+15:32:11.144724 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips" rename to "stg_tips__dbt_backup"
+15:32:11.150388 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips__dbt_tmp" rename to "stg_tips"
+15:32:11.161093 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."stg_tips__dbt_backup" cascade
+    
+15:32:11.172481 [info ]: Finished running [  0.24s] model main.stg_tips [success]
+15:32:11.174314 [info ]:  Succeeded [  0.26s] model main.stg_tips (view)
+15:32:11.175639 [info ]: Started model main.fct_resumo
+15:32:11.175680 [debug]: Started rendering model main.fct_resumo
+15:32:11.178107 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:32:11.178306 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:32:11.179849 [debug]: Started analyzing model main.fct_resumo
+15:32:11.187969 [debug]: Finished analyzing [  0.01s] model main.fct_resumo [success]
+15:32:11.188801 [info ]: Started running model main.fct_resumo
+15:32:11.195600 [debug]: Writing runtime sql for node "model.meu_projeto.fct_resumo"
+15:32:11.218386 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."fct_resumo__dbt_tmp" as (
+    select
+    day,
+    sex,
+    sum(valor_total) as total_vendas,
+    avg(valor_total) as media_vendas,
+    count(*) as quantidade
+from "meu_banco"."main"."stg_tips"
+group by 1,2
+  );
+
+15:32:11.224006 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo" rename to "fct_resumo__dbt_backup"
+15:32:11.228688 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo__dbt_tmp" rename to "fct_resumo"
+15:32:11.237272 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."fct_resumo__dbt_backup" cascade
+    
+15:32:11.238277 [info ]: Finished running [  0.05s] model main.fct_resumo [success]
+15:32:11.238444 [info ]:  Succeeded [  0.06s] model main.fct_resumo (view)
+15:32:12.136008 [error]: [DbDriverFailed (dbt1308)]: Database Error in model stg_vendas (target\run\meu_projeto\models\staging\stg_vendas.sql)
+  Catalog Error: Table with name stg_vendas does not exist!
+  Did you mean "stg_tips"?
+  
+  LINE 11: FROM stg_vendas
+                ^
+  (in run\meu_projeto\models/staging\stg_vendas.sql)
+15:32:12.136173 [info ]: Finished running [  1.20s] model main.stg_vendas [error]
+15:32:12.136769 [info ]:     Failed [  1.22s] model main.stg_vendas (view)
+15:32:12.140113 [info ]: Started model main.fct_vendas
+15:32:12.140146 [debug]: Started rendering model main.fct_vendas
+15:32:12.140190 [debug]: Finished rendering [  0.00s] model main.fct_vendas [skipped]
+15:32:12.140967 [info ]: Finished rendering [  1.23s] (4 nodes, 1 skipped, 0 errors)
+15:32:12.142539 [debug]: Started analyzing model main.fct_vendas
+15:32:12.142593 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [skipped]
+15:32:12.142705 [info ]: Finished analyzing [  1.22s] (4 nodes, 1 skipped, 0 errors)
+15:32:12.143767 [info ]: Started running model main.fct_vendas
+15:32:12.143827 [info ]: Finished running [  0.00s] model main.fct_vendas [skipped]
+15:32:12.143936 [info ]: Finished running [  1.21s] (4 nodes, 1 skipped, 1 errors)
+15:32:12.149877 [info ]:    Skipped [-------] model main.fct_vendas (view)
+15:32:12.346296 [info ]: New version available 2.0.0-preview.210 (run `dbt system update`)
+15:32:12.456638 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error for target 'dev' [2.9s]
+Processed: 4 models
+Summary: 4 total | 2 success | 1 error | 1 skipped
+==================== 2026-08-19T15:38:51.995299Z | 01a01aac-ded7-7720-a367-f1333489996b ====================
+15:38:51.995533 [info ]: dbt-fusion 2.0.0-preview.205
+15:38:51.996468 [info ]: Started loading project
+15:38:52.000927 [info ]: Loading ~/.dbt/profiles.yml
+15:38:52.013666 [debug]:    Started loading packages
+15:38:52.020958 [debug]:     Loaded [  0.01s] packages
+15:38:52.022394 [info ]: Finished loading project [  0.03s]
+15:38:52.023569 [info ]: Started parsing
+15:38:52.088261 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:38:52.088619 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:38:52.091923 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:38:52.093842 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:38:52.094698 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:38:52.095909 [debug]: Finished parsing models/staging/stg_vendas.sql [  0.00s]
+15:38:52.110058 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_day.sql [  0.00s]
+15:38:52.115360 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_sex.sql [  0.01s]
+15:38:52.117862 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_tip.sql [  0.00s]
+15:38:52.119199 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_total_bill.sql [  0.00s]
+15:38:52.120417 [debug]: Finished parsing target\generic_tests\unique_stg_vendas_id.sql [  0.00s]
+15:38:52.121654 [debug]: Finished parsing target\generic_tests\not_null_stg_vendas_id.sql [  0.00s]
+15:38:52.522178 [info ]: Finished parsing [  0.50s]
+15:38:52.523435 [info ]: Started scheduling
+15:38:52.523712 [info ]: Finished scheduling [  0.00s]
+15:38:52.537628 [debug]: No platform credentials found, skipping remote license
+15:38:52.537900 [debug]: License check failed: Feature not licensed: 'lineage'
+15:38:52.538322 [info ]: Started building task graph
+15:38:52.538659 [info ]: Finished building task graph [  0.00s]
+15:38:52.597421 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"meu_banco"'
+    
+  
+  
+15:38:52.599830 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='meu_banco'
+        and type='sqlite'
+    
+  
+15:38:52.600942 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "meu_banco"."main"
+    
+15:38:52.601202 [info ]: Started rendering (4 nodes)
+15:38:52.601433 [info ]: Started model main.stg_vendas
+15:38:52.601459 [debug]: Started rendering model main.stg_vendas
+15:38:52.601513 [info ]: Started model main.stg_tips
+15:38:52.601547 [debug]: Started rendering model main.stg_tips
+15:38:52.604312 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:38:52.604655 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\compiled\meu_projeto\models\staging\stg_tips.sql
+15:38:52.604600 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:38:52.606547 [info ]: Started analyzing (4 nodes)
+15:38:52.606886 [debug]: Started analyzing model main.stg_vendas
+15:38:52.606946 [debug]: Finished rendering [  0.01s] model main.stg_tips [success]
+15:38:52.609363 [debug]: Started analyzing model main.stg_tips
+15:38:52.618063 [debug]: Finished analyzing [  0.01s] model main.stg_vendas [success]
+15:38:52.618454 [info ]: Started running (4 nodes)
+15:38:52.618675 [info ]: Started running model main.stg_vendas
+15:38:52.618732 [debug]: Finished analyzing [  0.01s] model main.stg_tips [success]
+15:38:52.619400 [info ]: Started running model main.stg_tips
+15:38:52.632814 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+15:38:52.636224 [debug]: Query executed on node model.meu_projeto.stg_tips:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+15:38:52.639455 [debug]: Writing runtime sql for node "model.meu_projeto.stg_vendas"
+15:38:52.644043 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_vendas__dbt_tmp" as (
+    SELECT
+    id,
+    cliente,
+    categoria,
+    valor,
+    data_venda
+from read_csv_auto('../data/stg_vendas.csv')
+  );
+
+15:38:52.649596 [debug]: Writing runtime sql for node "model.meu_projeto.stg_tips"
+15:38:52.681031 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_tips__dbt_tmp" as (
+    select
+    total_bill,
+    tip,
+    sex,
+    day,
+    total_bill + tip as valor_total
+from read_csv_auto('C:/Users/tl100/OneDrive/Documents/Carreira dados/teste-volta/pandas/tips.csv')
+  );
+
+15:38:52.689058 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips" rename to "stg_tips__dbt_backup"
+15:38:52.695800 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips__dbt_tmp" rename to "stg_tips"
+15:38:52.705614 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."stg_tips__dbt_backup" cascade
+    
+15:38:52.706727 [info ]: Finished running [  0.09s] model main.stg_tips [success]
+15:38:52.707317 [info ]:  Succeeded [  0.10s] model main.stg_tips (view)
+15:38:52.708059 [info ]: Started model main.fct_resumo
+15:38:52.708091 [debug]: Started rendering model main.fct_resumo
+15:38:52.711560 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:38:52.711837 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:38:52.713626 [debug]: Started analyzing model main.fct_resumo
+15:38:52.722677 [debug]: Finished analyzing [  0.01s] model main.fct_resumo [success]
+15:38:52.723615 [info ]: Started running model main.fct_resumo
+15:38:52.732298 [debug]: Writing runtime sql for node "model.meu_projeto.fct_resumo"
+15:38:52.750874 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."fct_resumo__dbt_tmp" as (
+    select
+    day,
+    sex,
+    sum(valor_total) as total_vendas,
+    avg(valor_total) as media_vendas,
+    count(*) as quantidade
+from "meu_banco"."main"."stg_tips"
+group by 1,2
+  );
+
+15:38:52.758133 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo" rename to "fct_resumo__dbt_backup"
+15:38:52.765700 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo__dbt_tmp" rename to "fct_resumo"
+15:38:52.774560 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."fct_resumo__dbt_backup" cascade
+    
+15:38:52.776231 [info ]: Finished running [  0.05s] model main.fct_resumo [success]
+15:38:52.779725 [info ]:  Succeeded [  0.06s] model main.fct_resumo (view)
+15:38:53.644648 [error]: [DbDriverFailed (dbt1308)]: Database Error in model stg_vendas (target\run\meu_projeto\models\staging\stg_vendas.sql)
+  IO Error: No files found that match the pattern "../data/stg_vendas.csv"
+  
+  LINE 11: from read_csv_auto('../data/stg_vendas.csv')
+                ^
+  (in run\meu_projeto\models/staging\stg_vendas.sql)
+15:38:53.644795 [info ]: Finished running [  1.03s] model main.stg_vendas [error]
+15:38:53.646431 [info ]:     Failed [  1.04s] model main.stg_vendas (view)
+15:38:53.647884 [info ]: Started model main.fct_vendas
+15:38:53.647928 [debug]: Started rendering model main.fct_vendas
+15:38:53.647992 [debug]: Finished rendering [  0.00s] model main.fct_vendas [skipped]
+15:38:53.648151 [info ]: Finished rendering [  1.05s] (4 nodes, 1 skipped, 0 errors)
+15:38:53.649346 [debug]: Started analyzing model main.fct_vendas
+15:38:53.649413 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [skipped]
+15:38:53.649572 [info ]: Finished analyzing [  1.04s] (4 nodes, 1 skipped, 0 errors)
+15:38:53.650461 [info ]: Started running model main.fct_vendas
+15:38:53.650516 [info ]: Finished running [  0.00s] model main.fct_vendas [skipped]
+15:38:53.650659 [info ]: Finished running [  1.03s] (4 nodes, 1 skipped, 1 errors)
+15:38:53.651204 [info ]:    Skipped [-------] model main.fct_vendas (view)
+15:38:53.722536 [info ]: New version available 2.0.0-preview.210 (run `dbt system update`)
+15:38:53.873297 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error for target 'dev' [1.9s]
+Processed: 4 models
+Summary: 4 total | 2 success | 1 error | 1 skipped
+==================== 2026-08-19T15:40:15.593865Z | 01a01aae-2565-7ed3-80b7-62cc2eebdae2 ====================
+15:40:15.594197 [info ]: dbt-fusion 2.0.0-preview.205
+15:40:15.595065 [info ]: Started loading project
+15:40:15.599629 [info ]: Loading ~/.dbt/profiles.yml
+15:40:15.616459 [debug]:    Started loading packages
+15:40:15.624028 [debug]:     Loaded [  0.01s] packages
+15:40:15.625355 [info ]: Finished loading project [  0.03s]
+15:40:15.626452 [info ]: Started parsing
+15:40:15.792604 [debug]: Finished parsing models/staging/stg_tips.yml [  0.02s]
+15:40:15.793135 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:40:15.811808 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:40:15.812806 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:40:15.813564 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:40:15.814267 [debug]: Finished parsing models/staging/stg_vendas.sql [  0.00s]
+15:40:15.828914 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_day.sql [  0.00s]
+15:40:15.830255 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_sex.sql [  0.00s]
+15:40:15.831514 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_tip.sql [  0.00s]
+15:40:15.832390 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_total_bill.sql [  0.00s]
+15:40:15.833201 [debug]: Finished parsing target\generic_tests\unique_stg_vendas_id.sql [  0.00s]
+15:40:15.834061 [debug]: Finished parsing target\generic_tests\not_null_stg_vendas_id.sql [  0.00s]
+15:40:16.182827 [info ]: Finished parsing [  0.56s]
+15:40:16.184071 [info ]: Started scheduling
+15:40:16.184323 [info ]: Finished scheduling [  0.00s]
+15:40:16.200510 [debug]: No platform credentials found, skipping remote license
+15:40:16.200815 [debug]: License check failed: Feature not licensed: 'lineage'
+15:40:16.201289 [info ]: Started building task graph
+15:40:16.201615 [info ]: Finished building task graph [  0.00s]
+15:40:16.242765 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"meu_banco"'
+    
+  
+  
+15:40:16.244780 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='meu_banco'
+        and type='sqlite'
+    
+  
+15:40:16.245924 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "meu_banco"."main"
+    
+15:40:16.246153 [info ]: Started rendering (4 nodes)
+15:40:16.246359 [info ]: Started model main.stg_vendas
+15:40:16.246391 [debug]: Started rendering model main.stg_vendas
+15:40:16.246457 [info ]: Started model main.stg_tips
+15:40:16.246508 [debug]: Started rendering model main.stg_tips
+15:40:16.249202 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\compiled\meu_projeto\models\staging\stg_tips.sql
+15:40:16.249488 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:40:16.249406 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:40:16.250183 [info ]: Started analyzing (4 nodes)
+15:40:16.250572 [debug]: Started analyzing model main.stg_tips
+15:40:16.250638 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:40:16.251473 [debug]: Started analyzing model main.stg_vendas
+15:40:16.258757 [debug]: Finished analyzing [  0.01s] model main.stg_vendas [success]
+15:40:16.259205 [info ]: Started running (4 nodes)
+15:40:16.259357 [info ]: Started running model main.stg_vendas
+15:40:16.259667 [debug]: Finished analyzing [  0.01s] model main.stg_tips [success]
+15:40:16.260168 [info ]: Started running model main.stg_tips
+15:40:16.271994 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+15:40:16.273378 [debug]: Query executed on node model.meu_projeto.stg_tips:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+15:40:16.279711 [debug]: Writing runtime sql for node "model.meu_projeto.stg_tips"
+15:40:16.279964 [debug]: Writing runtime sql for node "model.meu_projeto.stg_vendas"
+15:40:16.290454 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_vendas__dbt_tmp" as (
+    SELECT
+    id,
+    cliente,
+    categoria,
+    valor,
+    data_venda
+from read_csv_auto('/../data/stg_vendas.csv')
+  );
+
+15:40:16.310551 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_tips__dbt_tmp" as (
+    select
+    total_bill,
+    tip,
+    sex,
+    day,
+    total_bill + tip as valor_total
+from read_csv_auto('C:/Users/tl100/OneDrive/Documents/Carreira dados/teste-volta/pandas/tips.csv')
+  );
+
+15:40:16.315709 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips" rename to "stg_tips__dbt_backup"
+15:40:16.322787 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips__dbt_tmp" rename to "stg_tips"
+15:40:16.329680 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."stg_tips__dbt_backup" cascade
+    
+15:40:16.331647 [info ]: Finished running [  0.07s] model main.stg_tips [success]
+15:40:16.332715 [info ]:  Succeeded [  0.08s] model main.stg_tips (view)
+15:40:16.334302 [info ]: Started model main.fct_resumo
+15:40:16.334336 [debug]: Started rendering model main.fct_resumo
+15:40:16.337226 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:40:16.337586 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:40:16.339286 [debug]: Started analyzing model main.fct_resumo
+15:40:16.347090 [debug]: Finished analyzing [  0.01s] model main.fct_resumo [success]
+15:40:16.347554 [info ]: Started running model main.fct_resumo
+15:40:16.352860 [debug]: Writing runtime sql for node "model.meu_projeto.fct_resumo"
+15:40:16.368916 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."fct_resumo__dbt_tmp" as (
+    select
+    day,
+    sex,
+    sum(valor_total) as total_vendas,
+    avg(valor_total) as media_vendas,
+    count(*) as quantidade
+from "meu_banco"."main"."stg_tips"
+group by 1,2
+  );
+
+15:40:16.375518 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo" rename to "fct_resumo__dbt_backup"
+15:40:16.380216 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo__dbt_tmp" rename to "fct_resumo"
+15:40:16.385872 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."fct_resumo__dbt_backup" cascade
+    
+15:40:16.387526 [info ]: Finished running [  0.04s] model main.fct_resumo [success]
+15:40:16.388148 [info ]:  Succeeded [  0.05s] model main.fct_resumo (view)
+15:40:17.291087 [error]: [DbDriverFailed (dbt1308)]: Database Error in model stg_vendas (target\run\meu_projeto\models\staging\stg_vendas.sql)
+  IO Error: No files found that match the pattern "/../data/stg_vendas.csv"
+  
+  LINE 11: from read_csv_auto('/../data/stg_vendas.csv')
+                ^
+  (in run\meu_projeto\models/staging\stg_vendas.sql)
+15:40:17.291230 [info ]: Finished running [  1.03s] model main.stg_vendas [error]
+15:40:17.292950 [info ]:     Failed [  1.04s] model main.stg_vendas (view)
+15:40:17.294286 [info ]: Started model main.fct_vendas
+15:40:17.294329 [debug]: Started rendering model main.fct_vendas
+15:40:17.294383 [debug]: Finished rendering [  0.00s] model main.fct_vendas [skipped]
+15:40:17.294610 [info ]: Finished rendering [  1.05s] (4 nodes, 1 skipped, 0 errors)
+15:40:17.295758 [debug]: Started analyzing model main.fct_vendas
+15:40:17.295814 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [skipped]
+15:40:17.295983 [info ]: Finished analyzing [  1.05s] (4 nodes, 1 skipped, 0 errors)
+15:40:17.296771 [info ]: Started running model main.fct_vendas
+15:40:17.296826 [info ]: Finished running [  0.00s] model main.fct_vendas [skipped]
+15:40:17.296954 [info ]: Finished running [  1.04s] (4 nodes, 1 skipped, 1 errors)
+15:40:17.297430 [info ]:    Skipped [-------] model main.fct_vendas (view)
+15:40:17.361274 [info ]: New version available 2.0.0-preview.210 (run `dbt system update`)
+15:40:17.480617 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error for target 'dev' [1.9s]
+Processed: 4 models
+Summary: 4 total | 2 success | 1 error | 1 skipped
+==================== 2026-08-19T15:40:41.933424Z | 01a01aae-8c49-7ee0-8068-3a2c405cb9ed ====================
+15:40:41.933686 [info ]: dbt-fusion 2.0.0-preview.205
+15:40:41.934689 [info ]: Started loading project
+15:40:41.938993 [info ]: Loading ~/.dbt/profiles.yml
+15:40:41.953821 [debug]:    Started loading packages
+15:40:41.960026 [debug]:     Loaded [  0.01s] packages
+15:40:41.961404 [info ]: Finished loading project [  0.03s]
+15:40:41.962405 [info ]: Started parsing
+15:40:42.023603 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:40:42.024079 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:40:42.026724 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:40:42.027416 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:40:42.028066 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:40:42.028690 [debug]: Finished parsing models/staging/stg_vendas.sql [  0.00s]
+15:40:42.041955 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_day.sql [  0.00s]
+15:40:42.043247 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_sex.sql [  0.00s]
+15:40:42.044750 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_tip.sql [  0.00s]
+15:40:42.046185 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_total_bill.sql [  0.00s]
+15:40:42.047393 [debug]: Finished parsing target\generic_tests\unique_stg_vendas_id.sql [  0.00s]
+15:40:42.048580 [debug]: Finished parsing target\generic_tests\not_null_stg_vendas_id.sql [  0.00s]
+15:40:42.404054 [info ]: Finished parsing [  0.44s]
+15:40:42.405287 [info ]: Started scheduling
+15:40:42.405560 [info ]: Finished scheduling [  0.00s]
+15:40:42.417877 [debug]: No platform credentials found, skipping remote license
+15:40:42.418250 [debug]: License check failed: Feature not licensed: 'lineage'
+15:40:42.418885 [info ]: Started building task graph
+15:40:42.419278 [info ]: Finished building task graph [  0.00s]
+15:40:42.469025 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"meu_banco"'
+    
+  
+  
+15:40:42.471101 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='meu_banco'
+        and type='sqlite'
+    
+  
+15:40:42.471841 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "meu_banco"."main"
+    
+15:40:42.472049 [info ]: Started rendering (4 nodes)
+15:40:42.472284 [info ]: Started model main.stg_vendas
+15:40:42.472303 [debug]: Started rendering model main.stg_vendas
+15:40:42.472346 [info ]: Started model main.stg_tips
+15:40:42.472397 [debug]: Started rendering model main.stg_tips
+15:40:42.474541 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:40:42.475048 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\compiled\meu_projeto\models\staging\stg_tips.sql
+15:40:42.475395 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:40:42.475993 [info ]: Started analyzing (4 nodes)
+15:40:42.476395 [debug]: Started analyzing model main.stg_vendas
+15:40:42.476447 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:40:42.477501 [debug]: Started analyzing model main.stg_tips
+15:40:42.487398 [debug]: Finished analyzing [  0.01s] model main.stg_vendas [success]
+15:40:42.487799 [info ]: Started running (4 nodes)
+15:40:42.487976 [info ]: Started running model main.stg_vendas
+15:40:42.488906 [debug]: Finished analyzing [  0.01s] model main.stg_tips [success]
+15:40:42.490576 [info ]: Started running model main.stg_tips
+15:40:42.503489 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+15:40:42.504406 [debug]: Query executed on node model.meu_projeto.stg_tips:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+15:40:42.509830 [debug]: Writing runtime sql for node "model.meu_projeto.stg_vendas"
+15:40:42.510679 [debug]: Writing runtime sql for node "model.meu_projeto.stg_tips"
+15:40:42.513989 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_vendas__dbt_tmp" as (
+    SELECT
+    id,
+    cliente,
+    categoria,
+    valor,
+    data_venda
+from read_csv_auto('/data/stg_vendas.csv')
+  );
+
+15:40:42.531413 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_tips__dbt_tmp" as (
+    select
+    total_bill,
+    tip,
+    sex,
+    day,
+    total_bill + tip as valor_total
+from read_csv_auto('C:/Users/tl100/OneDrive/Documents/Carreira dados/teste-volta/pandas/tips.csv')
+  );
+
+15:40:42.539039 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips" rename to "stg_tips__dbt_backup"
+15:40:42.545979 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips__dbt_tmp" rename to "stg_tips"
+15:40:42.554534 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."stg_tips__dbt_backup" cascade
+    
+15:40:42.556055 [info ]: Finished running [  0.07s] model main.stg_tips [success]
+15:40:42.556610 [info ]:  Succeeded [  0.08s] model main.stg_tips (view)
+15:40:42.557274 [info ]: Started model main.fct_resumo
+15:40:42.557305 [debug]: Started rendering model main.fct_resumo
+15:40:42.559405 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:40:42.559575 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:40:42.560101 [debug]: Started analyzing model main.fct_resumo
+15:40:42.568770 [debug]: Finished analyzing [  0.01s] model main.fct_resumo [success]
+15:40:42.569583 [info ]: Started running model main.fct_resumo
+15:40:42.577018 [debug]: Writing runtime sql for node "model.meu_projeto.fct_resumo"
+15:40:42.594833 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."fct_resumo__dbt_tmp" as (
+    select
+    day,
+    sex,
+    sum(valor_total) as total_vendas,
+    avg(valor_total) as media_vendas,
+    count(*) as quantidade
+from "meu_banco"."main"."stg_tips"
+group by 1,2
+  );
+
+15:40:42.600923 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo" rename to "fct_resumo__dbt_backup"
+15:40:42.607026 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo__dbt_tmp" rename to "fct_resumo"
+15:40:42.613569 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."fct_resumo__dbt_backup" cascade
+    
+15:40:42.614411 [info ]: Finished running [  0.04s] model main.fct_resumo [success]
+15:40:42.615343 [info ]:  Succeeded [  0.05s] model main.fct_resumo (view)
+15:40:43.514647 [error]: [DbDriverFailed (dbt1308)]: Database Error in model stg_vendas (target\run\meu_projeto\models\staging\stg_vendas.sql)
+  IO Error: No files found that match the pattern "/data/stg_vendas.csv"
+  
+  LINE 11: from read_csv_auto('/data/stg_vendas.csv')
+                ^
+  (in run\meu_projeto\models/staging\stg_vendas.sql)
+15:40:43.514819 [info ]: Finished running [  1.03s] model main.stg_vendas [error]
+15:40:43.516758 [info ]:     Failed [  1.04s] model main.stg_vendas (view)
+15:40:43.518600 [info ]: Started model main.fct_vendas
+15:40:43.518654 [debug]: Started rendering model main.fct_vendas
+15:40:43.518734 [debug]: Finished rendering [  0.00s] model main.fct_vendas [skipped]
+15:40:43.518990 [info ]: Finished rendering [  1.05s] (4 nodes, 1 skipped, 0 errors)
+15:40:43.521097 [debug]: Started analyzing model main.fct_vendas
+15:40:43.521206 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [skipped]
+15:40:43.521412 [info ]: Finished analyzing [  1.05s] (4 nodes, 1 skipped, 0 errors)
+15:40:43.522685 [info ]: Started running model main.fct_vendas
+15:40:43.522756 [info ]: Finished running [  0.00s] model main.fct_vendas [skipped]
+15:40:43.522932 [info ]: Finished running [  1.04s] (4 nodes, 1 skipped, 1 errors)
+15:40:43.524208 [info ]:    Skipped [-------] model main.fct_vendas (view)
+15:40:43.642741 [info ]: New version available 2.0.0-preview.210 (run `dbt system update`)
+15:40:43.807615 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error for target 'dev' [1.9s]
+Processed: 4 models
+Summary: 4 total | 2 success | 1 error | 1 skipped
+==================== 2026-08-19T15:41:07.010235Z | 01a01aae-ee3e-70e0-ae64-c288c9c7ef01 ====================
+15:41:07.010450 [info ]: dbt-fusion 2.0.0-preview.205
+15:41:07.011342 [info ]: Started loading project
+15:41:07.015823 [info ]: Loading ~/.dbt/profiles.yml
+15:41:07.029456 [debug]:    Started loading packages
+15:41:07.034175 [debug]:     Loaded [  0.00s] packages
+15:41:07.036502 [info ]: Finished loading project [  0.03s]
+15:41:07.037830 [info ]: Started parsing
+15:41:07.097466 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:41:07.097854 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:41:07.100787 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:41:07.102203 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:41:07.103857 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:41:07.104880 [debug]: Finished parsing models/staging/stg_vendas.sql [  0.00s]
+15:41:07.118326 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_day.sql [  0.00s]
+15:41:07.119824 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_sex.sql [  0.00s]
+15:41:07.121681 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_tip.sql [  0.00s]
+15:41:07.122953 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_total_bill.sql [  0.00s]
+15:41:07.125212 [debug]: Finished parsing target\generic_tests\unique_stg_vendas_id.sql [  0.00s]
+15:41:07.127574 [debug]: Finished parsing target\generic_tests\not_null_stg_vendas_id.sql [  0.00s]
+15:41:07.491000 [info ]: Finished parsing [  0.45s]
+15:41:07.492318 [info ]: Started scheduling
+15:41:07.492681 [info ]: Finished scheduling [  0.00s]
+15:41:07.506212 [debug]: No platform credentials found, skipping remote license
+15:41:07.506496 [debug]: License check failed: Feature not licensed: 'lineage'
+15:41:07.506961 [info ]: Started building task graph
+15:41:07.507282 [info ]: Finished building task graph [  0.00s]
+15:41:07.555967 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"meu_banco"'
+    
+  
+  
+15:41:07.557509 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='meu_banco'
+        and type='sqlite'
+    
+  
+15:41:07.558282 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "meu_banco"."main"
+    
+15:41:07.558470 [info ]: Started rendering (4 nodes)
+15:41:07.558686 [info ]: Started model main.stg_vendas
+15:41:07.558716 [debug]: Started rendering model main.stg_vendas
+15:41:07.558779 [info ]: Started model main.stg_tips
+15:41:07.558813 [debug]: Started rendering model main.stg_tips
+15:41:07.561229 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:41:07.561246 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\compiled\meu_projeto\models\staging\stg_tips.sql
+15:41:07.561451 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:41:07.562709 [info ]: Started analyzing (4 nodes)
+15:41:07.563526 [debug]: Started analyzing model main.stg_tips
+15:41:07.563606 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:41:07.563930 [debug]: Started analyzing model main.stg_vendas
+15:41:07.575076 [debug]: Finished analyzing [  0.01s] model main.stg_vendas [success]
+15:41:07.575572 [info ]: Started running (4 nodes)
+15:41:07.575751 [info ]: Started running model main.stg_vendas
+15:41:07.575797 [debug]: Finished analyzing [  0.01s] model main.stg_tips [success]
+15:41:07.576226 [info ]: Started running model main.stg_tips
+15:41:07.589208 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+15:41:07.589209 [debug]: Query executed on node model.meu_projeto.stg_tips:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+15:41:07.593787 [debug]: Writing runtime sql for node "model.meu_projeto.stg_vendas"
+15:41:07.593921 [debug]: Writing runtime sql for node "model.meu_projeto.stg_tips"
+15:41:07.624043 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_vendas__dbt_tmp" as (
+    SELECT
+    id,
+    cliente,
+    categoria,
+    valor,
+    data_venda
+from read_csv_auto('C:\Users\tl100\OneDrive\Documents\Carreira dados\teste-volta\dbt\models\data\stg_vendas.csv')
+  );
+
+15:41:07.625524 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_tips__dbt_tmp" as (
+    select
+    total_bill,
+    tip,
+    sex,
+    day,
+    total_bill + tip as valor_total
+from read_csv_auto('C:/Users/tl100/OneDrive/Documents/Carreira dados/teste-volta/pandas/tips.csv')
+  );
+
+15:41:07.631005 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_vendas__dbt_tmp" rename to "stg_vendas"
+15:41:07.632929 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips" rename to "stg_tips__dbt_backup"
+15:41:07.637441 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."stg_vendas__dbt_backup" cascade
+    
+15:41:07.638655 [info ]: Finished running [  0.06s] model main.stg_vendas [success]
+15:41:07.639276 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips__dbt_tmp" rename to "stg_tips"
+15:41:07.639201 [info ]:  Succeeded [  0.08s] model main.stg_vendas (view)
+15:41:07.639860 [info ]: Started model main.fct_vendas
+15:41:07.639893 [debug]: Started rendering model main.fct_vendas
+15:41:07.642890 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:41:07.643415 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:41:07.644647 [debug]: Started analyzing model main.fct_vendas
+15:41:07.648553 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."stg_tips__dbt_backup" cascade
+    
+15:41:07.650126 [info ]: Finished running [  0.07s] model main.stg_tips [success]
+15:41:07.651581 [info ]:  Succeeded [  0.09s] model main.stg_tips (view)
+15:41:07.654270 [warn ]: [SyntaxInvalid (dbt0101)]: mismatched input 'as' expecting one of <EOF>, ';'
+  --> models/marts/fct_vendas.sql:7:5 (target\compiled\meu_projeto\models\marts\fct_vendas.sql:7:5)
+15:41:07.654385 [info ]: Started model main.fct_resumo
+15:41:07.654416 [debug]: Started rendering model main.fct_resumo
+15:41:07.654475 [debug]: Finished analyzing [  0.01s] model main.fct_vendas [success]
+15:41:07.654935 [info ]: Started running model main.fct_vendas
+15:41:07.656786 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:41:07.657007 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:41:07.659615 [info ]: Finished rendering [  0.10s] (4 nodes, 0 skipped, 0 errors)
+15:41:07.660284 [debug]: Started analyzing model main.fct_resumo
+15:41:07.662551 [debug]: Writing runtime sql for node "model.meu_projeto.fct_vendas"
+15:41:07.666020 [debug]: Query executed on node model.meu_projeto.fct_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."fct_vendas__dbt_tmp" as (
+    SELECT
+    cliente,
+    categoria,
+    SUM(valor) AS total_vendas,
+    AVG(valor) AS media_vendas,
+    COUNT(*) AS quantidade_vendas,
+    as percentual_total
+FROM "meu_banco"."main"."stg_vendas"
+GROUP BY cliente, categoria
+  );
+
+15:41:07.663993 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:41:07.666468 [info ]: Finished analyzing [  0.10s] (4 nodes, 0 skipped, 0 errors)
+15:41:07.668161 [info ]: Started running model main.fct_resumo
+15:41:07.675824 [debug]: Writing runtime sql for node "model.meu_projeto.fct_resumo"
+15:41:07.694518 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."fct_resumo__dbt_tmp" as (
+    select
+    day,
+    sex,
+    sum(valor_total) as total_vendas,
+    avg(valor_total) as media_vendas,
+    count(*) as quantidade
+from "meu_banco"."main"."stg_tips"
+group by 1,2
+  );
+
+15:41:07.700807 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo" rename to "fct_resumo__dbt_backup"
+15:41:07.705958 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo__dbt_tmp" rename to "fct_resumo"
+15:41:07.714060 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."fct_resumo__dbt_backup" cascade
+    
+15:41:07.714889 [info ]: Finished running [  0.05s] model main.fct_resumo [success]
+15:41:07.715245 [info ]:  Succeeded [  0.05s] model main.fct_resumo (view)
+15:41:08.684144 [error]: [DbDriverFailed (dbt1308)]: Database Error in model fct_vendas (target\run\meu_projeto\models\marts\fct_vendas.sql)
+  Parser Error: syntax error at or near "as"
+  
+  LINE 11:     as percentual_total
+               ^
+  (in run\meu_projeto\models/marts\fct_vendas.sql)
+15:41:08.684277 [info ]: Finished running [  1.03s] model main.fct_vendas [error]
+15:41:08.736562 [info ]: Finished running [  1.16s] (4 nodes, 0 skipped, 1 errors)
+15:41:08.740247 [info ]:     Failed [  1.04s] model main.fct_vendas (view)
+15:41:08.828177 [info ]: New version available 2.0.0-preview.210 (run `dbt system update`)
+15:41:08.935951 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 warning and 1 error for target 'dev' [1.9s]
+Processed: 4 models
+Summary: 4 total | 3 success | 1 error
+==================== 2026-08-19T15:46:07.480445Z | 01a01ab3-83f4-72c1-b2cd-616938a84353 ====================
+15:46:07.480657 [info ]: dbt-fusion 2.0.0-preview.205
+15:46:07.481543 [info ]: Started loading project
+15:46:07.486403 [info ]: Loading ~/.dbt/profiles.yml
+15:46:07.498145 [debug]:    Started loading packages
+15:46:07.505445 [debug]:     Loaded [  0.01s] packages
+15:46:07.508530 [info ]: Finished loading project [  0.03s]
+15:46:07.509854 [info ]: Started parsing
+15:46:07.572387 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:46:07.572716 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:46:07.575149 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:46:07.575799 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:46:07.576473 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:46:07.577038 [debug]: Finished parsing models/staging/stg_vendas.sql [  0.00s]
+15:46:07.590511 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_day.sql [  0.00s]
+15:46:07.591956 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_sex.sql [  0.00s]
+15:46:07.595135 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_tip.sql [  0.00s]
+15:46:07.596375 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_total_bill.sql [  0.00s]
+15:46:07.597180 [debug]: Finished parsing target\generic_tests\unique_stg_vendas_id.sql [  0.00s]
+15:46:07.598006 [debug]: Finished parsing target\generic_tests\not_null_stg_vendas_id.sql [  0.00s]
+15:46:07.947862 [info ]: Finished parsing [  0.44s]
+15:46:07.950271 [info ]: Started scheduling
+15:46:07.950631 [info ]: Finished scheduling [  0.00s]
+15:46:07.973347 [debug]: No platform credentials found, skipping remote license
+15:46:07.973735 [debug]: License check failed: Feature not licensed: 'lineage'
+15:46:07.974354 [info ]: Started building task graph
+15:46:07.974720 [info ]: Finished building task graph [  0.00s]
+15:46:08.023057 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"meu_banco"'
+    
+  
+  
+15:46:08.024664 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='meu_banco'
+        and type='sqlite'
+    
+  
+15:46:08.025348 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "meu_banco"."main"
+    
+15:46:08.025526 [info ]: Started rendering (4 nodes)
+15:46:08.025699 [info ]: Started model main.stg_vendas
+15:46:08.025718 [debug]: Started rendering model main.stg_vendas
+15:46:08.025761 [info ]: Started model main.stg_tips
+15:46:08.025799 [debug]: Started rendering model main.stg_tips
+15:46:08.027717 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\compiled\meu_projeto\models\staging\stg_tips.sql
+15:46:08.027768 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:46:08.027895 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:46:08.029528 [info ]: Started analyzing (4 nodes)
+15:46:08.029764 [debug]: Started analyzing model main.stg_tips
+15:46:08.029835 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:46:08.030146 [debug]: Started analyzing model main.stg_vendas
+15:46:08.040721 [debug]: Finished analyzing [  0.01s] model main.stg_vendas [success]
+15:46:08.041667 [info ]: Started running (4 nodes)
+15:46:08.041866 [info ]: Started running model main.stg_vendas
+15:46:08.041926 [debug]: Finished analyzing [  0.01s] model main.stg_tips [success]
+15:46:08.042309 [info ]: Started running model main.stg_tips
+15:46:08.056082 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+15:46:08.057348 [debug]: Query executed on node model.meu_projeto.stg_tips:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+15:46:08.061940 [debug]: Writing runtime sql for node "model.meu_projeto.stg_vendas"
+15:46:08.062202 [debug]: Writing runtime sql for node "model.meu_projeto.stg_tips"
+15:46:08.114135 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_vendas__dbt_tmp" as (
+    SELECT
+    id,
+    cliente,
+    categoria,
+    valor,
+    data_venda
+from read_csv_auto('C:\Users\tl100\OneDrive\Documents\Carreira dados\teste-volta\dbt\models\data\stg_vendas.csv')
+  );
+
+15:46:08.121827 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_vendas" rename to "stg_vendas__dbt_backup"
+15:46:08.127827 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_vendas__dbt_tmp" rename to "stg_vendas"
+15:46:08.133127 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_tips__dbt_tmp" as (
+    select
+    total_bill,
+    tip,
+    sex,
+    day,
+    total_bill + tip as valor_total
+from read_csv_auto('C:/Users/tl100/OneDrive/Documents/Carreira dados/teste-volta/pandas/tips.csv')
+  );
+
+15:46:08.136127 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."stg_vendas__dbt_backup" cascade
+    
+15:46:08.140172 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips" rename to "stg_tips__dbt_backup"
+15:46:08.147185 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips__dbt_tmp" rename to "stg_tips"
+15:46:08.156139 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."stg_tips__dbt_backup" cascade
+    
+15:46:08.137265 [info ]: Finished running [  0.10s] model main.stg_vendas [success]
+15:46:08.157806 [info ]:  Succeeded [  0.11s] model main.stg_vendas (view)
+15:46:08.211123 [info ]: Started model main.fct_vendas
+15:46:08.211160 [debug]: Started rendering model main.fct_vendas
+15:46:08.211219 [info ]: Finished running [  0.17s] model main.stg_tips [success]
+15:46:08.211588 [info ]:  Succeeded [  0.18s] model main.stg_tips (view)
+15:46:08.213643 [info ]: Started model main.fct_resumo
+15:46:08.213674 [debug]: Started rendering model main.fct_resumo
+15:46:08.213722 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:46:08.213984 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:46:08.216124 [debug]: Started analyzing model main.fct_vendas
+15:46:08.218934 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:46:08.219372 [debug]: Finished rendering [  0.01s] model main.fct_resumo [success]
+15:46:08.222264 [info ]: Finished rendering [  0.20s] (4 nodes, 0 skipped, 0 errors)
+15:46:08.254678 [debug]: Started analyzing model main.fct_resumo
+15:46:08.254906 [debug]: Finished analyzing [  0.04s] model main.fct_vendas [success]
+15:46:08.255299 [info ]: Started running model main.fct_vendas
+15:46:08.255967 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:46:08.256365 [info ]: Finished analyzing [  0.23s] (4 nodes, 0 skipped, 0 errors)
+15:46:08.256915 [info ]: Started running model main.fct_resumo
+15:46:08.265269 [debug]: Writing runtime sql for node "model.meu_projeto.fct_vendas"
+15:46:08.268279 [debug]: Writing runtime sql for node "model.meu_projeto.fct_resumo"
+15:46:08.280371 [debug]: Query executed on node model.meu_projeto.fct_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."fct_vendas__dbt_tmp" as (
+    SELECT
+    cliente,
+    categoria,
+    SUM(valor) AS total_vendas,
+    AVG(valor) AS media_vendas,
+    COUNT(*) AS quantidade_vendas,
+    ROUND( valor * 100.0 / SUM(valor) OVER (PARTITION BY cliente), 2 ) as percentual_total
+FROM "meu_banco"."main"."stg_vendas"
+GROUP BY cliente, categoria
+  );
+
+15:46:08.287000 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."fct_resumo__dbt_tmp" as (
+    select
+    day,
+    sex,
+    sum(valor_total) as total_vendas,
+    avg(valor_total) as media_vendas,
+    count(*) as quantidade
+from "meu_banco"."main"."stg_tips"
+group by 1,2
+  );
+
+15:46:08.294705 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo" rename to "fct_resumo__dbt_backup"
+15:46:08.302044 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo__dbt_tmp" rename to "fct_resumo"
+15:46:08.323128 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."fct_resumo__dbt_backup" cascade
+    
+15:46:08.327062 [info ]: Finished running [  0.07s] model main.fct_resumo [success]
+15:46:08.327426 [info ]:  Succeeded [  0.08s] model main.fct_resumo (view)
+15:46:09.281358 [error]: [DbDriverFailed (dbt1308)]: Database Error in model fct_vendas (target\run\meu_projeto\models\marts\fct_vendas.sql)
+  Binder Error: column "valor" must appear in the GROUP BY clause or must be part of an aggregate function.
+  Either add it to the GROUP BY list, or use "ANY_VALUE(valor)" if the exact value of "valor" is not important.
+  
+  LINE 11:     ROUND( valor * 100.0 / SUM(valor) OVER (PARTITION BY cliente),...
+                      ^
+  (in run\meu_projeto\models/marts\fct_vendas.sql)
+15:46:09.281883 [info ]: Finished running [  1.03s] model main.fct_vendas [error]
+15:46:09.283344 [info ]: Finished running [  1.24s] (4 nodes, 0 skipped, 1 errors)
+15:46:09.284822 [info ]:     Failed [  1.07s] model main.fct_vendas (view)
+15:46:09.365155 [info ]: New version available 2.0.0-preview.210 (run `dbt system update`)
+15:46:09.477399 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error for target 'dev' [2.0s]
+Processed: 4 models
+Summary: 4 total | 3 success | 1 error
+==================== 2026-08-19T15:51:19.223694Z | 01a01ab8-45b2-72d3-8617-663d991b3054 ====================
+15:51:19.224047 [info ]: dbt-fusion 2.0.0-preview.205
+15:51:19.224768 [info ]: Started loading project
+15:51:19.229516 [info ]: Loading ~/.dbt/profiles.yml
+15:51:19.385723 [debug]:    Started loading packages
+15:51:19.392595 [debug]:     Loaded [  0.01s] packages
+15:51:19.394594 [info ]: Finished loading project [  0.17s]
+15:51:19.397635 [info ]: Started parsing
+15:51:19.491961 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:51:19.492314 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:51:19.495438 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:51:19.496334 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:51:19.497294 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:51:19.498125 [debug]: Finished parsing models/staging/stg_vendas.sql [  0.00s]
+15:51:19.524843 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_day.sql [  0.00s]
+15:51:19.526306 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_sex.sql [  0.00s]
+15:51:19.527706 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_tip.sql [  0.00s]
+15:51:19.529129 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_total_bill.sql [  0.00s]
+15:51:19.530415 [debug]: Finished parsing target\generic_tests\unique_stg_vendas_id.sql [  0.00s]
+15:51:19.531671 [debug]: Finished parsing target\generic_tests\not_null_stg_vendas_id.sql [  0.00s]
+15:51:19.915880 [info ]: Finished parsing [  0.52s]
+15:51:19.917108 [info ]: Started scheduling
+15:51:19.917407 [info ]: Finished scheduling [  0.00s]
+15:51:19.930470 [debug]: No platform credentials found, skipping remote license
+15:51:19.930896 [debug]: License check failed: Feature not licensed: 'lineage'
+15:51:19.931383 [info ]: Started building task graph
+15:51:19.931712 [info ]: Finished building task graph [  0.00s]
+15:51:19.984185 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"meu_banco"'
+    
+  
+  
+15:51:19.985792 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='meu_banco'
+        and type='sqlite'
+    
+  
+15:51:19.987231 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "meu_banco"."main"
+    
+15:51:19.987566 [info ]: Started rendering (4 nodes)
+15:51:19.987794 [info ]: Started model main.stg_vendas
+15:51:19.987821 [debug]: Started rendering model main.stg_vendas
+15:51:19.987884 [info ]: Started model main.stg_tips
+15:51:19.987921 [debug]: Started rendering model main.stg_tips
+15:51:19.991453 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\compiled\meu_projeto\models\staging\stg_tips.sql
+15:51:19.991476 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:51:19.991688 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:51:19.993032 [info ]: Started analyzing (4 nodes)
+15:51:19.993230 [debug]: Started analyzing model main.stg_tips
+15:51:19.993290 [debug]: Finished rendering [  0.01s] model main.stg_vendas [success]
+15:51:19.993652 [debug]: Started analyzing model main.stg_vendas
+15:51:20.004889 [debug]: Finished analyzing [  0.01s] model main.stg_vendas [success]
+15:51:20.006028 [info ]: Started running (4 nodes)
+15:51:20.006276 [info ]: Started running model main.stg_vendas
+15:51:20.006337 [debug]: Finished analyzing [  0.01s] model main.stg_tips [success]
+15:51:20.007112 [info ]: Started running model main.stg_tips
+15:51:20.019382 [debug]: Query executed on node model.meu_projeto.stg_tips:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+15:51:20.019382 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+15:51:20.025641 [debug]: Writing runtime sql for node "model.meu_projeto.stg_vendas"
+15:51:20.026515 [debug]: Writing runtime sql for node "model.meu_projeto.stg_tips"
+15:51:20.056509 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_vendas__dbt_tmp" as (
+    SELECT
+    id,
+    cliente,
+    categoria,
+    valor,
+    data_venda
+from read_csv_auto('C:\Users\tl100\OneDrive\Documents\Carreira dados\teste-volta\dbt\models\data\stg_vendas.csv')
+  );
+
+15:51:20.063655 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_vendas" rename to "stg_vendas__dbt_backup"
+15:51:20.069633 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_vendas__dbt_tmp" rename to "stg_vendas"
+15:51:20.082410 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."stg_vendas__dbt_backup" cascade
+    
+15:51:20.084514 [info ]: Finished running [  0.08s] model main.stg_vendas [success]
+15:51:20.084955 [info ]:  Succeeded [  0.09s] model main.stg_vendas (view)
+15:51:20.085615 [info ]: Started model main.fct_vendas
+15:51:20.085649 [debug]: Started rendering model main.fct_vendas
+15:51:20.086216 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_tips__dbt_tmp" as (
+    select
+    total_bill,
+    tip,
+    sex,
+    day,
+    total_bill + tip as valor_total
+from read_csv_auto('C:/Users/tl100/OneDrive/Documents/Carreira dados/teste-volta/pandas/tips.csv')
+  );
+
+15:51:20.088222 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:51:20.090987 [debug]: Finished rendering [  0.01s] model main.fct_vendas [success]
+15:51:20.093309 [debug]: Started analyzing model main.fct_vendas
+15:51:20.096836 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips" rename to "stg_tips__dbt_backup"
+15:51:20.103745 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips__dbt_tmp" rename to "stg_tips"
+15:51:20.111972 [debug]: Finished analyzing [  0.02s] model main.fct_vendas [success]
+15:51:20.112531 [info ]: Started running model main.fct_vendas
+15:51:20.113723 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."stg_tips__dbt_backup" cascade
+    
+15:51:20.115290 [info ]: Finished running [  0.11s] model main.stg_tips [success]
+15:51:20.115828 [info ]:  Succeeded [  0.12s] model main.stg_tips (view)
+15:51:20.117263 [info ]: Started model main.fct_resumo
+15:51:20.117326 [debug]: Started rendering model main.fct_resumo
+15:51:20.119904 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:51:20.120707 [debug]: Writing runtime sql for node "model.meu_projeto.fct_vendas"
+15:51:20.120368 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:51:20.127912 [info ]: Finished rendering [  0.14s] (4 nodes, 0 skipped, 0 errors)
+15:51:20.128792 [debug]: Started analyzing model main.fct_resumo
+15:51:20.130078 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:51:20.130610 [info ]: Finished analyzing [  0.14s] (4 nodes, 0 skipped, 0 errors)
+15:51:20.131332 [info ]: Started running model main.fct_resumo
+15:51:20.135870 [debug]: Query executed on node model.meu_projeto.fct_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."fct_vendas__dbt_tmp" as (
+    SELECT
+    cliente,
+    categoria,
+    SUM(valor) AS total_vendas,
+    AVG(valor) AS media_vendas,
+    COUNT(*) AS quantidade_vendas,
+    ROUND( SUM(valor) OVER (PARTITION BY cliente) * 100.0 / sum(valor), 2 )as percentual_total
+FROM "meu_banco"."main"."stg_vendas"
+GROUP BY cliente, categoria
+  );
+
+15:51:20.140054 [debug]: Writing runtime sql for node "model.meu_projeto.fct_resumo"
+15:51:20.160505 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."fct_resumo__dbt_tmp" as (
+    select
+    day,
+    sex,
+    sum(valor_total) as total_vendas,
+    avg(valor_total) as media_vendas,
+    count(*) as quantidade
+from "meu_banco"."main"."stg_tips"
+group by 1,2
+  );
+
+15:51:20.167936 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo" rename to "fct_resumo__dbt_backup"
+15:51:20.177419 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo__dbt_tmp" rename to "fct_resumo"
+15:51:20.185425 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."fct_resumo__dbt_backup" cascade
+    
+15:51:20.187194 [info ]: Finished running [  0.06s] model main.fct_resumo [success]
+15:51:20.188041 [info ]:  Succeeded [  0.06s] model main.fct_resumo (view)
+15:51:21.165078 [error]: [DbDriverFailed (dbt1308)]: Database Error in model fct_vendas (target\run\meu_projeto\models\marts\fct_vendas.sql)
+  Binder Error: column "valor" must appear in the GROUP BY clause or must be part of an aggregate function.
+  Either add it to the GROUP BY list, or use "ANY_VALUE(valor)" if the exact value of "valor" is not important.
+  
+  LINE 11:     ROUND( SUM(valor) OVER (PARTITION BY cliente) * 100.0 / sum(valor)...
+                          ^
+  (in run\meu_projeto\models/marts\fct_vendas.sql)
+15:51:21.165293 [info ]: Finished running [  1.05s] model main.fct_vendas [error]
+15:51:21.174441 [info ]: Finished running [  1.17s] (4 nodes, 0 skipped, 1 errors)
+15:51:21.246907 [info ]:     Failed [  1.07s] model main.fct_vendas (view)
+15:51:21.344350 [info ]: New version available 2.0.0-preview.210 (run `dbt system update`)
+15:51:21.455257 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error for target 'dev' [2.2s]
+Processed: 4 models
+Summary: 4 total | 3 success | 1 error
+==================== 2026-08-19T15:51:52.773203Z | 01a01ab8-c8c1-75d2-a02e-38cbe8f6055e ====================
+15:51:52.773467 [info ]: dbt-fusion 2.0.0-preview.205
+15:51:52.774124 [info ]: Started loading project
+15:51:52.778198 [info ]: Loading ~/.dbt/profiles.yml
+15:51:52.794157 [debug]:    Started loading packages
+15:51:52.801631 [debug]:     Loaded [  0.01s] packages
+15:51:52.803820 [info ]: Finished loading project [  0.03s]
+15:51:52.805514 [info ]: Started parsing
+15:51:52.870201 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:51:52.870509 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:51:52.873011 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:51:52.873842 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:51:52.874956 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:51:52.875615 [debug]: Finished parsing models/staging/stg_vendas.sql [  0.00s]
+15:51:52.893699 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_day.sql [  0.00s]
+15:51:52.894898 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_sex.sql [  0.00s]
+15:51:52.895862 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_tip.sql [  0.00s]
+15:51:52.896826 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_total_bill.sql [  0.00s]
+15:51:52.898015 [debug]: Finished parsing target\generic_tests\unique_stg_vendas_id.sql [  0.00s]
+15:51:52.899331 [debug]: Finished parsing target\generic_tests\not_null_stg_vendas_id.sql [  0.00s]
+15:51:53.274921 [info ]: Finished parsing [  0.47s]
+15:51:53.276120 [info ]: Started scheduling
+15:51:53.276429 [info ]: Finished scheduling [  0.00s]
+15:51:53.295635 [debug]: No platform credentials found, skipping remote license
+15:51:53.296008 [debug]: License check failed: Feature not licensed: 'lineage'
+15:51:53.296630 [info ]: Started building task graph
+15:51:53.296946 [info ]: Finished building task graph [  0.00s]
+15:51:53.347399 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"meu_banco"'
+    
+  
+  
+15:51:53.350456 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='meu_banco'
+        and type='sqlite'
+    
+  
+15:51:53.351331 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "meu_banco"."main"
+    
+15:51:53.351565 [info ]: Started rendering (4 nodes)
+15:51:53.351789 [info ]: Started model main.stg_vendas
+15:51:53.351817 [debug]: Started rendering model main.stg_vendas
+15:51:53.351866 [info ]: Started model main.stg_tips
+15:51:53.351896 [debug]: Started rendering model main.stg_tips
+15:51:53.354279 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:51:53.354294 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\compiled\meu_projeto\models\staging\stg_tips.sql
+15:51:53.354490 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:51:53.356389 [info ]: Started analyzing (4 nodes)
+15:51:53.356638 [debug]: Started analyzing model main.stg_vendas
+15:51:53.356698 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:51:53.356984 [debug]: Started analyzing model main.stg_tips
+15:51:53.368481 [debug]: Finished analyzing [  0.01s] model main.stg_vendas [success]
+15:51:53.369463 [info ]: Started running (4 nodes)
+15:51:53.369691 [info ]: Started running model main.stg_vendas
+15:51:53.369740 [debug]: Finished analyzing [  0.01s] model main.stg_tips [success]
+15:51:53.370191 [info ]: Started running model main.stg_tips
+15:51:53.383408 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+15:51:53.383485 [debug]: Query executed on node model.meu_projeto.stg_tips:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+15:51:53.390412 [debug]: Writing runtime sql for node "model.meu_projeto.stg_vendas"
+15:51:53.391728 [debug]: Writing runtime sql for node "model.meu_projeto.stg_tips"
+15:51:53.414074 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_vendas__dbt_tmp" as (
+    SELECT
+    id,
+    cliente,
+    categoria,
+    valor,
+    data_venda
+from read_csv_auto('C:\Users\tl100\OneDrive\Documents\Carreira dados\teste-volta\dbt\models\data\stg_vendas.csv')
+  );
+
+15:51:53.420997 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_vendas" rename to "stg_vendas__dbt_backup"
+15:51:53.428193 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_vendas__dbt_tmp" rename to "stg_vendas"
+15:51:53.431697 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_tips__dbt_tmp" as (
+    select
+    total_bill,
+    tip,
+    sex,
+    day,
+    total_bill + tip as valor_total
+from read_csv_auto('C:/Users/tl100/OneDrive/Documents/Carreira dados/teste-volta/pandas/tips.csv')
+  );
+
+15:51:53.435806 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."stg_vendas__dbt_backup" cascade
+    
+15:51:53.436764 [info ]: Finished running [  0.07s] model main.stg_vendas [success]
+15:51:53.438001 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips" rename to "stg_tips__dbt_backup"
+15:51:53.437697 [info ]:  Succeeded [  0.08s] model main.stg_vendas (view)
+15:51:53.439911 [info ]: Started model main.fct_vendas
+15:51:53.439955 [debug]: Started rendering model main.fct_vendas
+15:51:53.442708 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:51:53.443149 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:51:53.444849 [debug]: Started analyzing model main.fct_vendas
+15:51:53.447209 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips__dbt_tmp" rename to "stg_tips"
+15:51:53.457089 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."stg_tips__dbt_backup" cascade
+    
+15:51:53.458407 [info ]: Finished running [  0.09s] model main.stg_tips [success]
+15:51:53.460812 [info ]:  Succeeded [  0.10s] model main.stg_tips (view)
+15:51:53.461460 [info ]: Started model main.fct_resumo
+15:51:53.461493 [debug]: Started rendering model main.fct_resumo
+15:51:53.464185 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:51:53.464456 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:51:53.465046 [info ]: Finished rendering [  0.11s] (4 nodes, 0 skipped, 0 errors)
+15:51:53.469018 [debug]: Started analyzing model main.fct_resumo
+15:51:53.469165 [debug]: Finished analyzing [  0.02s] model main.fct_vendas [success]
+15:51:53.469661 [info ]: Started running model main.fct_vendas
+15:51:53.470058 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:51:53.470568 [info ]: Finished analyzing [  0.11s] (4 nodes, 0 skipped, 0 errors)
+15:51:53.471119 [info ]: Started running model main.fct_resumo
+15:51:53.476695 [debug]: Writing runtime sql for node "model.meu_projeto.fct_resumo"
+15:51:53.476803 [debug]: Writing runtime sql for node "model.meu_projeto.fct_vendas"
+15:51:53.493964 [debug]: Query executed on node model.meu_projeto.fct_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."fct_vendas__dbt_tmp" as (
+    SELECT
+    cliente,
+    categoria,
+    SUM(valor) over () AS total_vendas,
+    AVG(valor) over () AS media_vendas,
+    COUNT(*) AS quantidade_vendas,
+    ROUND( SUM(valor) OVER (PARTITION BY cliente) * 100.0 / sum(valor) over(), 2 )as percentual_total
+FROM "meu_banco"."main"."stg_vendas"
+GROUP BY cliente, categoria
+  );
+
+15:51:53.509521 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."fct_resumo__dbt_tmp" as (
+    select
+    day,
+    sex,
+    sum(valor_total) as total_vendas,
+    avg(valor_total) as media_vendas,
+    count(*) as quantidade
+from "meu_banco"."main"."stg_tips"
+group by 1,2
+  );
+
+15:51:53.515973 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo" rename to "fct_resumo__dbt_backup"
+15:51:53.522865 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo__dbt_tmp" rename to "fct_resumo"
+15:51:53.528248 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."fct_resumo__dbt_backup" cascade
+    
+15:51:53.529081 [info ]: Finished running [  0.06s] model main.fct_resumo [success]
+15:51:53.529436 [info ]:  Succeeded [  0.06s] model main.fct_resumo (view)
+15:51:54.494614 [error]: [DbDriverFailed (dbt1308)]: Database Error in model fct_vendas (target\run\meu_projeto\models\marts\fct_vendas.sql)
+  Binder Error: column "valor" must appear in the GROUP BY clause or must be part of an aggregate function.
+  Either add it to the GROUP BY list, or use "ANY_VALUE(valor)" if the exact value of "valor" is not important.
+  
+  LINE 8:     SUM(valor) over () AS total_vendas,
+                  ^
+  (in run\meu_projeto\models/marts\fct_vendas.sql)
+15:51:54.494765 [info ]: Finished running [  1.03s] model main.fct_vendas [error]
+15:51:54.495839 [info ]: Finished running [  1.13s] (4 nodes, 0 skipped, 1 errors)
+15:51:54.496542 [info ]:     Failed [  1.05s] model main.fct_vendas (view)
+15:51:54.558727 [info ]: New version available 2.0.0-preview.210 (run `dbt system update`)
+15:51:54.669657 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error for target 'dev' [1.9s]
+Processed: 4 models
+Summary: 4 total | 3 success | 1 error
+==================== 2026-08-19T15:53:23.625000Z | 01a01aba-2ba4-79a1-af88-a344bbe1e407 ====================
+15:53:23.625320 [info ]: dbt-fusion 2.0.0-preview.205
+15:53:23.626004 [info ]: Started loading project
+15:53:23.630242 [info ]: Loading ~/.dbt/profiles.yml
+15:53:23.642906 [debug]:    Started loading packages
+15:53:23.647646 [debug]:     Loaded [  0.00s] packages
+15:53:23.649051 [info ]: Finished loading project [  0.02s]
+15:53:23.650201 [info ]: Started parsing
+15:53:23.713441 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:53:23.713769 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:53:23.716530 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:53:23.717420 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:53:23.718316 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:53:23.718936 [debug]: Finished parsing models/staging/stg_vendas.sql [  0.00s]
+15:53:23.731891 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_day.sql [  0.00s]
+15:53:23.733219 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_sex.sql [  0.00s]
+15:53:23.734304 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_tip.sql [  0.00s]
+15:53:23.735216 [debug]: Finished parsing target\generic_tests\not_null_stg_tips_total_bill.sql [  0.00s]
+15:53:23.735999 [debug]: Finished parsing target\generic_tests\unique_stg_vendas_id.sql [  0.00s]
+15:53:23.740103 [debug]: Finished parsing target\generic_tests\not_null_stg_vendas_id.sql [  0.00s]
+15:53:24.117617 [info ]: Finished parsing [  0.47s]
+15:53:24.118759 [info ]: Started scheduling
+15:53:24.119103 [info ]: Finished scheduling [  0.00s]
+15:53:24.131786 [debug]: No platform credentials found, skipping remote license
+15:53:24.132071 [debug]: License check failed: Feature not licensed: 'lineage'
+15:53:24.132499 [info ]: Started building task graph
+15:53:24.132813 [info ]: Finished building task graph [  0.00s]
+15:53:24.189952 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"meu_banco"'
+    
+  
+  
+15:53:24.191546 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='meu_banco'
+        and type='sqlite'
+    
+  
+15:53:24.192323 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "meu_banco"."main"
+    
+15:53:24.192522 [info ]: Started rendering (4 nodes)
+15:53:24.192713 [info ]: Started model main.stg_vendas
+15:53:24.192730 [debug]: Started rendering model main.stg_vendas
+15:53:24.192769 [info ]: Started model main.stg_tips
+15:53:24.192804 [debug]: Started rendering model main.stg_tips
+15:53:24.194817 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\compiled\meu_projeto\models\staging\stg_tips.sql
+15:53:24.195380 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:53:24.195392 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:53:24.196637 [info ]: Started analyzing (4 nodes)
+15:53:24.196842 [debug]: Started analyzing model main.stg_tips
+15:53:24.196901 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:53:24.197518 [debug]: Started analyzing model main.stg_vendas
+15:53:24.206739 [debug]: Finished analyzing [  0.01s] model main.stg_vendas [success]
+15:53:24.207115 [info ]: Started running (4 nodes)
+15:53:24.207269 [info ]: Started running model main.stg_vendas
+15:53:24.207902 [debug]: Finished analyzing [  0.01s] model main.stg_tips [success]
+15:53:24.208582 [info ]: Started running model main.stg_tips
+15:53:24.219210 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+15:53:24.219210 [debug]: Query executed on node model.meu_projeto.stg_tips:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main' AND lower(table_catalog) = lower('meu_banco')
+15:53:24.225344 [debug]: Writing runtime sql for node "model.meu_projeto.stg_tips"
+15:53:24.225400 [debug]: Writing runtime sql for node "model.meu_projeto.stg_vendas"
+15:53:24.248918 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_vendas__dbt_tmp" as (
+    SELECT
+    id,
+    cliente,
+    categoria,
+    valor,
+    data_venda
+from read_csv_auto('C:\Users\tl100\OneDrive\Documents\Carreira dados\teste-volta\dbt\models\data\stg_vendas.csv')
+  );
+
+15:53:24.257906 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_vendas" rename to "stg_vendas__dbt_backup"
+15:53:24.264208 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_vendas__dbt_tmp" rename to "stg_vendas"
+15:53:24.265800 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."stg_tips__dbt_tmp" as (
+    select
+    total_bill,
+    tip,
+    sex,
+    day,
+    total_bill + tip as valor_total
+from read_csv_auto('C:/Users/tl100/OneDrive/Documents/Carreira dados/teste-volta/pandas/tips.csv')
+  );
+
+15:53:24.270370 [debug]: Query executed on node model.meu_projeto.stg_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."stg_vendas__dbt_backup" cascade
+    
+15:53:24.271750 [info ]: Finished running [  0.06s] model main.stg_vendas [success]
+15:53:24.272328 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips" rename to "stg_tips__dbt_backup"
+15:53:24.272204 [info ]:  Succeeded [  0.08s] model main.stg_vendas (view)
+15:53:24.272841 [info ]: Started model main.fct_vendas
+15:53:24.272875 [debug]: Started rendering model main.fct_vendas
+15:53:24.275527 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:53:24.275743 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:53:24.276643 [debug]: Started analyzing model main.fct_vendas
+15:53:24.280084 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."stg_tips__dbt_tmp" rename to "stg_tips"
+15:53:24.290474 [debug]: Query executed on node model.meu_projeto.stg_tips:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.stg_tips", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."stg_tips__dbt_backup" cascade
+    
+15:53:24.291907 [info ]: Finished running [  0.08s] model main.stg_tips [success]
+15:53:24.292501 [info ]:  Succeeded [  0.10s] model main.stg_tips (view)
+15:53:24.293327 [info ]: Started model main.fct_resumo
+15:53:24.293360 [debug]: Started rendering model main.fct_resumo
+15:53:24.295900 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:53:24.296371 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:53:24.297086 [info ]: Finished rendering [  0.10s] (4 nodes, 0 skipped, 0 errors)
+15:53:24.297919 [debug]: Started analyzing model main.fct_resumo
+15:53:24.298010 [debug]: Finished analyzing [  0.02s] model main.fct_vendas [success]
+15:53:24.298492 [info ]: Started running model main.fct_vendas
+15:53:24.299087 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:53:24.299801 [info ]: Finished analyzing [  0.10s] (4 nodes, 0 skipped, 0 errors)
+15:53:24.301372 [info ]: Started running model main.fct_resumo
+15:53:24.306952 [debug]: Writing runtime sql for node "model.meu_projeto.fct_vendas"
+15:53:24.308709 [debug]: Writing runtime sql for node "model.meu_projeto.fct_resumo"
+15:53:24.328274 [debug]: Query executed on node model.meu_projeto.fct_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."fct_vendas__dbt_tmp" as (
+    SELECT
+    cliente,
+    categoria,
+    SUM(valor) over () AS total_vendas,
+    AVG(valor) over () AS media_vendas,
+    COUNT(*) AS quantidade_vendas,
+    ROUND( SUM(valor) OVER (PARTITION BY cliente) * 100.0 / sum(valor) over(), 2 )as percentual_total
+FROM "meu_banco"."main"."stg_vendas"
+GROUP BY cliente, categoria, valor
+  );
+
+15:53:24.338420 [debug]: Query executed on node model.meu_projeto.fct_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_vendas__dbt_tmp" rename to "fct_vendas"
+15:53:24.343404 [debug]: Query executed on node model.meu_projeto.fct_vendas:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_vendas", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."fct_vendas__dbt_backup" cascade
+    
+15:53:24.344383 [info ]: Finished running [  0.05s] model main.fct_vendas [success]
+15:53:24.344770 [info ]:  Succeeded [  0.07s] model main.fct_vendas (view)
+15:53:24.349360 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+  
+  create view "meu_banco"."main"."fct_resumo__dbt_tmp" as (
+    select
+    day,
+    sex,
+    sum(valor_total) as total_vendas,
+    avg(valor_total) as media_vendas,
+    count(*) as quantidade
+from "meu_banco"."main"."stg_tips"
+group by 1,2
+  );
+
+15:53:24.354968 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo" rename to "fct_resumo__dbt_backup"
+15:53:24.361123 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+alter view "meu_banco"."main"."fct_resumo__dbt_tmp" rename to "fct_resumo"
+15:53:24.369376 [debug]: Query executed on node model.meu_projeto.fct_resumo:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.meu_projeto.fct_resumo", "profile_name": "meu_projeto", "target_name": "dev"} */
+
+      drop view if exists "meu_banco"."main"."fct_resumo__dbt_backup" cascade
+    
+15:53:24.370455 [info ]: Finished running [  0.07s] model main.fct_resumo [success]
+15:53:24.370783 [info ]: Finished running [  0.16s] (4 nodes, 0 skipped, 0 errors)
+15:53:24.371421 [info ]:  Succeeded [  0.07s] model main.fct_resumo (view)
+15:53:24.435245 [info ]: New version available 2.0.0-preview.210 (run `dbt system update`)
+15:53:24.548559 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [923ms]
+Processed: 4 models
+Summary: 4 total | 4 success

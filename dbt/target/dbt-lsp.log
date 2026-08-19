@@ -885,3 +885,1874 @@ To fix this, add the following hint to the top of the model "stg_tips":
 17:56:02.377818 [info ]: Started scheduling
 17:56:02.377915 [info ]: Finished scheduling [  0.00s]
 17:56:02.378162 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-08-19T15:09:47.131189Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-08-19T15:09:47.136571Z | 7e2f8e23-6833-42b7-8be0-f7beb52d92dd ====================
+15:09:47.138595 [info ]: Starting dbt LSP server
+15:09:47.148410 [info ]: Connecting to LSP client on port 8000
+15:09:47.181850 [info ]: Successfully connected to LSP client
+15:09:47.182894 [info ]: Creating LSP service...
+15:09:47.290057 [info ]: Creating LSP server...
+15:09:47.290088 [info ]: Starting LSP server...
+15:09:47.579180 [info ]: Loading ~/.dbt/profiles.yml
+15:09:47.835008 [info ]: Started loading project
+15:09:47.864166 [info ]: Loading ~/.dbt/profiles.yml
+15:09:47.911318 [debug]:    Started loading packages
+15:09:47.930082 [debug]:     Loaded [  0.02s] packages
+15:09:48.003758 [info ]: Finished loading project [  0.17s]
+15:09:48.022419 [info ]: Started parsing
+15:09:48.344959 [debug]: Finished parsing models/staging/stg_tips.yml [  0.06s]
+15:09:48.472474 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.09s]
+15:09:48.473599 [debug]: Finished parsing models/staging/raw_vendas.sql [  0.00s]
+15:09:48.491662 [debug]: Finished parsing models/staging/stg_tips.sql [  0.02s]
+15:09:49.317691 [info ]: Finished parsing [  1.30s]
+15:09:49.337322 [info ]: Cached model count updated: 3 models (estimate)
+15:09:49.337415 [info ]: Cached model count updated: 3 models (accurate)
+15:09:49.345405 [info ]: Started scheduling
+15:09:49.362956 [info ]: Finished scheduling [  0.02s]
+15:09:49.363028 [debug]: Compilation - 0 nodes selected: {}
+15:09:49.369766 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+fqn:model.meu_projeto.raw_vendas' does not match any enabled nodes
+15:09:49.371862 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:09:49.373239 [info ]: Started scheduling
+15:09:49.377601 [info ]: Finished scheduling [  0.00s]
+15:09:49.420197 [debug]: No platform credentials found, skipping remote license
+15:09:50.251716 [debug]: License loaded from file C:\Users\tl100\.dbt\license.trial
+15:09:50.483714 [info ]: Started building task graph
+15:09:50.490389 [info ]: Finished building task graph [  0.01s]
+15:09:50.666637 [info ]: Started scheduling
+15:09:50.666698 [info ]: Finished scheduling [  0.00s]
+15:09:50.670310 [info ]: Cached model count updated: 3 models (accurate)
+15:09:50.789412 [info ]: Started loading project
+15:09:50.790869 [info ]: Loading ~/.dbt/profiles.yml
+15:09:50.843479 [info ]: Cached model count updated: 3 models (estimate)
+15:09:50.843501 [info ]: Cached model count updated: 3 models (accurate)
+15:09:50.843528 [info ]: Started scheduling
+15:09:50.843581 [info ]: Finished scheduling [  0.00s]
+15:09:50.843599 [debug]: Compilation - 0 nodes selected: {}
+15:09:50.844021 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+fqn:model.meu_projeto.raw_vendas' does not match any enabled nodes
+15:09:50.844041 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:09:50.847978 [info ]: Started building task graph
+15:09:50.848024 [info ]: Finished building task graph [  0.00s]
+15:09:50.858917 [info ]: Started scheduling
+15:09:50.859046 [info ]: Finished scheduling [  0.00s]
+15:09:50.859146 [info ]: Cached model count updated: 3 models (accurate)
+15:09:50.859789 [info ]: Finished loading project [  0.07s]
+15:09:52.438007 [info ]: Started loading project
+15:09:52.438781 [info ]: Loading ~/.dbt/profiles.yml
+15:09:52.481017 [info ]: Cached model count updated: 3 models (estimate)
+15:09:52.481049 [info ]: Cached model count updated: 3 models (accurate)
+15:09:52.481094 [info ]: Started scheduling
+15:09:52.481194 [info ]: Finished scheduling [  0.00s]
+15:09:52.481224 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.stg_tips"}
+15:09:52.491934 [info ]: Started building task graph
+15:09:52.500444 [info ]: Finished building task graph [  0.01s]
+15:09:52.509476 [info ]: Started rendering (2 nodes)
+15:09:52.515022 [info ]: Started model main.fct_resumo
+15:09:52.516105 [debug]: Started rendering model main.fct_resumo
+15:09:52.517457 [info ]: Started model main.stg_tips
+15:09:52.517490 [info ]: Finished loading project [  0.08s]
+15:09:52.517512 [debug]: Started rendering model main.stg_tips
+15:09:52.549697 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:09:52.550726 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:09:52.558587 [debug]: Finished rendering [  0.04s] model main.fct_resumo [success]
+15:09:52.559886 [info ]: Started analyzing (2 nodes)
+15:09:52.559916 [debug]: Started analyzing model main.fct_resumo
+15:09:52.560563 [debug]: Finished rendering [  0.04s] model main.stg_tips [success]
+15:09:52.560597 [info ]: Finished rendering [  0.05s] (2 nodes, 0 skipped, 0 errors)
+15:09:52.560623 [debug]: Started analyzing model main.stg_tips
+15:09:52.687075 [debug]: Finished analyzing [  0.13s] model main.stg_tips [success]
+15:09:52.687120 [info ]:  Succeeded [  0.17s] model main.stg_tips (view)
+15:09:52.687880 [debug]: Finished analyzing [  0.13s] model main.fct_resumo [success]
+15:09:52.687902 [info ]: Finished analyzing [  0.13s] (2 nodes, 0 skipped, 0 errors)
+15:09:52.687918 [info ]:  Succeeded [  0.17s] model main.fct_resumo (view)
+15:09:52.695092 [info ]: Started scheduling
+15:09:52.695155 [info ]: Finished scheduling [  0.00s]
+15:09:52.695299 [info ]: Cached model count updated: 3 models (accurate)
+15:10:03.395359 [info ]: Started loading project
+15:10:03.396370 [info ]: Loading ~/.dbt/profiles.yml
+15:10:03.426415 [info ]: Started parsing
+15:10:03.569183 [info ]: Finished loading project [  0.17s]
+15:10:03.574153 [debug]: Finished parsing models/staging/raw_vendas.sql [  0.01s]
+15:10:03.886791 [error]: [DependencyNotFound (dbt1048)]: Source 'raw.vendas' not found in project. Searched for 'vendas'
+  --> models/staging/raw_vendas.sql:7:6
+15:10:03.894701 [info ]: Cached model count updated: 3 models (estimate)
+15:10:03.894723 [info ]: Cached model count updated: 3 models (accurate)
+15:10:03.894751 [info ]: Started scheduling
+15:10:03.894813 [info ]: Finished scheduling [  0.00s]
+15:10:03.894839 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.raw_vendas"}
+15:10:03.896734 [info ]: Started building task graph
+15:10:03.896789 [info ]: Finished building task graph [  0.00s]
+15:10:03.900201 [info ]: Started rendering (1 nodes)
+15:10:03.900243 [info ]: Started model main.raw_vendas
+15:10:03.900270 [debug]: Started rendering model main.raw_vendas
+15:10:03.900355 [info ]: Finished parsing [  0.47s]
+15:10:03.903905 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: raw, table name: vendas
+(in models/staging/raw_vendas.sql:7:6)
+  --> models/staging/raw_vendas.sql:7:6
+15:10:03.904017 [info ]: Started analyzing (1 nodes)
+15:10:03.904039 [debug]: Started analyzing model main.raw_vendas
+15:10:03.904081 [debug]: Finished analyzing [  0.00s] model main.raw_vendas [skipped]
+15:10:03.904124 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+15:10:03.904142 [info ]:     Failed [  0.00s] model main.raw_vendas (view)
+15:10:03.912320 [info ]: Started scheduling
+15:10:03.912424 [info ]: Finished scheduling [  0.00s]
+15:10:03.914981 [info ]: Cached model count updated: 3 models (accurate)
+15:10:03.915037 [debug]: Finished rendering [  0.01s] model main.raw_vendas [error]
+15:10:03.915063 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 1 errors)
+15:10:05.493542 [info ]: Started loading project
+15:10:05.497093 [info ]: Loading ~/.dbt/profiles.yml
+15:10:05.546493 [info ]: Cached model count updated: 3 models (estimate)
+15:10:05.546514 [info ]: Cached model count updated: 3 models (accurate)
+15:10:05.546554 [info ]: Started scheduling
+15:10:05.546635 [info ]: Finished scheduling [  0.00s]
+15:10:05.546663 [debug]: Compilation - 3 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.raw_vendas", "model.meu_projeto.stg_tips"}
+15:10:05.548459 [info ]: Started building task graph
+15:10:05.548531 [info ]: Finished building task graph [  0.00s]
+15:10:05.551615 [info ]: Started rendering (3 nodes)
+15:10:05.551649 [info ]: Started model main.raw_vendas
+15:10:05.551663 [debug]: Started rendering model main.raw_vendas
+15:10:05.551700 [info ]: Started model main.fct_resumo
+15:10:05.551723 [info ]: Finished loading project [  0.06s]
+15:10:05.551721 [debug]: Started rendering model main.fct_resumo
+15:10:05.551752 [info ]: Started model main.stg_tips
+15:10:05.551782 [debug]: Started rendering model main.stg_tips
+15:10:05.553082 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:10:05.553217 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:10:05.553264 [info ]: Started analyzing (3 nodes)
+15:10:05.553283 [debug]: Started analyzing model main.stg_tips
+15:10:05.553604 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:10:05.553615 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:10:05.553646 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:10:05.553695 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:10:05.553726 [debug]: Started analyzing model main.fct_resumo
+15:10:05.554107 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: raw, table name: vendas
+(in models/staging/raw_vendas.sql:7:6)
+  --> models/staging/raw_vendas.sql:7:6
+15:10:05.554172 [debug]: Started analyzing model main.raw_vendas
+15:10:05.554203 [debug]: Finished analyzing [  0.00s] model main.raw_vendas [skipped]
+15:10:05.554235 [info ]:     Failed [  0.00s] model main.raw_vendas (view)
+15:10:05.554293 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:10:05.554322 [info ]: Finished analyzing [  0.00s] (3 nodes, 1 skipped, 0 errors)
+15:10:05.554332 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:10:05.560906 [info ]: Started scheduling
+15:10:05.560975 [info ]: Finished scheduling [  0.00s]
+15:10:05.562885 [info ]: Cached model count updated: 3 models (accurate)
+15:10:05.562929 [debug]: Finished rendering [  0.01s] model main.raw_vendas [error]
+15:10:05.562951 [info ]: Finished rendering [  0.01s] (3 nodes, 0 skipped, 1 errors)
+15:10:56.696675 [info ]: Started loading project
+15:10:56.697850 [info ]: Loading ~/.dbt/profiles.yml
+15:10:56.714952 [info ]: Started loading project
+15:10:56.716195 [info ]: Loading ~/.dbt/profiles.yml
+15:10:56.716247 [info ]: Finished loading project [  0.02s]
+15:10:56.729625 [debug]:    Started loading packages
+15:10:56.735775 [debug]:     Loaded [  0.01s] packages
+15:10:56.738995 [info ]: Finished loading project [  0.02s]
+15:10:56.739863 [info ]: Started parsing
+15:10:56.910599 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:10:56.914534 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:10:56.934187 [debug]: Finished parsing models/marts/vendas.sql [  0.02s]
+15:10:56.938185 [debug]: Finished parsing models/staging/raw_vendas.sql [  0.00s]
+15:10:56.939974 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:10:58.033466 [error]: [DependencyNotFound (dbt1048)]: Source 'raw.vendas' not found in project. Searched for 'vendas'
+  --> models/staging/raw_vendas.sql:7:6
+15:10:58.044467 [info ]: Cached model count updated: 4 models (estimate)
+15:10:58.044562 [info ]: Cached model count updated: 4 models (accurate)
+15:10:58.044774 [info ]: Started scheduling
+15:10:58.044901 [info ]: Finished scheduling [  0.00s]
+15:10:58.044982 [debug]: Compilation - 0 nodes selected: {}
+15:10:58.045067 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+15:10:58.045137 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:10:58.045415 [info ]: Started scheduling
+15:10:58.045680 [info ]: Finished scheduling [  0.00s]
+15:10:58.050539 [info ]: Started building task graph
+15:10:58.050600 [info ]: Finished building task graph [  0.00s]
+15:10:58.080641 [info ]: Started scheduling
+15:10:58.080718 [info ]: Finished scheduling [  0.00s]
+15:10:58.092555 [info ]: Cached model count updated: 4 models (accurate)
+15:10:58.092635 [info ]: Finished parsing [  1.35s]
+15:10:59.663123 [info ]: Started loading project
+15:10:59.664287 [info ]: Loading ~/.dbt/profiles.yml
+15:10:59.754802 [info ]: Cached model count updated: 4 models (estimate)
+15:10:59.754832 [info ]: Cached model count updated: 4 models (accurate)
+15:10:59.754877 [info ]: Started scheduling
+15:10:59.754982 [info ]: Finished scheduling [  0.00s]
+15:10:59.755011 [debug]: Compilation - 3 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.raw_vendas", "model.meu_projeto.stg_tips"}
+15:10:59.758402 [info ]: Started building task graph
+15:10:59.758795 [info ]: Finished building task graph [  0.00s]
+15:10:59.773411 [info ]: Started rendering (3 nodes)
+15:10:59.773460 [info ]: Started model main.raw_vendas
+15:10:59.773484 [debug]: Started rendering model main.raw_vendas
+15:10:59.773528 [info ]: Started model main.fct_resumo
+15:10:59.773547 [debug]: Started rendering model main.fct_resumo
+15:10:59.773556 [info ]: Finished loading project [  0.11s]
+15:10:59.773573 [info ]: Started model main.stg_tips
+15:10:59.773592 [debug]: Started rendering model main.stg_tips
+15:10:59.777577 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:10:59.779103 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: raw, table name: vendas
+(in models/staging/raw_vendas.sql:7:6)
+  --> models/staging/raw_vendas.sql:7:6
+15:10:59.779263 [info ]: Started analyzing (3 nodes)
+15:10:59.779366 [debug]: Started analyzing model main.raw_vendas
+15:10:59.779501 [debug]: Finished analyzing [  0.00s] model main.raw_vendas [skipped]
+15:10:59.779597 [info ]:     Failed [  0.01s] model main.raw_vendas (view)
+15:10:59.779690 [debug]: Finished rendering [  0.01s] model main.fct_resumo [success]
+15:10:59.779780 [debug]: Started analyzing model main.fct_resumo
+15:10:59.779898 [debug]: Finished rendering [  0.01s] model main.raw_vendas [error]
+15:10:59.780934 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:10:59.780983 [info ]:  Succeeded [  0.01s] model main.fct_resumo (view)
+15:10:59.781786 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:10:59.782129 [debug]: Finished rendering [  0.01s] model main.stg_tips [success]
+15:10:59.782161 [info ]: Finished rendering [  0.01s] (3 nodes, 0 skipped, 1 errors)
+15:10:59.782191 [debug]: Started analyzing model main.stg_tips
+15:10:59.782563 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:10:59.782593 [info ]: Finished analyzing [  0.00s] (3 nodes, 1 skipped, 0 errors)
+15:10:59.782613 [info ]:  Succeeded [  0.01s] model main.stg_tips (view)
+15:10:59.791567 [info ]: Started scheduling
+15:10:59.791640 [info ]: Finished scheduling [  0.00s]
+15:10:59.791916 [info ]: Cached model count updated: 4 models (accurate)
+15:11:07.271715 [info ]: Started loading project
+15:11:07.272699 [info ]: Loading ~/.dbt/profiles.yml
+15:11:07.284367 [info ]: Started parsing
+15:11:07.357033 [info ]: Finished loading project [  0.09s]
+15:11:07.361829 [debug]: Finished parsing models/marts/vendas.sql [  0.00s]
+15:11:07.362861 [debug]: Finished parsing models/staging/raw_vendas.sql [  0.00s]
+15:11:07.674635 [error]: [DependencyNotFound (dbt1048)]: Source 'raw.vendas' not found in project. Searched for 'vendas'
+  --> models/staging/raw_vendas.sql:7:6
+15:11:07.674789 [error]: [DependencyNotFound (dbt1048)]: Ref 'stg_vendas' not found in project. Searched for 'meu_projeto.stg_vendas, stg_vendas'
+  --> models/marts/vendas.sql:7:6
+15:11:07.684121 [info ]: Cached model count updated: 4 models (estimate)
+15:11:07.684144 [info ]: Cached model count updated: 4 models (accurate)
+15:11:07.684192 [info ]: Started scheduling
+15:11:07.684280 [info ]: Finished scheduling [  0.00s]
+15:11:07.684309 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.vendas"}
+15:11:07.686336 [info ]: Started building task graph
+15:11:07.686394 [info ]: Finished building task graph [  0.00s]
+15:11:07.690790 [info ]: Started rendering (1 nodes)
+15:11:07.690845 [info ]: Started model main.vendas
+15:11:07.690875 [debug]: Started rendering model main.vendas
+15:11:07.690979 [info ]: Finished parsing [  0.41s]
+15:11:07.693623 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: ref not found for package: meu_projeto, model: stg_vendas, version: None
+(in models/marts/vendas.sql:7:6)
+  --> models/marts/vendas.sql:7:6
+15:11:07.693710 [info ]: Started analyzing (1 nodes)
+15:11:07.693732 [debug]: Started analyzing model main.vendas
+15:11:07.693777 [debug]: Finished analyzing [  0.00s] model main.vendas [skipped]
+15:11:07.693811 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+15:11:07.693828 [info ]:     Failed [  0.00s] model main.vendas (view)
+15:11:07.702762 [info ]: Started scheduling
+15:11:07.702897 [info ]: Finished scheduling [  0.00s]
+15:11:07.705607 [info ]: Cached model count updated: 4 models (accurate)
+15:11:07.705659 [debug]: Finished rendering [  0.01s] model main.vendas [error]
+15:11:07.705685 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 1 errors)
+15:11:09.269988 [info ]: Started loading project
+15:11:09.270973 [info ]: Loading ~/.dbt/profiles.yml
+15:11:09.353631 [info ]: Cached model count updated: 4 models (estimate)
+15:11:09.353732 [info ]: Cached model count updated: 4 models (accurate)
+15:11:09.353830 [info ]: Started scheduling
+15:11:09.353981 [info ]: Finished scheduling [  0.00s]
+15:11:09.354011 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.raw_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.vendas"}
+15:11:09.356869 [info ]: Started building task graph
+15:11:09.356975 [info ]: Finished building task graph [  0.00s]
+15:11:09.363310 [info ]: Started rendering (4 nodes)
+15:11:09.363372 [info ]: Started model main.vendas
+15:11:09.363405 [debug]: Started rendering model main.vendas
+15:11:09.363489 [info ]: Finished loading project [  0.09s]
+15:11:09.364517 [info ]: Started model main.raw_vendas
+15:11:09.364629 [debug]: Started rendering model main.raw_vendas
+15:11:09.364768 [info ]: Started model main.fct_resumo
+15:11:09.364938 [debug]: Started rendering model main.fct_resumo
+15:11:09.365342 [info ]: Started model main.stg_tips
+15:11:09.365592 [debug]: Started rendering model main.stg_tips
+15:11:09.365646 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:11:09.365783 [info ]: Started analyzing (4 nodes)
+15:11:09.365802 [debug]: Started analyzing model main.fct_resumo
+15:11:09.365885 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: raw, table name: vendas
+(in models/staging/raw_vendas.sql:7:6)
+  --> models/staging/raw_vendas.sql:7:6
+15:11:09.365939 [debug]: Started analyzing model main.raw_vendas
+15:11:09.365974 [debug]: Finished analyzing [  0.00s] model main.raw_vendas [skipped]
+15:11:09.366002 [info ]:     Failed [  0.00s] model main.raw_vendas (view)
+15:11:09.366072 [debug]: Finished rendering [  0.00s] model main.raw_vendas [error]
+15:11:09.366919 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:11:09.366937 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:11:09.366957 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:11:09.367105 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:11:09.367151 [debug]: Started analyzing model main.stg_tips
+15:11:09.367417 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: ref not found for package: meu_projeto, model: stg_vendas, version: None
+(in models/marts/vendas.sql:7:6)
+  --> models/marts/vendas.sql:7:6
+15:11:09.367516 [debug]: Started analyzing model main.vendas
+15:11:09.367559 [debug]: Finished analyzing [  0.00s] model main.vendas [skipped]
+15:11:09.367479 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:11:09.367605 [info ]:     Failed [  0.00s] model main.vendas (view)
+15:11:09.367729 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:11:09.367755 [info ]: Finished analyzing [  0.00s] (4 nodes, 2 skipped, 0 errors)
+15:11:09.367771 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:11:09.377284 [info ]: Started scheduling
+15:11:09.377367 [info ]: Finished scheduling [  0.00s]
+15:11:09.377760 [info ]: Cached model count updated: 4 models (accurate)
+15:11:09.377808 [debug]: Finished rendering [  0.01s] model main.vendas [error]
+15:11:09.377830 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 2 errors)
+15:11:37.159406 [info ]: Started loading project
+15:11:37.160422 [info ]: Loading ~/.dbt/profiles.yml
+15:11:37.176696 [info ]: Started loading project
+15:11:37.179245 [info ]: Loading ~/.dbt/profiles.yml
+15:11:37.184604 [info ]: Finished loading project [  0.03s]
+15:11:37.190715 [debug]:    Started loading packages
+15:11:37.197536 [debug]:     Loaded [  0.01s] packages
+15:11:37.199515 [info ]: Finished loading project [  0.02s]
+15:11:37.200035 [info ]: Started parsing
+15:11:37.348195 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:11:37.351448 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:11:37.352830 [debug]: Finished parsing models/marts/resume_sales.sql [  0.00s]
+15:11:37.354523 [debug]: Finished parsing models/staging/raw_vendas.sql [  0.00s]
+15:11:37.355389 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:11:37.994013 [error]: [DependencyNotFound (dbt1048)]: Source 'raw.vendas' not found in project. Searched for 'vendas'
+  --> models/staging/raw_vendas.sql:7:6
+15:11:37.994201 [error]: [DependencyNotFound (dbt1048)]: Ref 'stg_vendas' not found in project. Searched for 'meu_projeto.stg_vendas, stg_vendas'
+  --> models/marts/resume_sales.sql:7:6
+15:11:38.000069 [info ]: Cached model count updated: 4 models (estimate)
+15:11:38.000101 [info ]: Cached model count updated: 4 models (accurate)
+15:11:38.000138 [info ]: Started scheduling
+15:11:38.000199 [info ]: Finished scheduling [  0.00s]
+15:11:38.000223 [debug]: Compilation - 0 nodes selected: {}
+15:11:38.000252 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+15:11:38.000277 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:11:38.000592 [info ]: Started scheduling
+15:11:38.000742 [info ]: Finished scheduling [  0.00s]
+15:11:38.004924 [info ]: Started building task graph
+15:11:38.004971 [info ]: Finished building task graph [  0.00s]
+15:11:38.019390 [info ]: Started scheduling
+15:11:38.019468 [info ]: Finished scheduling [  0.00s]
+15:11:38.034970 [info ]: Cached model count updated: 4 models (accurate)
+15:11:38.035123 [info ]: Finished parsing [  0.84s]
+15:11:39.601819 [info ]: Started loading project
+15:11:39.605142 [info ]: Loading ~/.dbt/profiles.yml
+15:11:39.651103 [info ]: Cached model count updated: 4 models (estimate)
+15:11:39.651123 [info ]: Cached model count updated: 4 models (accurate)
+15:11:39.651165 [info ]: Started scheduling
+15:11:39.651246 [info ]: Finished scheduling [  0.00s]
+15:11:39.651274 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.raw_vendas", "model.meu_projeto.resume_sales", "model.meu_projeto.stg_tips"}
+15:11:39.652958 [info ]: Started building task graph
+15:11:39.653041 [info ]: Finished building task graph [  0.00s]
+15:11:39.656383 [info ]: Started rendering (4 nodes)
+15:11:39.656425 [info ]: Started model main.resume_sales
+15:11:39.656440 [debug]: Started rendering model main.resume_sales
+15:11:39.656478 [info ]: Started model main.raw_vendas
+15:11:39.656501 [debug]: Started rendering model main.raw_vendas
+15:11:39.656500 [info ]: Finished loading project [  0.05s]
+15:11:39.656529 [info ]: Started model main.fct_resumo
+15:11:39.656573 [debug]: Started rendering model main.fct_resumo
+15:11:39.656886 [info ]: Started model main.stg_tips
+15:11:39.656961 [debug]: Started rendering model main.stg_tips
+15:11:39.657677 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: ref not found for package: meu_projeto, model: stg_vendas, version: None
+(in models/marts/resume_sales.sql:7:6)
+  --> models/marts/resume_sales.sql:7:6
+15:11:39.657763 [info ]: Started analyzing (4 nodes)
+15:11:39.657782 [debug]: Started analyzing model main.resume_sales
+15:11:39.657812 [debug]: Finished analyzing [  0.00s] model main.resume_sales [skipped]
+15:11:39.657837 [info ]:     Failed [  0.00s] model main.resume_sales (view)
+15:11:39.657889 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: raw, table name: vendas
+(in models/staging/raw_vendas.sql:7:6)
+  --> models/staging/raw_vendas.sql:7:6
+15:11:39.657926 [debug]: Started analyzing model main.raw_vendas
+15:11:39.657950 [debug]: Finished analyzing [  0.00s] model main.raw_vendas [skipped]
+15:11:39.657969 [info ]:     Failed [  0.00s] model main.raw_vendas (view)
+15:11:39.658030 [debug]: Finished rendering [  0.00s] model main.raw_vendas [error]
+15:11:39.658071 [debug]: Finished rendering [  0.00s] model main.resume_sales [error]
+15:11:39.660420 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:11:39.660916 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:11:39.660959 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:11:39.660975 [debug]: Started analyzing model main.fct_resumo
+15:11:39.661560 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:11:39.661599 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 2 errors)
+15:11:39.661630 [debug]: Started analyzing model main.stg_tips
+15:11:39.661833 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:11:39.661871 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:11:39.661926 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:11:39.661955 [info ]: Finished analyzing [  0.00s] (4 nodes, 2 skipped, 0 errors)
+15:11:39.661975 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:11:39.670478 [info ]: Started scheduling
+15:11:39.670549 [info ]: Finished scheduling [  0.00s]
+15:11:39.670873 [info ]: Cached model count updated: 4 models (accurate)
+15:13:06.121736 [info ]: Started loading project
+15:13:06.122675 [info ]: Loading ~/.dbt/profiles.yml
+15:13:06.166240 [info ]: Finished loading project [  0.04s]
+15:13:06.166272 [info ]: Cached model count updated: 4 models (accurate)
+15:13:07.740872 [info ]: Started loading project
+15:13:07.744068 [info ]: Loading ~/.dbt/profiles.yml
+15:13:07.789835 [info ]: Cached model count updated: 4 models (estimate)
+15:13:07.789856 [info ]: Cached model count updated: 4 models (accurate)
+15:13:07.789886 [info ]: Started scheduling
+15:13:07.789953 [info ]: Finished scheduling [  0.00s]
+15:13:07.789971 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.raw_vendas", "model.meu_projeto.resume_sales", "model.meu_projeto.stg_tips"}
+15:13:07.791647 [info ]: Started building task graph
+15:13:07.791740 [info ]: Finished building task graph [  0.00s]
+15:13:07.794699 [info ]: Started rendering (4 nodes)
+15:13:07.794733 [info ]: Started model main.resume_sales
+15:13:07.794747 [debug]: Started rendering model main.resume_sales
+15:13:07.794782 [info ]: Started model main.raw_vendas
+15:13:07.794805 [info ]: Finished loading project [  0.05s]
+15:13:07.794841 [debug]: Started rendering model main.raw_vendas
+15:13:07.794979 [info ]: Started model main.fct_resumo
+15:13:07.795054 [debug]: Started rendering model main.fct_resumo
+15:13:07.795153 [info ]: Started model main.stg_tips
+15:13:07.795239 [debug]: Started rendering model main.stg_tips
+15:13:07.795889 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: ref not found for package: meu_projeto, model: stg_vendas, version: None
+(in models/marts/resume_sales.sql:7:6)
+  --> models/marts/resume_sales.sql:7:6
+15:13:07.795959 [info ]: Started analyzing (4 nodes)
+15:13:07.795980 [debug]: Started analyzing model main.resume_sales
+15:13:07.796015 [debug]: Finished analyzing [  0.00s] model main.resume_sales [skipped]
+15:13:07.796043 [info ]:     Failed [  0.00s] model main.resume_sales (view)
+15:13:07.796114 [debug]: Finished rendering [  0.00s] model main.resume_sales [error]
+15:13:07.796355 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:13:07.796440 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:13:07.796486 [debug]: Started analyzing model main.fct_resumo
+15:13:07.796792 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:13:07.796868 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:13:07.796904 [debug]: Started analyzing model main.stg_tips
+15:13:07.797163 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:13:07.797192 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:13:07.797237 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:13:07.797256 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:13:07.797702 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: raw, table name: vendas
+(in models/staging/raw_vendas.sql:7:6)
+  --> models/staging/raw_vendas.sql:7:6
+15:13:07.797767 [debug]: Started analyzing model main.raw_vendas
+15:13:07.797804 [debug]: Finished analyzing [  0.00s] model main.raw_vendas [skipped]
+15:13:07.797827 [info ]: Finished analyzing [  0.00s] (4 nodes, 2 skipped, 0 errors)
+15:13:07.797878 [info ]:     Failed [  0.00s] model main.raw_vendas (view)
+15:13:07.804862 [info ]: Started scheduling
+15:13:07.804923 [info ]: Finished scheduling [  0.00s]
+15:13:07.805179 [info ]: Cached model count updated: 4 models (accurate)
+15:13:07.805230 [debug]: Finished rendering [  0.01s] model main.raw_vendas [error]
+15:13:07.805250 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 2 errors)
+15:13:41.872816 [info ]: Started loading project
+15:13:41.873881 [info ]: Loading ~/.dbt/profiles.yml
+15:13:41.889121 [info ]: Started loading project
+15:13:41.890174 [info ]: Loading ~/.dbt/profiles.yml
+15:13:41.901368 [info ]: Finished loading project [  0.03s]
+15:13:41.913157 [debug]:    Started loading packages
+15:13:41.919519 [debug]:     Loaded [  0.01s] packages
+15:13:41.921294 [info ]: Finished loading project [  0.03s]
+15:13:41.921826 [info ]: Started parsing
+15:13:42.123456 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:13:42.123668 [debug]: Finished parsing tests/test.yaml [  0.00s]
+15:13:42.126414 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:13:42.128699 [debug]: Finished parsing models/marts/resume_sales.sql [  0.00s]
+15:13:42.129970 [debug]: Finished parsing models/staging/raw_vendas.sql [  0.00s]
+15:13:42.132788 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:13:43.010421 [error]: [DependencyNotFound (dbt1048)]: Source 'raw.vendas' not found in project. Searched for 'vendas'
+  --> models/staging/raw_vendas.sql:7:6
+15:13:43.010700 [error]: [DependencyNotFound (dbt1048)]: Ref 'stg_vendas' not found in project. Searched for 'meu_projeto.stg_vendas, stg_vendas'
+  --> models/marts/resume_sales.sql:7:6
+15:13:43.015148 [info ]: Cached model count updated: 4 models (estimate)
+15:13:43.015236 [info ]: Cached model count updated: 4 models (accurate)
+15:13:43.015313 [info ]: Started scheduling
+15:13:43.015409 [info ]: Finished scheduling [  0.00s]
+15:13:43.015476 [debug]: Compilation - 0 nodes selected: {}
+15:13:43.015544 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+15:13:43.015608 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:13:43.016426 [info ]: Started scheduling
+15:13:43.016578 [info ]: Finished scheduling [  0.00s]
+15:13:43.019547 [info ]: Started building task graph
+15:13:43.019591 [info ]: Finished building task graph [  0.00s]
+15:13:43.059888 [info ]: Started scheduling
+15:13:43.059986 [info ]: Finished scheduling [  0.00s]
+15:13:43.060859 [info ]: Finished parsing [  1.14s]
+15:13:43.073809 [info ]: Cached model count updated: 4 models (accurate)
+15:13:44.638517 [info ]: Started loading project
+15:13:44.639540 [info ]: Loading ~/.dbt/profiles.yml
+15:13:44.677412 [info ]: Cached model count updated: 4 models (estimate)
+15:13:44.677443 [info ]: Cached model count updated: 4 models (accurate)
+15:13:44.677472 [info ]: Started scheduling
+15:13:44.677546 [info ]: Finished scheduling [  0.00s]
+15:13:44.677574 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.raw_vendas", "model.meu_projeto.resume_sales", "model.meu_projeto.stg_tips"}
+15:13:44.679409 [info ]: Started building task graph
+15:13:44.679471 [info ]: Finished building task graph [  0.00s]
+15:13:44.682453 [info ]: Started rendering (4 nodes)
+15:13:44.682488 [info ]: Started model main.resume_sales
+15:13:44.682501 [debug]: Started rendering model main.resume_sales
+15:13:44.682536 [info ]: Started model main.raw_vendas
+15:13:44.682558 [debug]: Started rendering model main.raw_vendas
+15:13:44.682570 [info ]: Finished loading project [  0.04s]
+15:13:44.682591 [info ]: Started model main.fct_resumo
+15:13:44.682612 [debug]: Started rendering model main.fct_resumo
+15:13:44.682642 [info ]: Started model main.stg_tips
+15:13:44.682665 [debug]: Started rendering model main.stg_tips
+15:13:44.683976 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: raw, table name: vendas
+(in models/staging/raw_vendas.sql:7:6)
+  --> models/staging/raw_vendas.sql:7:6
+15:13:44.684064 [info ]: Started analyzing (4 nodes)
+15:13:44.684082 [debug]: Started analyzing model main.raw_vendas
+15:13:44.684112 [debug]: Finished analyzing [  0.00s] model main.raw_vendas [skipped]
+15:13:44.684152 [info ]:     Failed [  0.00s] model main.raw_vendas (view)
+15:13:44.684216 [debug]: Finished rendering [  0.00s] model main.raw_vendas [error]
+15:13:44.684953 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: ref not found for package: meu_projeto, model: stg_vendas, version: None
+(in models/marts/resume_sales.sql:7:6)
+  --> models/marts/resume_sales.sql:7:6
+15:13:44.685021 [debug]: Started analyzing model main.resume_sales
+15:13:44.685057 [debug]: Finished analyzing [  0.00s] model main.resume_sales [skipped]
+15:13:44.685081 [info ]:     Failed [  0.00s] model main.resume_sales (view)
+15:13:44.685104 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:13:44.685139 [debug]: Finished rendering [  0.00s] model main.resume_sales [error]
+15:13:44.685314 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:13:44.685351 [debug]: Started analyzing model main.fct_resumo
+15:13:44.686169 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:13:44.686212 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:13:44.688233 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:13:44.688603 [debug]: Finished rendering [  0.01s] model main.stg_tips [success]
+15:13:44.688649 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 2 errors)
+15:13:44.688681 [debug]: Started analyzing model main.stg_tips
+15:13:44.689249 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:13:44.689279 [info ]: Finished analyzing [  0.01s] (4 nodes, 2 skipped, 0 errors)
+15:13:44.689299 [info ]:  Succeeded [  0.01s] model main.stg_tips (view)
+15:13:44.698627 [info ]: Started scheduling
+15:13:44.698679 [info ]: Finished scheduling [  0.00s]
+15:13:44.698928 [info ]: Cached model count updated: 4 models (accurate)
+15:13:46.566085 [info ]: Started loading project
+15:13:46.566915 [info ]: Loading ~/.dbt/profiles.yml
+15:13:46.582561 [info ]: Started loading project
+15:13:46.583497 [info ]: Loading ~/.dbt/profiles.yml
+15:13:46.583537 [info ]: Finished loading project [  0.02s]
+15:13:46.593138 [debug]:    Started loading packages
+15:13:46.597163 [debug]:     Loaded [  0.00s] packages
+15:13:46.598271 [info ]: Finished loading project [  0.02s]
+15:13:46.598603 [info ]: Started parsing
+15:13:46.668027 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:13:46.671229 [error]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key `"columns"`. YAML path: `columns`.
+  --> tests\test.yaml:1:1
+15:13:46.674696 [debug]: Finished parsing tests/test.yaml [  0.01s]
+15:13:46.675644 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:13:46.676796 [debug]: Finished parsing models/marts/resume_sales.sql [  0.00s]
+15:13:46.677939 [debug]: Finished parsing models/staging/raw_vendas.sql [  0.00s]
+15:13:46.679134 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:13:46.994642 [error]: [DependencyNotFound (dbt1048)]: Source 'raw.vendas' not found in project. Searched for 'vendas'
+  --> models/staging/raw_vendas.sql:7:6
+15:13:46.994699 [error]: [DependencyNotFound (dbt1048)]: Ref 'stg_vendas' not found in project. Searched for 'meu_projeto.stg_vendas, stg_vendas'
+  --> models/marts/resume_sales.sql:7:6
+15:13:46.998634 [info ]: Cached model count updated: 4 models (estimate)
+15:13:46.998655 [info ]: Cached model count updated: 4 models (accurate)
+15:13:46.998693 [info ]: Started scheduling
+15:13:46.998752 [info ]: Finished scheduling [  0.00s]
+15:13:46.998777 [debug]: Compilation - 0 nodes selected: {}
+15:13:46.998805 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+15:13:46.998827 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:13:46.998994 [info ]: Started scheduling
+15:13:46.999078 [info ]: Finished scheduling [  0.00s]
+15:13:47.001550 [info ]: Started building task graph
+15:13:47.001587 [info ]: Finished building task graph [  0.00s]
+15:13:47.013270 [info ]: Started scheduling
+15:13:47.013361 [info ]: Finished scheduling [  0.00s]
+15:13:47.015139 [info ]: Cached model count updated: 4 models (accurate)
+15:13:47.015207 [info ]: Finished parsing [  0.42s]
+15:13:48.586659 [info ]: Started loading project
+15:13:48.589190 [info ]: Loading ~/.dbt/profiles.yml
+15:13:48.702648 [info ]: Cached model count updated: 4 models (estimate)
+15:13:48.702677 [info ]: Cached model count updated: 4 models (accurate)
+15:13:48.702721 [info ]: Started scheduling
+15:13:48.702831 [info ]: Finished scheduling [  0.00s]
+15:13:48.702861 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.raw_vendas", "model.meu_projeto.resume_sales", "model.meu_projeto.stg_tips"}
+15:13:48.706739 [info ]: Started building task graph
+15:13:48.706849 [info ]: Finished building task graph [  0.00s]
+15:13:48.717744 [info ]: Started rendering (4 nodes)
+15:13:48.717789 [info ]: Started model main.resume_sales
+15:13:48.717816 [debug]: Started rendering model main.resume_sales
+15:13:48.717866 [info ]: Started model main.raw_vendas
+15:13:48.717885 [info ]: Finished loading project [  0.13s]
+15:13:48.717889 [debug]: Started rendering model main.raw_vendas
+15:13:48.717915 [info ]: Started model main.fct_resumo
+15:13:48.717933 [debug]: Started rendering model main.fct_resumo
+15:13:48.717956 [info ]: Started model main.stg_tips
+15:13:48.719496 [debug]: Started rendering model main.stg_tips
+15:13:48.720641 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: raw, table name: vendas
+(in models/staging/raw_vendas.sql:7:6)
+  --> models/staging/raw_vendas.sql:7:6
+15:13:48.721482 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:13:48.721418 [info ]: Started analyzing (4 nodes)
+15:13:48.722567 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:13:48.722635 [debug]: Started analyzing model main.raw_vendas
+15:13:48.722714 [debug]: Finished analyzing [  0.00s] model main.raw_vendas [skipped]
+15:13:48.723013 [info ]:     Failed [  0.00s] model main.raw_vendas (view)
+15:13:48.723100 [debug]: Finished rendering [  0.01s] model main.raw_vendas [error]
+15:13:48.723287 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: ref not found for package: meu_projeto, model: stg_vendas, version: None
+(in models/marts/resume_sales.sql:7:6)
+  --> models/marts/resume_sales.sql:7:6
+15:13:48.723351 [debug]: Started analyzing model main.resume_sales
+15:13:48.723380 [debug]: Finished analyzing [  0.00s] model main.resume_sales [skipped]
+15:13:48.723402 [info ]:     Failed [  0.01s] model main.resume_sales (view)
+15:13:48.723459 [debug]: Finished rendering [  0.01s] model main.resume_sales [error]
+15:13:48.727664 [debug]: Started analyzing model main.fct_resumo
+15:13:48.727736 [debug]: Finished rendering [  0.01s] model main.fct_resumo [success]
+15:13:48.731056 [debug]: Started analyzing model main.stg_tips
+15:13:48.731375 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:13:48.731412 [info ]:  Succeeded [  0.01s] model main.stg_tips (view)
+15:13:48.731727 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:13:48.731761 [info ]: Finished analyzing [  0.01s] (4 nodes, 2 skipped, 0 errors)
+15:13:48.731782 [info ]:  Succeeded [  0.01s] model main.fct_resumo (view)
+15:13:48.740996 [info ]: Started scheduling
+15:13:48.741079 [info ]: Finished scheduling [  0.00s]
+15:13:48.741430 [info ]: Cached model count updated: 4 models (accurate)
+15:13:48.745898 [debug]: Finished rendering [  0.03s] model main.stg_tips [success]
+15:13:48.745944 [info ]: Finished rendering [  0.03s] (4 nodes, 0 skipped, 2 errors)
+15:17:32.565718 [info ]: Started loading project
+15:17:32.566576 [info ]: Loading ~/.dbt/profiles.yml
+15:17:32.577272 [info ]: Started loading project
+15:17:32.578063 [info ]: Loading ~/.dbt/profiles.yml
+15:17:32.578123 [info ]: Finished loading project [  0.01s]
+15:17:32.586257 [debug]:    Started loading packages
+15:17:32.591870 [debug]:     Loaded [  0.01s] packages
+15:17:32.593369 [info ]: Finished loading project [  0.02s]
+15:17:32.593686 [info ]: Started parsing
+15:17:32.643620 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:17:32.644305 [error]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key `"columns"`. YAML path: `columns`.
+  --> tests\test.yaml:1:1
+15:17:32.645534 [debug]: Finished parsing tests/test.yaml [  0.00s]
+15:17:32.647395 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:17:32.648486 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:17:32.649631 [debug]: Finished parsing models/staging/raw_vendas.sql [  0.00s]
+15:17:32.650465 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:17:32.963519 [error]: [DependencyNotFound (dbt1048)]: Ref 'stg_vendas' not found in project. Searched for 'meu_projeto.stg_vendas, stg_vendas'
+  --> models/marts/fct_vendas.sql:7:6
+15:17:32.963577 [error]: [DependencyNotFound (dbt1048)]: Source 'raw.vendas' not found in project. Searched for 'vendas'
+  --> models/staging/raw_vendas.sql:7:6
+15:17:32.966432 [info ]: Cached model count updated: 4 models (estimate)
+15:17:32.966450 [info ]: Cached model count updated: 4 models (accurate)
+15:17:32.966485 [info ]: Started scheduling
+15:17:32.966521 [info ]: Finished scheduling [  0.00s]
+15:17:32.966547 [debug]: Compilation - 0 nodes selected: {}
+15:17:32.966578 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+15:17:32.966592 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:17:32.966735 [info ]: Started scheduling
+15:17:32.966802 [info ]: Finished scheduling [  0.00s]
+15:17:32.968499 [info ]: Started building task graph
+15:17:32.968524 [info ]: Finished building task graph [  0.00s]
+15:17:32.980950 [info ]: Started scheduling
+15:17:32.981091 [info ]: Finished scheduling [  0.00s]
+15:17:32.985345 [info ]: Cached model count updated: 4 models (accurate)
+15:17:32.985420 [info ]: Finished parsing [  0.39s]
+15:17:34.554314 [info ]: Started loading project
+15:17:34.556541 [info ]: Loading ~/.dbt/profiles.yml
+15:17:34.613199 [info ]: Cached model count updated: 4 models (estimate)
+15:17:34.613237 [info ]: Cached model count updated: 4 models (accurate)
+15:17:34.613286 [info ]: Started scheduling
+15:17:34.613406 [info ]: Finished scheduling [  0.00s]
+15:17:34.613442 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.raw_vendas", "model.meu_projeto.stg_tips"}
+15:17:34.616055 [info ]: Started building task graph
+15:17:34.616169 [info ]: Finished building task graph [  0.00s]
+15:17:34.620824 [info ]: Started rendering (4 nodes)
+15:17:34.620882 [info ]: Started model main.raw_vendas
+15:17:34.620910 [debug]: Started rendering model main.raw_vendas
+15:17:34.620956 [info ]: Started model main.fct_vendas
+15:17:34.620987 [info ]: Finished loading project [  0.07s]
+15:17:34.620990 [debug]: Started rendering model main.fct_vendas
+15:17:34.621031 [info ]: Started model main.fct_resumo
+15:17:34.621066 [debug]: Started rendering model main.fct_resumo
+15:17:34.621303 [info ]: Started model main.stg_tips
+15:17:34.622136 [debug]: Started rendering model main.stg_tips
+15:17:34.622514 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: ref not found for package: meu_projeto, model: stg_vendas, version: None
+(in models/marts/fct_vendas.sql:7:6)
+  --> models/marts/fct_vendas.sql:7:6
+15:17:34.622673 [info ]: Started analyzing (4 nodes)
+15:17:34.622996 [debug]: Started analyzing model main.fct_vendas
+15:17:34.623101 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [skipped]
+15:17:34.623266 [info ]:     Failed [  0.00s] model main.fct_vendas (view)
+15:17:34.623534 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:17:34.623701 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:17:34.623737 [debug]: Started analyzing model main.fct_resumo
+15:17:34.624454 [debug]: Finished rendering [  0.00s] model main.fct_vendas [error]
+15:17:34.624667 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:17:34.624674 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:17:34.624699 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:17:34.624822 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:17:34.624877 [debug]: Started analyzing model main.stg_tips
+15:17:34.625187 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:17:34.625218 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:17:34.626592 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: raw, table name: vendas
+(in models/staging/raw_vendas.sql:7:6)
+  --> models/staging/raw_vendas.sql:7:6
+15:17:34.626691 [debug]: Started analyzing model main.raw_vendas
+15:17:34.626736 [debug]: Finished analyzing [  0.00s] model main.raw_vendas [skipped]
+15:17:34.626765 [info ]: Finished analyzing [  0.00s] (4 nodes, 2 skipped, 0 errors)
+15:17:34.626790 [info ]:     Failed [  0.01s] model main.raw_vendas (view)
+15:17:34.636661 [info ]: Started scheduling
+15:17:34.636752 [info ]: Finished scheduling [  0.00s]
+15:17:34.637143 [info ]: Cached model count updated: 4 models (accurate)
+15:17:34.637201 [debug]: Finished rendering [  0.02s] model main.raw_vendas [error]
+15:17:34.637229 [info ]: Finished rendering [  0.02s] (4 nodes, 0 skipped, 2 errors)
+15:18:10.966597 [info ]: Started loading project
+15:18:10.967521 [info ]: Loading ~/.dbt/profiles.yml
+15:18:10.978406 [info ]: Started loading project
+15:18:10.979573 [info ]: Loading ~/.dbt/profiles.yml
+15:18:10.979627 [info ]: Finished loading project [  0.01s]
+15:18:10.986820 [debug]:    Started loading packages
+15:18:10.992043 [debug]:     Loaded [  0.01s] packages
+15:18:10.993713 [info ]: Finished loading project [  0.02s]
+15:18:10.994170 [info ]: Started parsing
+15:18:11.072799 [debug]: Finished parsing models/staging/schema.yml [  0.00s]
+15:18:11.073332 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:18:11.074334 [error]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key `"columns"`. YAML path: `columns`.
+  --> tests\test.yaml:1:1
+15:18:11.076772 [debug]: Finished parsing tests/test.yaml [  0.00s]
+15:18:11.084854 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.01s]
+15:18:11.085247 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:18:11.086278 [debug]: Finished parsing models/staging/raw_vendas.sql [  0.00s]
+15:18:11.087145 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:18:11.652406 [error]: [DependencyNotFound (dbt1048)]: Ref 'stg_vendas' not found in project. Searched for 'meu_projeto.stg_vendas, stg_vendas'
+  --> models/marts/fct_vendas.sql:7:6
+15:18:11.652473 [error]: [DependencyNotFound (dbt1048)]: Source 'raw.vendas' not found in project. Searched for 'vendas'
+  --> models/staging/raw_vendas.sql:7:6
+15:18:11.657329 [info ]: Cached model count updated: 4 models (estimate)
+15:18:11.657377 [info ]: Cached model count updated: 4 models (accurate)
+15:18:11.657425 [info ]: Started scheduling
+15:18:11.657486 [info ]: Finished scheduling [  0.00s]
+15:18:11.657514 [debug]: Compilation - 0 nodes selected: {}
+15:18:11.657550 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+15:18:11.657574 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:18:11.657784 [info ]: Started scheduling
+15:18:11.657936 [info ]: Finished scheduling [  0.00s]
+15:18:11.664420 [info ]: Started building task graph
+15:18:11.664656 [info ]: Finished building task graph [  0.00s]
+15:18:11.685479 [info ]: Started scheduling
+15:18:11.685617 [info ]: Finished scheduling [  0.00s]
+15:18:11.686031 [info ]: Finished parsing [  0.69s]
+15:18:11.736526 [info ]: Cached model count updated: 4 models (accurate)
+15:18:13.339518 [info ]: Started loading project
+15:18:13.341000 [info ]: Loading ~/.dbt/profiles.yml
+15:18:13.403724 [info ]: Cached model count updated: 4 models (estimate)
+15:18:13.403762 [info ]: Cached model count updated: 4 models (accurate)
+15:18:13.403805 [info ]: Started scheduling
+15:18:13.403921 [info ]: Finished scheduling [  0.00s]
+15:18:13.403958 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.raw_vendas", "model.meu_projeto.stg_tips"}
+15:18:13.406424 [info ]: Started building task graph
+15:18:13.406531 [info ]: Finished building task graph [  0.00s]
+15:18:13.412112 [info ]: Started rendering (4 nodes)
+15:18:13.412172 [info ]: Started model main.raw_vendas
+15:18:13.412198 [debug]: Started rendering model main.raw_vendas
+15:18:13.412245 [info ]: Started model main.fct_vendas
+15:18:13.412271 [info ]: Finished loading project [  0.07s]
+15:18:13.412286 [debug]: Started rendering model main.fct_vendas
+15:18:13.412336 [info ]: Started model main.fct_resumo
+15:18:13.412455 [debug]: Started rendering model main.fct_resumo
+15:18:13.412694 [info ]: Started model main.stg_tips
+15:18:13.413381 [debug]: Started rendering model main.stg_tips
+15:18:13.413778 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: ref not found for package: meu_projeto, model: stg_vendas, version: None
+(in models/marts/fct_vendas.sql:7:6)
+  --> models/marts/fct_vendas.sql:7:6
+15:18:13.413913 [info ]: Started analyzing (4 nodes)
+15:18:13.414008 [debug]: Started analyzing model main.fct_vendas
+15:18:13.414089 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [skipped]
+15:18:13.414299 [info ]:     Failed [  0.00s] model main.fct_vendas (view)
+15:18:13.414719 [debug]: Finished rendering [  0.00s] model main.fct_vendas [error]
+15:18:13.414783 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:18:13.414933 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:18:13.414971 [debug]: Started analyzing model main.fct_resumo
+15:18:13.415794 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:18:13.415865 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:18:13.416142 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: raw, table name: vendas
+(in models/staging/raw_vendas.sql:7:6)
+  --> models/staging/raw_vendas.sql:7:6
+15:18:13.416206 [debug]: Started analyzing model main.raw_vendas
+15:18:13.416240 [debug]: Finished analyzing [  0.00s] model main.raw_vendas [skipped]
+15:18:13.416267 [info ]:     Failed [  0.00s] model main.raw_vendas (view)
+15:18:13.416356 [debug]: Finished rendering [  0.00s] model main.raw_vendas [error]
+15:18:13.417980 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:18:13.418229 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:18:13.418273 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 2 errors)
+15:18:13.418303 [debug]: Started analyzing model main.stg_tips
+15:18:13.418678 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:18:13.418709 [info ]: Finished analyzing [  0.00s] (4 nodes, 2 skipped, 0 errors)
+15:18:13.418729 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:18:13.431540 [info ]: Started scheduling
+15:18:13.431647 [info ]: Finished scheduling [  0.00s]
+15:18:13.432007 [info ]: Cached model count updated: 4 models (accurate)
+15:18:47.430032 [info ]: Started loading project
+15:18:47.430737 [info ]: Loading ~/.dbt/profiles.yml
+15:18:47.446577 [info ]: Started parsing
+15:18:47.529330 [info ]: Finished loading project [  0.10s]
+15:18:47.531390 [error]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key `"columns"`. YAML path: `columns`.
+  --> models\staging\schema.yml:1:1
+15:18:47.533663 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:18:47.535197 [debug]: Finished parsing models/staging/schema.yml [  0.00s]
+15:18:47.535349 [debug]: Finished parsing models/staging/raw_vendas.sql [  0.00s]
+15:18:47.846821 [error]: [DependencyNotFound (dbt1048)]: Ref 'stg_vendas' not found in project. Searched for 'meu_projeto.stg_vendas, stg_vendas'
+  --> models/marts/fct_vendas.sql:7:6
+15:18:47.846869 [error]: [DependencyNotFound (dbt1048)]: Source 'raw.vendas' not found in project. Searched for 'vendas'
+  --> models/staging/raw_vendas.sql:7:6
+15:18:47.851767 [info ]: Cached model count updated: 4 models (estimate)
+15:18:47.851786 [info ]: Cached model count updated: 4 models (accurate)
+15:18:47.851825 [info ]: Started scheduling
+15:18:47.851926 [info ]: Finished scheduling [  0.00s]
+15:18:47.851955 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_vendas", "model.meu_projeto.raw_vendas"}
+15:18:47.854394 [info ]: Started building task graph
+15:18:47.854494 [info ]: Finished building task graph [  0.00s]
+15:18:47.858797 [info ]: Started rendering (2 nodes)
+15:18:47.858842 [info ]: Started model main.raw_vendas
+15:18:47.858866 [debug]: Started rendering model main.raw_vendas
+15:18:47.858957 [info ]: Finished parsing [  0.41s]
+15:18:47.859021 [info ]: Started model main.fct_vendas
+15:18:47.859448 [debug]: Started rendering model main.fct_vendas
+15:18:47.860246 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: raw, table name: vendas
+(in models/staging/raw_vendas.sql:7:6)
+  --> models/staging/raw_vendas.sql:7:6
+15:18:47.860341 [info ]: Started analyzing (2 nodes)
+15:18:47.860368 [debug]: Started analyzing model main.raw_vendas
+15:18:47.860401 [debug]: Finished analyzing [  0.00s] model main.raw_vendas [skipped]
+15:18:47.860426 [info ]:     Failed [  0.00s] model main.raw_vendas (view)
+15:18:47.860513 [debug]: Finished rendering [  0.00s] model main.raw_vendas [error]
+15:18:47.861218 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: ref not found for package: meu_projeto, model: stg_vendas, version: None
+(in models/marts/fct_vendas.sql:7:6)
+  --> models/marts/fct_vendas.sql:7:6
+15:18:47.861297 [debug]: Started analyzing model main.fct_vendas
+15:18:47.861339 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [skipped]
+15:18:47.861362 [info ]: Finished analyzing [  0.00s] (2 nodes, 2 skipped, 0 errors)
+15:18:47.861382 [info ]:     Failed [  0.00s] model main.fct_vendas (view)
+15:18:47.869248 [info ]: Started scheduling
+15:18:47.869302 [info ]: Finished scheduling [  0.00s]
+15:18:47.872235 [info ]: Cached model count updated: 4 models (accurate)
+15:18:47.872292 [debug]: Finished rendering [  0.01s] model main.fct_vendas [error]
+15:18:47.872328 [info ]: Finished rendering [  0.01s] (2 nodes, 0 skipped, 2 errors)
+15:18:49.511993 [info ]: Started loading project
+15:18:49.512941 [info ]: Loading ~/.dbt/profiles.yml
+15:18:49.572473 [info ]: Cached model count updated: 4 models (estimate)
+15:18:49.572502 [info ]: Cached model count updated: 4 models (accurate)
+15:18:49.572551 [info ]: Started scheduling
+15:18:49.572678 [info ]: Finished scheduling [  0.00s]
+15:18:49.572714 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.raw_vendas", "model.meu_projeto.stg_tips"}
+15:18:49.575469 [info ]: Started building task graph
+15:18:49.575560 [info ]: Finished building task graph [  0.00s]
+15:18:49.579047 [info ]: Started rendering (4 nodes)
+15:18:49.579088 [info ]: Started model main.raw_vendas
+15:18:49.579130 [debug]: Started rendering model main.raw_vendas
+15:18:49.579174 [info ]: Started model main.fct_vendas
+15:18:49.579200 [debug]: Started rendering model main.fct_vendas
+15:18:49.579202 [info ]: Finished loading project [  0.07s]
+15:18:49.579230 [info ]: Started model main.fct_resumo
+15:18:49.579305 [debug]: Started rendering model main.fct_resumo
+15:18:49.580136 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:18:49.580411 [info ]: Started model main.stg_tips
+15:18:49.580501 [debug]: Started rendering model main.stg_tips
+15:18:49.581110 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:18:49.581376 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: ref not found for package: meu_projeto, model: stg_vendas, version: None
+(in models/marts/fct_vendas.sql:7:6)
+  --> models/marts/fct_vendas.sql:7:6
+15:18:49.581467 [info ]: Started analyzing (4 nodes)
+15:18:49.581491 [debug]: Started analyzing model main.fct_vendas
+15:18:49.581524 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [skipped]
+15:18:49.581606 [info ]:     Failed [  0.00s] model main.fct_vendas (view)
+15:18:49.581653 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:18:49.581684 [debug]: Started analyzing model main.fct_resumo
+15:18:49.581758 [debug]: Finished rendering [  0.00s] model main.fct_vendas [error]
+15:18:49.581801 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: raw, table name: vendas
+(in models/staging/raw_vendas.sql:7:6)
+  --> models/staging/raw_vendas.sql:7:6
+15:18:49.581939 [debug]: Started analyzing model main.raw_vendas
+15:18:49.582016 [debug]: Finished analyzing [  0.00s] model main.raw_vendas [skipped]
+15:18:49.582081 [info ]:     Failed [  0.00s] model main.raw_vendas (view)
+15:18:49.582163 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:18:49.582238 [debug]: Started analyzing model main.stg_tips
+15:18:49.582340 [debug]: Finished rendering [  0.00s] model main.raw_vendas [error]
+15:18:49.582360 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 2 errors)
+15:18:49.582529 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:18:49.582695 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:18:49.582846 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:18:49.582870 [info ]: Finished analyzing [  0.00s] (4 nodes, 2 skipped, 0 errors)
+15:18:49.582884 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:18:49.591512 [info ]: Started scheduling
+15:18:49.591599 [info ]: Finished scheduling [  0.00s]
+15:18:49.592538 [info ]: Cached model count updated: 4 models (accurate)
+15:19:21.763373 [info ]: Started loading project
+15:19:21.764353 [info ]: Loading ~/.dbt/profiles.yml
+15:19:21.780210 [info ]: Started parsing
+15:19:21.882483 [info ]: Finished loading project [  0.12s]
+15:19:21.885297 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:19:21.886076 [debug]: Finished parsing models/staging/raw_vendas.sql [  0.00s]
+15:19:22.196956 [error]: [DependencyNotFound (dbt1048)]: Ref 'stg_vendas' not found in project. Searched for 'meu_projeto.stg_vendas, stg_vendas'
+  --> models/marts/fct_vendas.sql:7:6
+15:19:22.202791 [info ]: Cached model count updated: 4 models (estimate)
+15:19:22.202816 [info ]: Cached model count updated: 4 models (accurate)
+15:19:22.202867 [info ]: Started scheduling
+15:19:22.202950 [info ]: Finished scheduling [  0.00s]
+15:19:22.202977 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.raw_vendas"}
+15:19:22.204772 [info ]: Started building task graph
+15:19:22.204827 [info ]: Finished building task graph [  0.00s]
+15:19:22.208098 [info ]: Started rendering (1 nodes)
+15:19:22.208125 [info ]: Started model main.raw_vendas
+15:19:22.208143 [debug]: Started rendering model main.raw_vendas
+15:19:22.208222 [info ]: Finished parsing [  0.43s]
+15:19:22.211938 [debug]: Compiled SQL for node model.meu_projeto.raw_vendas at target\.lsp\compiled\meu_projeto\models\staging\raw_vendas.sql
+15:19:22.212358 [debug]: Finished rendering [  0.00s] model main.raw_vendas [success]
+15:19:22.212495 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:19:22.212536 [info ]: Started analyzing (1 nodes)
+15:19:22.212555 [debug]: Started analyzing model main.raw_vendas
+15:19:22.213251 [debug]: Finished analyzing [  0.00s] model main.raw_vendas [success]
+15:19:22.213286 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:19:22.213307 [info ]:  Succeeded [  0.00s] model main.raw_vendas (view)
+15:19:22.220794 [info ]: Started scheduling
+15:19:22.220899 [info ]: Finished scheduling [  0.00s]
+15:19:22.223592 [info ]: Cached model count updated: 4 models (accurate)
+15:19:23.840240 [info ]: Started loading project
+15:19:23.841798 [info ]: Loading ~/.dbt/profiles.yml
+15:19:23.890018 [info ]: Cached model count updated: 4 models (estimate)
+15:19:23.890039 [info ]: Cached model count updated: 4 models (accurate)
+15:19:23.890070 [info ]: Started scheduling
+15:19:23.890143 [info ]: Finished scheduling [  0.00s]
+15:19:23.890161 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.raw_vendas", "model.meu_projeto.stg_tips"}
+15:19:23.891920 [info ]: Started building task graph
+15:19:23.891993 [info ]: Finished building task graph [  0.00s]
+15:19:23.895064 [info ]: Started rendering (4 nodes)
+15:19:23.895097 [info ]: Started model main.raw_vendas
+15:19:23.895112 [debug]: Started rendering model main.raw_vendas
+15:19:23.895147 [info ]: Started model main.fct_vendas
+15:19:23.895187 [debug]: Started rendering model main.fct_vendas
+15:19:23.895189 [info ]: Finished loading project [  0.05s]
+15:19:23.895213 [info ]: Started model main.fct_resumo
+15:19:23.895228 [debug]: Started rendering model main.fct_resumo
+15:19:23.895253 [info ]: Started model main.stg_tips
+15:19:23.895277 [debug]: Started rendering model main.stg_tips
+15:19:23.896239 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:19:23.896347 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:19:23.896393 [info ]: Started analyzing (4 nodes)
+15:19:23.896411 [debug]: Started analyzing model main.fct_resumo
+15:19:23.896555 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: ref not found for package: meu_projeto, model: stg_vendas, version: None
+(in models/marts/fct_vendas.sql:7:6)
+  --> models/marts/fct_vendas.sql:7:6
+15:19:23.896609 [debug]: Started analyzing model main.fct_vendas
+15:19:23.896640 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [skipped]
+15:19:23.896663 [info ]:     Failed [  0.00s] model main.fct_vendas (view)
+15:19:23.896717 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:19:23.896726 [debug]: Finished rendering [  0.00s] model main.fct_vendas [error]
+15:19:23.896870 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:19:23.896901 [debug]: Started analyzing model main.stg_tips
+15:19:23.897152 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:19:23.897177 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:19:23.897232 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:19:23.897262 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:19:23.897718 [debug]: Compiled SQL for node model.meu_projeto.raw_vendas at target\.lsp\compiled\meu_projeto\models\staging\raw_vendas.sql
+15:19:23.897802 [debug]: Finished rendering [  0.00s] model main.raw_vendas [success]
+15:19:23.897830 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 1 errors)
+15:19:23.897854 [debug]: Started analyzing model main.raw_vendas
+15:19:23.898036 [debug]: Finished analyzing [  0.00s] model main.raw_vendas [success]
+15:19:23.898067 [info ]: Finished analyzing [  0.00s] (4 nodes, 1 skipped, 0 errors)
+15:19:23.898096 [info ]:  Succeeded [  0.00s] model main.raw_vendas (view)
+15:19:23.906201 [info ]: Started scheduling
+15:19:23.906265 [info ]: Finished scheduling [  0.00s]
+15:19:23.906648 [info ]: Cached model count updated: 4 models (accurate)
+15:21:27.258359 [info ]: Started loading project
+15:21:27.259574 [info ]: Loading ~/.dbt/profiles.yml
+15:21:27.275916 [info ]: Started loading project
+15:21:27.276947 [info ]: Loading ~/.dbt/profiles.yml
+15:21:27.276985 [info ]: Finished loading project [  0.02s]
+15:21:27.291587 [debug]:    Started loading packages
+15:21:27.304744 [debug]:     Loaded [  0.01s] packages
+15:21:27.306894 [info ]: Finished loading project [  0.03s]
+15:21:27.307439 [info ]: Started parsing
+15:21:27.388585 [error]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key `"columns"`. YAML path: `columns`.
+  --> models\staging\schema.yml:1:1
+15:21:27.390599 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:21:27.391756 [debug]: Finished parsing models/staging/schema.yml [  0.00s]
+15:21:27.392597 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:21:27.393664 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:21:27.394751 [debug]: Finished parsing models/staging/raw_vendas.sql [  0.00s]
+15:21:27.395547 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:21:28.325398 [error]: [DependencyNotFound (dbt1048)]: Ref 'stg_vendas' not found in project. Searched for 'meu_projeto.stg_vendas, stg_vendas'
+  --> models/marts/fct_vendas.sql:7:6
+15:21:28.329109 [info ]: Cached model count updated: 4 models (estimate)
+15:21:28.329148 [info ]: Cached model count updated: 4 models (accurate)
+15:21:28.329190 [info ]: Started scheduling
+15:21:28.329429 [info ]: Finished scheduling [  0.00s]
+15:21:28.329487 [debug]: Compilation - 0 nodes selected: {}
+15:21:28.329534 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+15:21:28.329563 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:21:28.329748 [info ]: Started scheduling
+15:21:28.329843 [info ]: Finished scheduling [  0.00s]
+15:21:28.331941 [info ]: Started building task graph
+15:21:28.331978 [info ]: Finished building task graph [  0.00s]
+15:21:28.345608 [info ]: Started scheduling
+15:21:28.345703 [info ]: Finished scheduling [  0.00s]
+15:21:28.346336 [info ]: Finished parsing [  1.04s]
+15:21:28.352213 [info ]: Cached model count updated: 4 models (accurate)
+15:21:29.932594 [info ]: Started loading project
+15:21:29.935825 [info ]: Loading ~/.dbt/profiles.yml
+15:21:29.981855 [info ]: Cached model count updated: 4 models (estimate)
+15:21:29.981876 [info ]: Cached model count updated: 4 models (accurate)
+15:21:29.981905 [info ]: Started scheduling
+15:21:29.981979 [info ]: Finished scheduling [  0.00s]
+15:21:29.982006 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.raw_vendas", "model.meu_projeto.stg_tips"}
+15:21:29.983695 [info ]: Started building task graph
+15:21:29.983767 [info ]: Finished building task graph [  0.00s]
+15:21:29.986834 [info ]: Started rendering (4 nodes)
+15:21:29.986869 [info ]: Started model main.raw_vendas
+15:21:29.986885 [debug]: Started rendering model main.raw_vendas
+15:21:29.986922 [info ]: Started model main.fct_vendas
+15:21:29.986943 [debug]: Started rendering model main.fct_vendas
+15:21:29.986945 [info ]: Finished loading project [  0.05s]
+15:21:29.986971 [info ]: Started model main.fct_resumo
+15:21:29.987004 [debug]: Started rendering model main.fct_resumo
+15:21:29.987156 [info ]: Started model main.stg_tips
+15:21:29.987179 [debug]: Started rendering model main.stg_tips
+15:21:29.988037 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: ref not found for package: meu_projeto, model: stg_vendas, version: None
+(in models/marts/fct_vendas.sql:7:6)
+  --> models/marts/fct_vendas.sql:7:6
+15:21:29.988106 [info ]: Started analyzing (4 nodes)
+15:21:29.988123 [debug]: Started analyzing model main.fct_vendas
+15:21:29.988153 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [skipped]
+15:21:29.988177 [info ]:     Failed [  0.00s] model main.fct_vendas (view)
+15:21:29.988244 [debug]: Finished rendering [  0.00s] model main.fct_vendas [error]
+15:21:29.990081 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:21:29.990249 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:21:29.990264 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:21:29.990308 [debug]: Started analyzing model main.fct_resumo
+15:21:29.990399 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:21:29.990442 [debug]: Started analyzing model main.stg_tips
+15:21:29.990761 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:21:29.990799 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:21:29.991099 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:21:29.991130 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:21:29.994646 [debug]: Compiled SQL for node model.meu_projeto.raw_vendas at target\.lsp\compiled\meu_projeto\models\staging\raw_vendas.sql
+15:21:29.995097 [debug]: Finished rendering [  0.01s] model main.raw_vendas [success]
+15:21:29.995135 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 1 errors)
+15:21:29.995167 [debug]: Started analyzing model main.raw_vendas
+15:21:29.995435 [debug]: Finished analyzing [  0.00s] model main.raw_vendas [success]
+15:21:29.995461 [info ]: Finished analyzing [  0.01s] (4 nodes, 1 skipped, 0 errors)
+15:21:29.995481 [info ]:  Succeeded [  0.01s] model main.raw_vendas (view)
+15:21:30.001779 [info ]: Started scheduling
+15:21:30.001948 [info ]: Finished scheduling [  0.00s]
+15:21:30.002411 [info ]: Cached model count updated: 4 models (accurate)
+15:27:38.495712 [info ]: Started loading project
+15:27:38.497229 [info ]: Loading ~/.dbt/profiles.yml
+15:27:38.514349 [info ]: Started parsing
+15:27:38.595110 [info ]: Finished loading project [  0.10s]
+15:27:38.610516 [error]: [SerializationError (dbt1013)]: YAML error: models: invalid type: map, expected a sequence
+  --> models\staging\schema.yml:2:3
+15:27:38.611933 [debug]: Finished parsing models/staging/schema.yml [  0.01s]
+15:27:38.613022 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:27:38.936741 [error]: [DependencyNotFound (dbt1048)]: Ref 'stg_vendas' not found in project. Searched for 'meu_projeto.stg_vendas, stg_vendas'
+  --> models/marts/fct_vendas.sql:7:6
+15:27:38.941287 [info ]: Cached model count updated: 4 models (estimate)
+15:27:38.941305 [info ]: Cached model count updated: 4 models (accurate)
+15:27:38.941341 [info ]: Started scheduling
+15:27:38.941412 [info ]: Finished scheduling [  0.00s]
+15:27:38.941438 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.fct_vendas"}
+15:27:38.942915 [info ]: Started building task graph
+15:27:38.942964 [info ]: Finished building task graph [  0.00s]
+15:27:38.946341 [info ]: Started rendering (1 nodes)
+15:27:38.946490 [info ]: Started model main.fct_vendas
+15:27:38.946522 [debug]: Started rendering model main.fct_vendas
+15:27:38.946634 [info ]: Finished parsing [  0.43s]
+15:27:38.947738 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: ref not found for package: meu_projeto, model: stg_vendas, version: None
+(in models/marts/fct_vendas.sql:7:6)
+  --> models/marts/fct_vendas.sql:7:6
+15:27:38.947836 [info ]: Started analyzing (1 nodes)
+15:27:38.947860 [debug]: Started analyzing model main.fct_vendas
+15:27:38.947917 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [skipped]
+15:27:38.947944 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+15:27:38.947960 [info ]:     Failed [  0.00s] model main.fct_vendas (view)
+15:27:38.955644 [info ]: Started scheduling
+15:27:38.955705 [info ]: Finished scheduling [  0.00s]
+15:27:38.957761 [info ]: Cached model count updated: 4 models (accurate)
+15:27:38.957819 [debug]: Finished rendering [  0.01s] model main.fct_vendas [error]
+15:27:38.957848 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 1 errors)
+15:27:40.571651 [info ]: Started loading project
+15:27:40.572420 [info ]: Loading ~/.dbt/profiles.yml
+15:27:40.619853 [info ]: Cached model count updated: 4 models (estimate)
+15:27:40.619874 [info ]: Cached model count updated: 4 models (accurate)
+15:27:40.619903 [info ]: Started scheduling
+15:27:40.619991 [info ]: Finished scheduling [  0.00s]
+15:27:40.620011 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.raw_vendas", "model.meu_projeto.stg_tips"}
+15:27:40.621800 [info ]: Started building task graph
+15:27:40.621859 [info ]: Finished building task graph [  0.00s]
+15:27:40.625241 [info ]: Started rendering (4 nodes)
+15:27:40.625268 [info ]: Started model main.raw_vendas
+15:27:40.625283 [debug]: Started rendering model main.raw_vendas
+15:27:40.625317 [info ]: Started model main.fct_vendas
+15:27:40.625340 [debug]: Started rendering model main.fct_vendas
+15:27:40.625342 [info ]: Finished loading project [  0.05s]
+15:27:40.625368 [info ]: Started model main.fct_resumo
+15:27:40.625384 [debug]: Started rendering model main.fct_resumo
+15:27:40.625405 [info ]: Started model main.stg_tips
+15:27:40.625453 [debug]: Started rendering model main.stg_tips
+15:27:40.625925 [debug]: Compiled SQL for node model.meu_projeto.raw_vendas at target\.lsp\compiled\meu_projeto\models\staging\raw_vendas.sql
+15:27:40.626011 [debug]: Finished rendering [  0.00s] model main.raw_vendas [success]
+15:27:40.626053 [info ]: Started analyzing (4 nodes)
+15:27:40.626069 [debug]: Started analyzing model main.raw_vendas
+15:27:40.626325 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:27:40.626341 [debug]: Finished analyzing [  0.00s] model main.raw_vendas [success]
+15:27:40.626368 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:27:40.626365 [info ]:  Succeeded [-------] model main.raw_vendas (view)
+15:27:40.626427 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:27:40.626456 [debug]: Started analyzing model main.fct_resumo
+15:27:40.626523 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:27:40.626556 [debug]: Started analyzing model main.stg_tips
+15:27:40.626833 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:27:40.626857 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:27:40.627192 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:27:40.627225 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:27:40.628281 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: ref not found for package: meu_projeto, model: stg_vendas, version: None
+(in models/marts/fct_vendas.sql:7:6)
+  --> models/marts/fct_vendas.sql:7:6
+15:27:40.628371 [debug]: Started analyzing model main.fct_vendas
+15:27:40.628415 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [skipped]
+15:27:40.628440 [info ]: Finished analyzing [  0.00s] (4 nodes, 1 skipped, 0 errors)
+15:27:40.628457 [info ]:     Failed [  0.00s] model main.fct_vendas (view)
+15:27:40.633150 [info ]: Started scheduling
+15:27:40.633203 [info ]: Finished scheduling [  0.00s]
+15:27:40.633452 [info ]: Cached model count updated: 4 models (accurate)
+15:27:40.633493 [debug]: Finished rendering [  0.01s] model main.fct_vendas [error]
+15:27:40.633512 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 1 errors)
+15:27:51.073650 [info ]: Started loading project
+15:27:51.074666 [info ]: Loading ~/.dbt/profiles.yml
+15:27:51.088027 [info ]: Started loading project
+15:27:51.089022 [info ]: Loading ~/.dbt/profiles.yml
+15:27:51.089057 [info ]: Finished loading project [  0.02s]
+15:27:51.097996 [debug]:    Started loading packages
+15:27:51.102358 [debug]:     Loaded [  0.00s] packages
+15:27:51.103497 [info ]: Finished loading project [  0.02s]
+15:27:51.103840 [info ]: Started parsing
+15:27:51.155570 [error]: [SerializationError (dbt1013)]: YAML error: models: invalid type: map, expected a sequence
+  --> models\staging\raw_vendas.yml:2:3
+15:27:51.156285 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:27:51.158257 [debug]: Finished parsing models/staging/raw_vendas.yml [  0.00s]
+15:27:51.159413 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:27:51.160425 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:27:51.161779 [debug]: Finished parsing models/staging/raw_vendas.sql [  0.00s]
+15:27:51.162809 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:27:51.540475 [error]: [DependencyNotFound (dbt1048)]: Ref 'stg_vendas' not found in project. Searched for 'meu_projeto.stg_vendas, stg_vendas'
+  --> models/marts/fct_vendas.sql:7:6
+15:27:51.542905 [info ]: Cached model count updated: 4 models (estimate)
+15:27:51.542924 [info ]: Cached model count updated: 4 models (accurate)
+15:27:51.542946 [info ]: Started scheduling
+15:27:51.542981 [info ]: Finished scheduling [  0.00s]
+15:27:51.542998 [debug]: Compilation - 0 nodes selected: {}
+15:27:51.543016 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+15:27:51.543031 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:27:51.543176 [info ]: Started scheduling
+15:27:51.543234 [info ]: Finished scheduling [  0.00s]
+15:27:51.544774 [info ]: Started building task graph
+15:27:51.544808 [info ]: Finished building task graph [  0.00s]
+15:27:51.553606 [info ]: Started scheduling
+15:27:51.553662 [info ]: Finished scheduling [  0.00s]
+15:27:51.561290 [info ]: Cached model count updated: 4 models (accurate)
+15:27:51.561369 [info ]: Finished parsing [  0.46s]
+15:27:53.248423 [info ]: Started loading project
+15:27:53.249456 [info ]: Loading ~/.dbt/profiles.yml
+15:27:53.311462 [info ]: Cached model count updated: 4 models (estimate)
+15:27:53.311487 [info ]: Cached model count updated: 4 models (accurate)
+15:27:53.311534 [info ]: Started scheduling
+15:27:53.311628 [info ]: Finished scheduling [  0.00s]
+15:27:53.311658 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.raw_vendas", "model.meu_projeto.stg_tips"}
+15:27:53.314457 [info ]: Started building task graph
+15:27:53.314563 [info ]: Finished building task graph [  0.00s]
+15:27:53.320376 [info ]: Started rendering (4 nodes)
+15:27:53.320430 [info ]: Started model main.raw_vendas
+15:27:53.320474 [debug]: Started rendering model main.raw_vendas
+15:27:53.320555 [info ]: Finished loading project [  0.07s]
+15:27:53.320541 [info ]: Started model main.fct_vendas
+15:27:53.321563 [debug]: Started rendering model main.fct_vendas
+15:27:53.322532 [info ]: Started model main.fct_resumo
+15:27:53.322629 [debug]: Started rendering model main.fct_resumo
+15:27:53.323524 [debug]: Compiled SQL for node model.meu_projeto.raw_vendas at target\.lsp\compiled\meu_projeto\models\staging\raw_vendas.sql
+15:27:53.323957 [info ]: Started model main.stg_tips
+15:27:53.324076 [debug]: Started rendering model main.stg_tips
+15:27:53.325272 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:27:53.325737 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: ref not found for package: meu_projeto, model: stg_vendas, version: None
+(in models/marts/fct_vendas.sql:7:6)
+  --> models/marts/fct_vendas.sql:7:6
+15:27:53.326009 [info ]: Started analyzing (4 nodes)
+15:27:53.326105 [debug]: Started analyzing model main.fct_vendas
+15:27:53.326221 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [skipped]
+15:27:53.326265 [info ]:     Failed [  0.00s] model main.fct_vendas (view)
+15:27:53.326324 [debug]: Finished rendering [  0.01s] model main.raw_vendas [success]
+15:27:53.326408 [debug]: Started analyzing model main.raw_vendas
+15:27:53.326512 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:27:53.326516 [debug]: Finished rendering [  0.00s] model main.fct_vendas [error]
+15:27:53.326761 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:27:53.326841 [debug]: Started analyzing model main.fct_resumo
+15:27:53.327009 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:27:53.327094 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 1 errors)
+15:27:53.327179 [debug]: Started analyzing model main.stg_tips
+15:27:53.328172 [debug]: Finished analyzing [  0.00s] model main.raw_vendas [success]
+15:27:53.328305 [info ]:  Succeeded [  0.01s] model main.raw_vendas (view)
+15:27:53.328499 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:27:53.328590 [info ]:  Succeeded [  0.01s] model main.fct_resumo (view)
+15:27:53.328717 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:27:53.328793 [info ]: Finished analyzing [  0.00s] (4 nodes, 1 skipped, 0 errors)
+15:27:53.330319 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:27:53.337638 [info ]: Started scheduling
+15:27:53.337723 [info ]: Finished scheduling [  0.00s]
+15:27:53.338527 [info ]: Cached model count updated: 4 models (accurate)
+15:28:11.649674 [info ]: Started loading project
+15:28:11.650562 [info ]: Loading ~/.dbt/profiles.yml
+15:28:11.662033 [info ]: Started parsing
+15:28:11.730421 [info ]: Finished loading project [  0.08s]
+15:28:11.734334 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:28:11.735080 [debug]: Finished parsing models/staging/raw_vendas.sql [  0.00s]
+15:28:12.074196 [error]: [DependencyNotFound (dbt1048)]: Ref 'stg_vendas' not found in project. Searched for 'meu_projeto.stg_vendas, stg_vendas'
+  --> models/marts/fct_vendas.sql:7:6
+15:28:12.079925 [info ]: Cached model count updated: 4 models (estimate)
+15:28:12.079951 [info ]: Cached model count updated: 4 models (accurate)
+15:28:12.079994 [info ]: Started scheduling
+15:28:12.080080 [info ]: Finished scheduling [  0.00s]
+15:28:12.080109 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.raw_vendas"}
+15:28:12.082060 [info ]: Started building task graph
+15:28:12.082126 [info ]: Finished building task graph [  0.00s]
+15:28:12.085522 [info ]: Started rendering (1 nodes)
+15:28:12.085562 [info ]: Started model main.raw_vendas
+15:28:12.085596 [debug]: Started rendering model main.raw_vendas
+15:28:12.085677 [info ]: Finished parsing [  0.42s]
+15:28:12.087935 [debug]: Compiled SQL for node model.meu_projeto.raw_vendas at target\.lsp\compiled\meu_projeto\models\staging\raw_vendas.sql
+15:28:12.088221 [debug]: Finished rendering [  0.00s] model main.raw_vendas [success]
+15:28:12.088258 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:28:12.088293 [info ]: Started analyzing (1 nodes)
+15:28:12.088312 [debug]: Started analyzing model main.raw_vendas
+15:28:12.088701 [debug]: Finished analyzing [  0.00s] model main.raw_vendas [success]
+15:28:12.088732 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:28:12.088752 [info ]:  Succeeded [  0.00s] model main.raw_vendas (view)
+15:28:12.094447 [info ]: Started scheduling
+15:28:12.094557 [info ]: Finished scheduling [  0.00s]
+15:28:12.097212 [info ]: Cached model count updated: 4 models (accurate)
+15:28:13.661889 [info ]: Started loading project
+15:28:13.663446 [info ]: Loading ~/.dbt/profiles.yml
+15:28:13.708616 [info ]: Cached model count updated: 4 models (estimate)
+15:28:13.708636 [info ]: Cached model count updated: 4 models (accurate)
+15:28:13.708716 [info ]: Started scheduling
+15:28:13.708822 [info ]: Finished scheduling [  0.00s]
+15:28:13.708843 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.raw_vendas", "model.meu_projeto.stg_tips"}
+15:28:13.710594 [info ]: Started building task graph
+15:28:13.710666 [info ]: Finished building task graph [  0.00s]
+15:28:13.713750 [info ]: Started rendering (4 nodes)
+15:28:13.713785 [info ]: Started model main.raw_vendas
+15:28:13.713800 [debug]: Started rendering model main.raw_vendas
+15:28:13.713837 [info ]: Started model main.fct_vendas
+15:28:13.713858 [debug]: Started rendering model main.fct_vendas
+15:28:13.713858 [info ]: Finished loading project [  0.05s]
+15:28:13.713886 [info ]: Started model main.fct_resumo
+15:28:13.713906 [debug]: Started rendering model main.fct_resumo
+15:28:13.713931 [info ]: Started model main.stg_tips
+15:28:13.713951 [debug]: Started rendering model main.stg_tips
+15:28:13.714392 [debug]: Compiled SQL for node model.meu_projeto.raw_vendas at target\.lsp\compiled\meu_projeto\models\staging\raw_vendas.sql
+15:28:13.714479 [debug]: Finished rendering [  0.00s] model main.raw_vendas [success]
+15:28:13.714518 [info ]: Started analyzing (4 nodes)
+15:28:13.714534 [debug]: Started analyzing model main.raw_vendas
+15:28:13.714767 [debug]: Finished analyzing [  0.00s] model main.raw_vendas [success]
+15:28:13.714796 [info ]:  Succeeded [-------] model main.raw_vendas (view)
+15:28:13.714848 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:28:13.714974 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: ref not found for package: meu_projeto, model: stg_vendas, version: None
+(in models/marts/fct_vendas.sql:7:6)
+  --> models/marts/fct_vendas.sql:7:6
+15:28:13.715024 [debug]: Started analyzing model main.fct_vendas
+15:28:13.715053 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [skipped]
+15:28:13.715097 [info ]:     Failed [  0.00s] model main.fct_vendas (view)
+15:28:13.715135 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:28:13.715165 [debug]: Started analyzing model main.fct_resumo
+15:28:13.715226 [debug]: Finished rendering [  0.00s] model main.fct_vendas [error]
+15:28:13.715284 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:28:13.715353 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:28:13.715374 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 1 errors)
+15:28:13.715397 [debug]: Started analyzing model main.stg_tips
+15:28:13.715646 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:28:13.715673 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:28:13.715902 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:28:13.715936 [info ]: Finished analyzing [  0.00s] (4 nodes, 1 skipped, 0 errors)
+15:28:13.715956 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:28:13.720389 [info ]: Started scheduling
+15:28:13.720450 [info ]: Finished scheduling [  0.00s]
+15:28:13.720701 [info ]: Cached model count updated: 4 models (accurate)
+15:28:30.327714 [info ]: Started loading project
+15:28:30.328421 [info ]: Loading ~/.dbt/profiles.yml
+15:28:30.339555 [info ]: Started loading project
+15:28:30.340407 [info ]: Loading ~/.dbt/profiles.yml
+15:28:30.340439 [info ]: Finished loading project [  0.01s]
+15:28:30.347378 [debug]:    Started loading packages
+15:28:30.351565 [debug]:     Loaded [  0.00s] packages
+15:28:30.352632 [info ]: Finished loading project [  0.01s]
+15:28:30.352966 [info ]: Started parsing
+15:28:30.399407 [error]: [SerializationError (dbt1013)]: YAML error: models: invalid type: map, expected a sequence
+  --> models\staging\raw_vendas.yml:2:3
+15:28:30.400114 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:28:30.401097 [debug]: Finished parsing models/staging/raw_vendas.yml [  0.00s]
+15:28:30.401985 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:28:30.403220 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:28:30.404444 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:28:30.405392 [debug]: Finished parsing models/staging/stg_vendas.sql [  0.00s]
+15:28:30.695446 [info ]: Finished parsing [  0.34s]
+15:28:30.696796 [info ]: Cached model count updated: 4 models (estimate)
+15:28:30.696819 [info ]: Cached model count updated: 4 models (accurate)
+15:28:30.696852 [info ]: Started scheduling
+15:28:30.696962 [info ]: Finished scheduling [  0.00s]
+15:28:30.697015 [debug]: Compilation - 0 nodes selected: {}
+15:28:30.697059 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+15:28:30.697084 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:28:30.697320 [info ]: Started scheduling
+15:28:30.697418 [info ]: Finished scheduling [  0.00s]
+15:28:30.700804 [info ]: Started building task graph
+15:28:30.700842 [info ]: Finished building task graph [  0.00s]
+15:28:30.711081 [info ]: Started scheduling
+15:28:30.711158 [info ]: Finished scheduling [  0.00s]
+15:28:30.715958 [info ]: Cached model count updated: 4 models (accurate)
+15:28:32.269269 [info ]: Started loading project
+15:28:32.270050 [info ]: Loading ~/.dbt/profiles.yml
+15:28:32.308861 [info ]: Cached model count updated: 4 models (estimate)
+15:28:32.308882 [info ]: Cached model count updated: 4 models (accurate)
+15:28:32.308912 [info ]: Started scheduling
+15:28:32.308988 [info ]: Finished scheduling [  0.00s]
+15:28:32.309007 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:28:32.311069 [info ]: Started building task graph
+15:28:32.311149 [info ]: Finished building task graph [  0.00s]
+15:28:32.314264 [info ]: Started rendering (4 nodes)
+15:28:32.314297 [info ]: Started model main.fct_vendas
+15:28:32.314310 [debug]: Started rendering model main.fct_vendas
+15:28:32.314344 [info ]: Started model main.stg_vendas
+15:28:32.314366 [debug]: Started rendering model main.stg_vendas
+15:28:32.314366 [info ]: Finished loading project [  0.05s]
+15:28:32.314396 [info ]: Started model main.fct_resumo
+15:28:32.314419 [debug]: Started rendering model main.fct_resumo
+15:28:32.314449 [info ]: Started model main.stg_tips
+15:28:32.314468 [debug]: Started rendering model main.stg_tips
+15:28:32.316889 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:28:32.317079 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:28:32.317145 [info ]: Started analyzing (4 nodes)
+15:28:32.317169 [debug]: Started analyzing model main.stg_vendas
+15:28:32.317463 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:28:32.317512 [info ]:  Succeeded [  0.00s] model main.stg_vendas (view)
+15:28:32.318232 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:28:32.318411 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:28:32.318471 [debug]: Started analyzing model main.fct_resumo
+15:28:32.319423 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:28:32.319466 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:28:32.319648 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:28:32.319785 [debug]: Finished rendering [  0.01s] model main.fct_vendas [success]
+15:28:32.319825 [debug]: Started analyzing model main.fct_vendas
+15:28:32.320956 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:28:32.321010 [info ]:  Succeeded [  0.01s] model main.fct_vendas (view)
+15:28:32.322715 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:28:32.323012 [debug]: Finished rendering [  0.01s] model main.stg_tips [success]
+15:28:32.323047 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 0 errors)
+15:28:32.323081 [debug]: Started analyzing model main.stg_tips
+15:28:32.323440 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:28:32.323475 [info ]: Finished analyzing [  0.01s] (4 nodes, 0 skipped, 0 errors)
+15:28:32.323493 [info ]:  Succeeded [  0.01s] model main.stg_tips (view)
+15:28:32.330222 [info ]: Started scheduling
+15:28:32.330298 [info ]: Finished scheduling [  0.00s]
+15:28:32.330577 [info ]: Cached model count updated: 4 models (accurate)
+15:28:37.016438 [info ]: Started loading project
+15:28:37.017289 [info ]: Loading ~/.dbt/profiles.yml
+15:28:37.029697 [info ]: Started parsing
+15:28:37.117130 [info ]: Finished loading project [  0.10s]
+15:28:37.120253 [error]: [SerializationError (dbt1013)]: YAML error: models: invalid type: map, expected a sequence
+  --> models\staging\raw_vendas.yml:2:3
+15:28:37.122955 [debug]: Finished parsing models/staging/raw_vendas.yml [  0.00s]
+15:28:37.451254 [info ]: Finished parsing [  0.42s]
+15:28:37.455568 [info ]: Cached model count updated: 4 models (estimate)
+15:28:37.455603 [info ]: Cached model count updated: 4 models (accurate)
+15:28:37.455642 [info ]: Started scheduling
+15:28:37.455699 [info ]: Finished scheduling [  0.00s]
+15:28:37.455741 [debug]: Compilation - 0 nodes selected: {}
+15:28:37.455768 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+15:28:37.455790 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:28:37.458241 [info ]: Started building task graph
+15:28:37.458278 [info ]: Finished building task graph [  0.00s]
+15:28:37.471763 [info ]: Started scheduling
+15:28:37.471842 [info ]: Finished scheduling [  0.00s]
+15:28:37.475421 [info ]: Cached model count updated: 4 models (accurate)
+15:28:39.049242 [info ]: Started loading project
+15:28:39.052908 [info ]: Loading ~/.dbt/profiles.yml
+15:28:39.101930 [info ]: Cached model count updated: 4 models (estimate)
+15:28:39.101950 [info ]: Cached model count updated: 4 models (accurate)
+15:28:39.101992 [info ]: Started scheduling
+15:28:39.102076 [info ]: Finished scheduling [  0.00s]
+15:28:39.102104 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:28:39.103837 [info ]: Started building task graph
+15:28:39.103910 [info ]: Finished building task graph [  0.00s]
+15:28:39.108199 [info ]: Started rendering (4 nodes)
+15:28:39.108243 [info ]: Started model main.fct_vendas
+15:28:39.108258 [debug]: Started rendering model main.fct_vendas
+15:28:39.108296 [info ]: Started model main.stg_vendas
+15:28:39.108320 [info ]: Finished loading project [  0.06s]
+15:28:39.108359 [debug]: Started rendering model main.stg_vendas
+15:28:39.108543 [info ]: Started model main.fct_resumo
+15:28:39.108626 [debug]: Started rendering model main.fct_resumo
+15:28:39.108899 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:28:39.108899 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:28:39.109196 [info ]: Started model main.stg_tips
+15:28:39.109266 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:28:39.109310 [debug]: Started rendering model main.stg_tips
+15:28:39.109406 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:28:39.109480 [info ]: Started analyzing (4 nodes)
+15:28:39.109501 [debug]: Started analyzing model main.fct_vendas
+15:28:39.109568 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:28:39.109663 [debug]: Started analyzing model main.stg_vendas
+15:28:39.109798 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:28:39.109946 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:28:39.110004 [debug]: Started analyzing model main.fct_resumo
+15:28:39.110125 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:28:39.110195 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:28:39.110263 [debug]: Started analyzing model main.stg_tips
+15:28:39.110383 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:28:39.110476 [info ]:  Succeeded [  0.00s] model main.stg_vendas (view)
+15:28:39.110620 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:28:39.110650 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:28:39.110693 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:28:39.110721 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:28:39.110775 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:28:39.110796 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:28:39.110811 [info ]:  Succeeded [-------] model main.stg_tips (view)
+15:28:39.114922 [info ]: Started scheduling
+15:28:39.114986 [info ]: Finished scheduling [  0.00s]
+15:28:39.115239 [info ]: Cached model count updated: 4 models (accurate)
+15:28:56.851507 [info ]: Started loading project
+15:28:56.852603 [info ]: Loading ~/.dbt/profiles.yml
+15:28:56.870022 [info ]: Started loading project
+15:28:56.871114 [info ]: Loading ~/.dbt/profiles.yml
+15:28:56.871151 [info ]: Finished loading project [  0.02s]
+15:28:56.885084 [debug]:    Started loading packages
+15:28:56.891549 [debug]:     Loaded [  0.01s] packages
+15:28:56.894844 [info ]: Finished loading project [  0.02s]
+15:28:56.895511 [info ]: Started parsing
+15:28:57.066926 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:28:57.067537 [error]: [SerializationError (dbt1013)]: YAML error: models: invalid type: map, expected a sequence
+  --> models\staging\stg_vendas.yml:2:3
+15:28:57.069476 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:28:57.072457 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:28:57.073700 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:28:57.074702 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:28:57.075662 [debug]: Finished parsing models/staging/stg_vendas.sql [  0.00s]
+15:28:57.868764 [info ]: Finished parsing [  0.97s]
+15:28:57.869616 [info ]: Cached model count updated: 4 models (estimate)
+15:28:57.869630 [info ]: Cached model count updated: 4 models (accurate)
+15:28:57.869651 [info ]: Started scheduling
+15:28:57.869689 [info ]: Finished scheduling [  0.00s]
+15:28:57.869702 [debug]: Compilation - 0 nodes selected: {}
+15:28:57.869719 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+15:28:57.869733 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:28:57.869876 [info ]: Started scheduling
+15:28:57.869933 [info ]: Finished scheduling [  0.00s]
+15:28:57.871354 [info ]: Started building task graph
+15:28:57.871377 [info ]: Finished building task graph [  0.00s]
+15:28:57.878942 [info ]: Started scheduling
+15:28:57.879013 [info ]: Finished scheduling [  0.00s]
+15:28:57.882430 [info ]: Cached model count updated: 4 models (accurate)
+15:28:58.304438 [info ]: Started loading project
+15:28:58.305258 [info ]: Loading ~/.dbt/profiles.yml
+15:28:58.315187 [info ]: Started parsing
+15:28:58.423866 [info ]: Finished loading project [  0.12s]
+15:28:58.437768 [error]: [SerializationError (dbt1013)]: YAML error: models: invalid type: map, expected a sequence
+  --> models\staging\stg_vendas.yml:2:3
+15:28:58.441169 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:28:58.770434 [info ]: Finished parsing [  0.46s]
+15:28:58.774788 [info ]: Cached model count updated: 4 models (estimate)
+15:28:58.774821 [info ]: Cached model count updated: 4 models (accurate)
+15:28:58.774855 [info ]: Started scheduling
+15:28:58.774919 [info ]: Finished scheduling [  0.00s]
+15:28:58.774950 [debug]: Compilation - 0 nodes selected: {}
+15:28:58.774974 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+15:28:58.774994 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:28:58.777632 [info ]: Started building task graph
+15:28:58.777675 [info ]: Finished building task graph [  0.00s]
+15:28:58.785373 [info ]: Started scheduling
+15:28:58.785439 [info ]: Finished scheduling [  0.00s]
+15:28:58.787697 [info ]: Cached model count updated: 4 models (accurate)
+15:29:00.361745 [info ]: Started loading project
+15:29:00.363143 [info ]: Loading ~/.dbt/profiles.yml
+15:29:00.404119 [info ]: Cached model count updated: 4 models (estimate)
+15:29:00.404149 [info ]: Cached model count updated: 4 models (accurate)
+15:29:00.404180 [info ]: Started scheduling
+15:29:00.404263 [info ]: Finished scheduling [  0.00s]
+15:29:00.404291 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:29:00.406003 [info ]: Started building task graph
+15:29:00.406076 [info ]: Finished building task graph [  0.00s]
+15:29:00.410125 [info ]: Started rendering (4 nodes)
+15:29:00.410169 [info ]: Started model main.fct_vendas
+15:29:00.410183 [debug]: Started rendering model main.fct_vendas
+15:29:00.410218 [info ]: Started model main.stg_vendas
+15:29:00.410241 [debug]: Started rendering model main.stg_vendas
+15:29:00.410244 [info ]: Finished loading project [  0.05s]
+15:29:00.410271 [info ]: Started model main.fct_resumo
+15:29:00.410292 [debug]: Started rendering model main.fct_resumo
+15:29:00.410318 [info ]: Started model main.stg_tips
+15:29:00.410342 [debug]: Started rendering model main.stg_tips
+15:29:00.412668 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:29:00.413063 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:29:00.413133 [info ]: Started analyzing (4 nodes)
+15:29:00.413388 [debug]: Started analyzing model main.stg_vendas
+15:29:00.413911 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:29:00.413954 [info ]:  Succeeded [  0.00s] model main.stg_vendas (view)
+15:29:00.413985 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:29:00.414211 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:29:00.414245 [debug]: Started analyzing model main.stg_tips
+15:29:00.414563 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:29:00.414594 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:29:00.415107 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:29:00.415414 [debug]: Finished rendering [  0.01s] model main.fct_resumo [success]
+15:29:00.415467 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:29:00.415455 [debug]: Started analyzing model main.fct_resumo
+15:29:00.415668 [debug]: Finished rendering [  0.01s] model main.fct_vendas [success]
+15:29:00.415696 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 0 errors)
+15:29:00.415724 [debug]: Started analyzing model main.fct_vendas
+15:29:00.416257 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:29:00.416290 [info ]:  Succeeded [  0.01s] model main.fct_resumo (view)
+15:29:00.416340 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:29:00.416359 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:29:00.416377 [info ]:  Succeeded [  0.01s] model main.fct_vendas (view)
+15:29:00.423530 [info ]: Started scheduling
+15:29:00.423601 [info ]: Finished scheduling [  0.00s]
+15:29:00.423843 [info ]: Cached model count updated: 4 models (accurate)
+15:29:14.108278 [info ]: Started loading project
+15:29:14.109373 [info ]: Loading ~/.dbt/profiles.yml
+15:29:14.122399 [info ]: Started parsing
+15:29:14.213563 [info ]: Finished loading project [  0.11s]
+15:29:14.216791 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:29:14.512106 [info ]: Finished parsing [  0.39s]
+15:29:14.515310 [info ]: Cached model count updated: 4 models (estimate)
+15:29:14.515386 [info ]: Cached model count updated: 4 models (accurate)
+15:29:14.515473 [info ]: Started scheduling
+15:29:14.515576 [info ]: Finished scheduling [  0.00s]
+15:29:14.515605 [debug]: Compilation - 2 nodes selected: {"model.meu_projeto.fct_vendas", "model.meu_projeto.stg_vendas"}
+15:29:14.517553 [info ]: Started building task graph
+15:29:14.517626 [info ]: Finished building task graph [  0.00s]
+15:29:14.521772 [info ]: Started rendering (2 nodes)
+15:29:14.521815 [info ]: Started model main.fct_vendas
+15:29:14.521832 [debug]: Started rendering model main.fct_vendas
+15:29:14.521867 [info ]: Started model main.stg_vendas
+15:29:14.521936 [debug]: Started rendering model main.stg_vendas
+15:29:14.522474 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:29:14.522564 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:29:14.522613 [info ]: Started analyzing (2 nodes)
+15:29:14.522633 [debug]: Started analyzing model main.stg_vendas
+15:29:14.522831 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:29:14.522858 [info ]:  Succeeded [-------] model main.stg_vendas (view)
+15:29:14.524326 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:29:14.524573 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:29:14.524609 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:29:14.524641 [debug]: Started analyzing model main.fct_vendas
+15:29:14.525462 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:29:14.525510 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:29:14.525531 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:29:14.529990 [info ]: Started scheduling
+15:29:14.530076 [info ]: Finished scheduling [  0.00s]
+15:29:14.532564 [info ]: Cached model count updated: 4 models (accurate)
+15:29:16.242626 [info ]: Started loading project
+15:29:16.244333 [info ]: Loading ~/.dbt/profiles.yml
+15:29:16.301246 [info ]: Cached model count updated: 4 models (estimate)
+15:29:16.301284 [info ]: Cached model count updated: 4 models (accurate)
+15:29:16.301317 [info ]: Started scheduling
+15:29:16.301397 [info ]: Finished scheduling [  0.00s]
+15:29:16.301425 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:29:16.303113 [info ]: Started building task graph
+15:29:16.303200 [info ]: Finished building task graph [  0.00s]
+15:29:16.306363 [info ]: Started rendering (4 nodes)
+15:29:16.306398 [info ]: Started model main.fct_vendas
+15:29:16.306414 [debug]: Started rendering model main.fct_vendas
+15:29:16.306449 [info ]: Started model main.stg_vendas
+15:29:16.306471 [info ]: Finished loading project [  0.06s]
+15:29:16.306469 [debug]: Started rendering model main.stg_vendas
+15:29:16.306783 [info ]: Started model main.fct_resumo
+15:29:16.306859 [debug]: Started rendering model main.fct_resumo
+15:29:16.307007 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:29:16.307125 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:29:16.307191 [info ]: Started model main.stg_tips
+15:29:16.307224 [debug]: Started rendering model main.stg_tips
+15:29:16.307449 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:29:16.307525 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:29:16.307653 [info ]: Started analyzing (4 nodes)
+15:29:16.307719 [debug]: Started analyzing model main.fct_vendas
+15:29:16.307802 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:29:16.307933 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:29:16.308015 [debug]: Started analyzing model main.stg_vendas
+15:29:16.308419 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:29:16.308456 [debug]: Started analyzing model main.fct_resumo
+15:29:16.308542 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:29:16.308665 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:29:16.308691 [debug]: Started analyzing model main.stg_tips
+15:29:16.308788 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:29:16.308859 [info ]:  Succeeded [  0.00s] model main.stg_vendas (view)
+15:29:16.308961 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:29:16.309014 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:29:16.309066 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:29:16.309096 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:29:16.309157 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:29:16.309178 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:29:16.309197 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:29:16.316852 [info ]: Started scheduling
+15:29:16.316921 [info ]: Finished scheduling [  0.00s]
+15:29:16.317223 [info ]: Cached model count updated: 4 models (accurate)
+15:31:08.593039 [info ]: Started loading project
+15:31:08.593987 [info ]: Loading ~/.dbt/profiles.yml
+15:31:08.610803 [info ]: Started parsing
+15:31:08.723084 [info ]: Finished loading project [  0.13s]
+15:31:08.725655 [error]: [SerializationError (dbt1013)]: YAML error: mapping values are not allowed in this context at line 4 column 7
+  --> models\staging\stg_vendas.yml:4:7
+15:31:08.728153 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:31:09.080672 [info ]: Finished parsing [  0.47s]
+15:31:09.084701 [info ]: Cached model count updated: 4 models (estimate)
+15:31:09.084723 [info ]: Cached model count updated: 4 models (accurate)
+15:31:09.084765 [info ]: Started scheduling
+15:31:09.084832 [info ]: Finished scheduling [  0.00s]
+15:31:09.084859 [debug]: Compilation - 0 nodes selected: {}
+15:31:09.084894 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+15:31:09.084917 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:31:09.086727 [info ]: Started building task graph
+15:31:09.086764 [info ]: Finished building task graph [  0.00s]
+15:31:09.096703 [info ]: Started scheduling
+15:31:09.096776 [info ]: Finished scheduling [  0.00s]
+15:31:09.100134 [info ]: Cached model count updated: 4 models (accurate)
+15:31:10.802895 [info ]: Started loading project
+15:31:10.804811 [info ]: Loading ~/.dbt/profiles.yml
+15:31:10.846968 [info ]: Cached model count updated: 4 models (estimate)
+15:31:10.846990 [info ]: Cached model count updated: 4 models (accurate)
+15:31:10.847031 [info ]: Started scheduling
+15:31:10.847124 [info ]: Finished scheduling [  0.00s]
+15:31:10.847153 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:31:10.848951 [info ]: Started building task graph
+15:31:10.849047 [info ]: Finished building task graph [  0.00s]
+15:31:10.852205 [info ]: Started rendering (4 nodes)
+15:31:10.852249 [info ]: Started model main.fct_vendas
+15:31:10.852265 [debug]: Started rendering model main.fct_vendas
+15:31:10.852306 [info ]: Started model main.stg_vendas
+15:31:10.852329 [debug]: Started rendering model main.stg_vendas
+15:31:10.852328 [info ]: Finished loading project [  0.05s]
+15:31:10.852360 [info ]: Started model main.fct_resumo
+15:31:10.852377 [debug]: Started rendering model main.fct_resumo
+15:31:10.852400 [info ]: Started model main.stg_tips
+15:31:10.852451 [debug]: Started rendering model main.stg_tips
+15:31:10.853147 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:31:10.854164 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:31:10.854759 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:31:10.854918 [info ]: Started analyzing (4 nodes)
+15:31:10.854943 [debug]: Started analyzing model main.stg_vendas
+15:31:10.855012 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:31:10.855048 [debug]: Started analyzing model main.fct_resumo
+15:31:10.855286 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:31:10.855314 [info ]:  Succeeded [  0.00s] model main.stg_vendas (view)
+15:31:10.856163 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:31:10.856405 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:31:10.857035 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:31:10.857133 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:31:10.857148 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:31:10.857188 [debug]: Started analyzing model main.stg_tips
+15:31:10.857241 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:31:10.857294 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 0 errors)
+15:31:10.857324 [debug]: Started analyzing model main.fct_vendas
+15:31:10.857589 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:31:10.857635 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:31:10.857978 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:31:10.858008 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:31:10.858031 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:31:10.863468 [info ]: Started scheduling
+15:31:10.863533 [info ]: Finished scheduling [  0.00s]
+15:31:10.863754 [info ]: Cached model count updated: 4 models (accurate)
+15:31:22.199184 [info ]: Started loading project
+15:31:22.200458 [info ]: Loading ~/.dbt/profiles.yml
+15:31:22.220839 [info ]: Started parsing
+15:31:22.347810 [info ]: Finished loading project [  0.15s]
+15:31:22.350093 [error]: [SerializationError (dbt1013)]: YAML error: models: invalid type: map, expected a sequence
+  --> models\staging\stg_vendas.yml:4:3
+15:31:22.352665 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:31:22.659000 [info ]: Finished parsing [  0.44s]
+15:31:22.662859 [info ]: Cached model count updated: 4 models (estimate)
+15:31:22.662889 [info ]: Cached model count updated: 4 models (accurate)
+15:31:22.662938 [info ]: Started scheduling
+15:31:22.663004 [info ]: Finished scheduling [  0.00s]
+15:31:22.663034 [debug]: Compilation - 0 nodes selected: {}
+15:31:22.663078 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+15:31:22.663104 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:31:22.664925 [info ]: Started building task graph
+15:31:22.664963 [info ]: Finished building task graph [  0.00s]
+15:31:22.671825 [info ]: Started scheduling
+15:31:22.671885 [info ]: Finished scheduling [  0.00s]
+15:31:22.673986 [info ]: Cached model count updated: 4 models (accurate)
+15:31:24.267919 [info ]: Started loading project
+15:31:24.269053 [info ]: Loading ~/.dbt/profiles.yml
+15:31:24.387355 [info ]: Cached model count updated: 4 models (estimate)
+15:31:24.387455 [info ]: Cached model count updated: 4 models (accurate)
+15:31:24.387547 [info ]: Started scheduling
+15:31:24.387713 [info ]: Finished scheduling [  0.00s]
+15:31:24.387787 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:31:24.390755 [info ]: Started building task graph
+15:31:24.390950 [info ]: Finished building task graph [  0.00s]
+15:31:24.395490 [info ]: Started rendering (4 nodes)
+15:31:24.395530 [info ]: Started model main.fct_vendas
+15:31:24.395551 [debug]: Started rendering model main.fct_vendas
+15:31:24.395590 [info ]: Started model main.stg_vendas
+15:31:24.395617 [info ]: Finished loading project [  0.13s]
+15:31:24.395614 [debug]: Started rendering model main.stg_vendas
+15:31:24.395880 [info ]: Started model main.fct_resumo
+15:31:24.395972 [debug]: Started rendering model main.fct_resumo
+15:31:24.396198 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:31:24.396199 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:31:24.396359 [info ]: Started model main.stg_tips
+15:31:24.396399 [debug]: Started rendering model main.stg_tips
+15:31:24.396576 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:31:24.396873 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:31:24.396968 [info ]: Started analyzing (4 nodes)
+15:31:24.397117 [debug]: Started analyzing model main.fct_vendas
+15:31:24.397275 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:31:24.397533 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:31:24.397619 [debug]: Started analyzing model main.stg_vendas
+15:31:24.397966 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:31:24.398065 [debug]: Started analyzing model main.fct_resumo
+15:31:24.398364 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:31:24.398454 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:31:24.398527 [debug]: Started analyzing model main.stg_tips
+15:31:24.398908 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:31:24.398973 [info ]:  Succeeded [  0.00s] model main.stg_vendas (view)
+15:31:24.399081 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:31:24.399111 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:31:24.399160 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:31:24.399189 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:31:24.399252 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:31:24.399273 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:31:24.399292 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:31:24.407682 [info ]: Started scheduling
+15:31:24.407877 [info ]: Finished scheduling [  0.00s]
+15:31:24.409610 [info ]: Cached model count updated: 4 models (accurate)
+15:31:59.572232 [info ]: Started loading project
+15:31:59.573537 [info ]: Loading ~/.dbt/profiles.yml
+15:31:59.593644 [info ]: Started parsing
+15:31:59.730358 [info ]: Finished loading project [  0.16s]
+15:31:59.732118 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:31:59.735094 [debug]: Finished parsing models/staging/stg_vendas.sql [  0.00s]
+15:32:00.065883 [info ]: Finished parsing [  0.47s]
+15:32:00.068978 [info ]: Cached model count updated: 4 models (estimate)
+15:32:00.069033 [info ]: Cached model count updated: 4 models (accurate)
+15:32:00.069096 [info ]: Started scheduling
+15:32:00.069170 [info ]: Finished scheduling [  0.00s]
+15:32:00.069187 [debug]: Compilation - 1 nodes selected: {"model.meu_projeto.stg_vendas"}
+15:32:00.071674 [info ]: Started building task graph
+15:32:00.071738 [info ]: Finished building task graph [  0.00s]
+15:32:00.074829 [info ]: Started rendering (1 nodes)
+15:32:00.074864 [info ]: Started model main.stg_vendas
+15:32:00.074879 [debug]: Started rendering model main.stg_vendas
+15:32:00.077151 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:32:00.077883 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:32:00.077928 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:32:00.077965 [info ]: Started analyzing (1 nodes)
+15:32:00.077984 [debug]: Started analyzing model main.stg_vendas
+15:32:00.078321 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:32:00.078347 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:32:00.078365 [info ]:  Succeeded [  0.00s] model main.stg_vendas (view)
+15:32:00.083284 [info ]: Started scheduling
+15:32:00.083349 [info ]: Finished scheduling [  0.00s]
+15:32:00.085225 [info ]: Cached model count updated: 4 models (accurate)
+15:32:01.653842 [info ]: Started loading project
+15:32:01.654865 [info ]: Loading ~/.dbt/profiles.yml
+15:32:01.697062 [info ]: Cached model count updated: 4 models (estimate)
+15:32:01.697083 [info ]: Cached model count updated: 4 models (accurate)
+15:32:01.697124 [info ]: Started scheduling
+15:32:01.697203 [info ]: Finished scheduling [  0.00s]
+15:32:01.697230 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:32:01.698816 [info ]: Started building task graph
+15:32:01.698922 [info ]: Finished building task graph [  0.00s]
+15:32:01.702258 [info ]: Started rendering (4 nodes)
+15:32:01.702301 [info ]: Started model main.fct_vendas
+15:32:01.702333 [debug]: Started rendering model main.fct_vendas
+15:32:01.702377 [info ]: Started model main.stg_vendas
+15:32:01.702396 [debug]: Started rendering model main.stg_vendas
+15:32:01.702401 [info ]: Finished loading project [  0.05s]
+15:32:01.702418 [info ]: Started model main.fct_resumo
+15:32:01.702433 [debug]: Started rendering model main.fct_resumo
+15:32:01.702455 [info ]: Started model main.stg_tips
+15:32:01.702469 [debug]: Started rendering model main.stg_tips
+15:32:01.703563 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:32:01.703688 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:32:01.703749 [info ]: Started analyzing (4 nodes)
+15:32:01.703770 [debug]: Started analyzing model main.stg_vendas
+15:32:01.704057 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:32:01.704085 [info ]:  Succeeded [  0.00s] model main.stg_vendas (view)
+15:32:01.704103 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:32:01.704146 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:32:01.704176 [debug]: Started analyzing model main.stg_tips
+15:32:01.704470 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:32:01.704494 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:32:01.704555 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:32:01.704638 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:32:01.704670 [debug]: Started analyzing model main.fct_vendas
+15:32:01.705571 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:32:01.705565 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:32:01.705607 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:32:01.705683 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:32:01.705712 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:32:01.705745 [debug]: Started analyzing model main.fct_resumo
+15:32:01.706530 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:32:01.706566 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:32:01.706586 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:32:01.711224 [info ]: Started scheduling
+15:32:01.711285 [info ]: Finished scheduling [  0.00s]
+15:32:01.711458 [info ]: Cached model count updated: 4 models (accurate)
+15:37:06.564125 [info ]: Started loading project
+15:37:06.564989 [info ]: Loading ~/.dbt/profiles.yml
+15:37:06.606320 [info ]: Cached model count updated: 4 models (accurate)
+15:37:06.606339 [info ]: Finished loading project [  0.04s]
+15:37:08.173420 [info ]: Started loading project
+15:37:08.174304 [info ]: Loading ~/.dbt/profiles.yml
+15:37:08.221937 [info ]: Cached model count updated: 4 models (estimate)
+15:37:08.221960 [info ]: Cached model count updated: 4 models (accurate)
+15:37:08.221993 [info ]: Started scheduling
+15:37:08.222080 [info ]: Finished scheduling [  0.00s]
+15:37:08.222100 [debug]: Compilation - 4 nodes selected: {"model.meu_projeto.fct_resumo", "model.meu_projeto.fct_vendas", "model.meu_projeto.stg_tips", "model.meu_projeto.stg_vendas"}
+15:37:08.223990 [info ]: Started building task graph
+15:37:08.224060 [info ]: Finished building task graph [  0.00s]
+15:37:08.227476 [info ]: Started rendering (4 nodes)
+15:37:08.227502 [info ]: Started model main.fct_vendas
+15:37:08.227519 [debug]: Started rendering model main.fct_vendas
+15:37:08.227558 [info ]: Started model main.stg_vendas
+15:37:08.227579 [info ]: Finished loading project [  0.05s]
+15:37:08.227584 [debug]: Started rendering model main.stg_vendas
+15:37:08.227620 [info ]: Started model main.fct_resumo
+15:37:08.227644 [debug]: Started rendering model main.fct_resumo
+15:37:08.227680 [info ]: Started model main.stg_tips
+15:37:08.227725 [debug]: Started rendering model main.stg_tips
+15:37:08.228208 [debug]: Compiled SQL for node model.meu_projeto.fct_vendas at target\.lsp\compiled\meu_projeto\models\marts\fct_vendas.sql
+15:37:08.228316 [debug]: Finished rendering [  0.00s] model main.fct_vendas [success]
+15:37:08.228360 [info ]: Started analyzing (4 nodes)
+15:37:08.228375 [debug]: Started analyzing model main.fct_vendas
+15:37:08.228947 [debug]: Compiled SQL for node model.meu_projeto.stg_vendas at target\.lsp\compiled\meu_projeto\models\staging\stg_vendas.sql
+15:37:08.229376 [debug]: Finished rendering [  0.00s] model main.stg_vendas [success]
+15:37:08.229433 [debug]: Started analyzing model main.stg_vendas
+15:37:08.229552 [debug]: Compiled SQL for node model.meu_projeto.stg_tips at target\.lsp\compiled\meu_projeto\models\staging\stg_tips.sql
+15:37:08.229661 [debug]: Finished analyzing [  0.00s] model main.stg_vendas [success]
+15:37:08.229690 [info ]:  Succeeded [  0.00s] model main.stg_vendas (view)
+15:37:08.229732 [debug]: Finished analyzing [  0.00s] model main.fct_vendas [success]
+15:37:08.229751 [info ]:  Succeeded [  0.00s] model main.fct_vendas (view)
+15:37:08.229790 [debug]: Finished rendering [  0.00s] model main.stg_tips [success]
+15:37:08.229829 [debug]: Started analyzing model main.stg_tips
+15:37:08.230043 [debug]: Compiled SQL for node model.meu_projeto.fct_resumo at target\.lsp\compiled\meu_projeto\models\marts\fct_resumo.sql
+15:37:08.230070 [debug]: Finished analyzing [  0.00s] model main.stg_tips [success]
+15:37:08.230092 [info ]:  Succeeded [  0.00s] model main.stg_tips (view)
+15:37:08.230130 [debug]: Finished rendering [  0.00s] model main.fct_resumo [success]
+15:37:08.230150 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:37:08.230170 [debug]: Started analyzing model main.fct_resumo
+15:37:08.230812 [debug]: Finished analyzing [  0.00s] model main.fct_resumo [success]
+15:37:08.230841 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:37:08.230861 [info ]:  Succeeded [  0.00s] model main.fct_resumo (view)
+15:37:08.235318 [info ]: Started scheduling
+15:37:08.235375 [info ]: Finished scheduling [  0.00s]
+15:37:08.235491 [info ]: Cached model count updated: 4 models (accurate)
+15:37:59.018098 [info ]: Started loading project
+15:37:59.019281 [info ]: Loading ~/.dbt/profiles.yml
+15:37:59.038771 [info ]: Started loading project
+15:37:59.039923 [info ]: Loading ~/.dbt/profiles.yml
+15:37:59.039968 [info ]: Finished loading project [  0.02s]
+15:37:59.059078 [debug]:    Started loading packages
+15:37:59.067096 [debug]:     Loaded [  0.01s] packages
+15:37:59.069025 [info ]: Finished loading project [  0.03s]
+15:37:59.069656 [info ]: Started parsing
+15:37:59.179760 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:37:59.180377 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:37:59.182722 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.00s]
+15:37:59.183803 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:37:59.184853 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:37:59.185749 [debug]: Finished parsing models/staging/stg_vendas.sql [  0.00s]
+15:37:59.699140 [info ]: Finished parsing [  0.63s]
+15:37:59.852376 [info ]: Started loading project
+15:37:59.853496 [info ]: Loading ~/.dbt/profiles.yml
+15:37:59.871253 [debug]:    Started loading packages
+15:37:59.877775 [debug]:     Loaded [  0.01s] packages
+15:37:59.880007 [info ]: Finished loading project [  0.03s]
+15:37:59.880627 [info ]: Started parsing
+15:38:00.271675 [debug]: Finished parsing models/staging/stg_tips.yml [  0.00s]
+15:38:00.272097 [debug]: Finished parsing models/staging/stg_vendas.yml [  0.00s]
+15:38:00.297834 [debug]: Finished parsing models/marts/fct_vendas.sql [  0.00s]
+15:38:00.302278 [debug]: Finished parsing models/staging/stg_tips.sql [  0.00s]
+15:38:00.303488 [debug]: Finished parsing models/staging/stg_vendas.sql [  0.00s]
+15:38:00.304269 [debug]: Finished parsing models/marts/fct_resumo.sql [  0.03s]
